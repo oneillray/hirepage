@@ -1,0 +1,419 @@
+// start styling
+
+
+@import "grids";
+// @import "logo";
+
+/* Vars
+-------------------------------------------- */
+
+$primary: #28262C;
+$secondary: #2F584C;
+$third: #F36A5A;
+$fourth: #495780;
+$fifth: #7FF1E9;
+
+$white: #fff; 
+
+
+
+/* old - elastic stroke colours
+$primary: #11232E;
+$secondary: #D4D05B;
+$third: #1D6374;
+$fourth: #EFEAC5;
+$white: #fff; 
+
+$yellow: #D4D05B;
+
+*/
+
+.wrap {
+
+	max-width: 65em;
+	margin: 0 auto;
+}
+.colour-box {
+
+	width: 800px;
+
+	p {
+
+		padding: 3.75em 1.75em;
+
+	}
+}
+.color--1 {background-color: $primary}
+.color--2 {background-color: $secondary}
+.color--3 {background-color: $third}
+.color--4 {background-color: $fourth}
+
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+
+/* Typography
+-------------------------------------------------- */
+
+
+$body-font: "Georgia";
+$headings-font: "Chaparral Pro";
+$special-font: "AW Conqueror Sans", Helvetica, sans-serif;
+
+
+h1 {
+
+	font-family: $special-font;
+	color: $white;
+	text-align: center;
+	font-size: 3em;
+
+}
+
+h2 {
+
+	border-bottom: 2px $primary solid;
+	color: $white;
+	padding-bottom: 0.3em;
+	text-align: center;
+	font-style: 0.8em;
+
+}
+
+h3 {
+
+	font-weight: 900;
+}
+
+h4 {
+
+	margin-bottom: 0.4em;
+	color: $white;
+	font-style: italic;
+	font-weight: 100;
+	font-family: $body-font;
+
+}
+
+body {
+  font: 100% $special-font, serif;
+  font-weight: 100;
+}
+
+
+/* Body & Grid
+-------------------------------------------------- */
+
+
+body {
+
+	  background-color: $primary;
+
+}
+
+	
+.og {
+	background-color: orange;
+}
+
+
+.gr {
+	background-color: green;
+}
+
+
+
+.grid {
+
+	max-width: 125em;
+	margin: 0 auto;
+}
+
+.grid--center {
+
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+/* Borders, Margins & Padding
+-------------------------------------------------- */
+
+
+.bt {
+
+	border-top:1px solid #fff;
+}
+
+.bl {
+
+	border-left:1px solid #fff;
+
+}
+
+.bb {
+
+	border-bottom:1px solid #fff;
+
+}
+
+.mt {
+
+	margin-top: 2em;
+}
+
+.mb {
+
+	margin-bottom: 2em;
+}
+
+
+.pt {
+
+	padding: 2em 0;
+}
+
+
+
+
+/* UI
+-------------------------------------------------- */
+
+button  {
+
+	padding: 1em 2.5em;
+	width:100%;
+	border: 2px solid $fifth;
+	background: none;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+
+/* Header
+-------------------------------------------------- */
+
+header {}
+.logo {}
+.menu {}
+
+/* Intro
+-------------------------------------------------- */
+
+.intro {
+
+	color: $white;
+	font-family: $special-font;
+	text-align: center;
+	padding-bottom: 3.125em;
+
+	h2 {
+
+		font-size: 1.2em;
+	}
+
+}
+
+
+#Intro {
+background: url("Hero-images.png") no-repeat 0 #f8e4cd;
+display: block;
+padding: 1.75em 0;
+font-family: "AW Conqueror Sans";
+
+	button {
+
+		margin: 1em 0;
+	}
+}
+
+#Intro-blurb {}
+
+/* Services
+-------------------------------------------------- */
+
+#Services {
+
+
+	background: $fifth;
+	color: $fourth;
+
+	h3 {
+
+		font-family: $special-font;
+		color: $primary;
+		font-weight: bold;
+
+	}
+
+		li {
+			padding: 3.75em 1.875em;
+			line-height: 1.6;
+			color: #fff;
+			min-height: 360px;  // fix needed to find convert to ems
+			border: 4px $primary solid;
+
+
+
+				a {
+
+					margin-top: 1em;
+					text-transform: italic;
+					text-decoration: dotted;
+					color: $primary;
+					display: block;
+
+
+					
+				}
+	
+
+
+		}
+
+			li:hover {
+
+		
+				background: $primary;
+
+					h3 {
+
+						color: $fifth;
+					}
+
+
+					a {
+
+						color: $fifth;
+
+					}
+
+
+
+
+		}
+
+
+}
+
+
+/* Media
+-------------------------------------------------- */
+
+img {
+
+	width: 100%;
+	height: auto;
+}
+
+
+svg {
+  width: 20%;
+  height: auto;
+  }
+
+
+/* CTA
+-------------------------------------------------- */
+
+a {color:$fifth;
+	
+	&:hover {
+
+		color: $primary;
+	}
+
+}
+
+
+
+#CTA {
+
+	background: none;
+	text-align: center;
+	margin: 2em 0;
+
+	h2 {
+
+		margin-bottom: 1em;
+	}
+
+	button {
+
+		border: 2px solid $fifth;
+		color: $fifth;
+		margin: 0 auto;
+
+				&:hover {
+
+			background: $fifth;
+			color: $primary;
+		}
+
+
+
+
+
+	}
+
+	a {
+
+			font-size: 2em;
+	}
+
+}
+
+
+
+/* About
+-------------------------------------------------- */
+
+#About {}
+
+.about--blurb {}
+.about--image {}
+
+/* Testimonials
+-------------------------------------------------- */
+
+@import "testimonials";
+
+#Testimonials {
+
+	background: $third;
+	color: $white;
+
+		li {
+
+			margin-bottom: 1em;
+		}
+}
+
+/* Work
+-------------------------------------------------- */
+
+#Work {}
+
+
+/* HACK : /
+-------------------------------------------------- */
+
+.no-border {
+
+	border-bottom: none;
+}
