@@ -9,24 +9,13 @@
 
 $primary: #28262C;
 $secondary: #2F584C;
-$third: #F36A5A;
+$third: #F24F5D;
 $fourth: #495780;
 $fifth: #7FF1E9;
 
 $white: #fff; 
+$special: #83C064;
 
-
-
-/* old - elastic stroke colours
-$primary: #11232E;
-$secondary: #D4D05B;
-$third: #1D6374;
-$fourth: #EFEAC5;
-$white: #fff; 
-
-$yellow: #D4D05B;
-
-*/
 
 .wrap {
 
@@ -73,6 +62,13 @@ $body-font: "Georgia";
 $headings-font: "Chaparral Pro";
 $special-font: "AW Conqueror Sans", Helvetica, sans-serif;
 
+body {
+  font: 100% $special-font, serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+
 
 h1 {
 
@@ -108,10 +104,20 @@ h4 {
 
 }
 
-body {
-  font: 100% $special-font, serif;
-  font-weight: 100;
+
+
+a {
+
+	color:$fifth;
+	
+	&:hover {
+
+		color: $primary;
+	}
+
 }
+
+
 
 
 /* Body & Grid
@@ -188,9 +194,38 @@ body {
 
 
 
-
 /* UI
 -------------------------------------------------- */
+$modal: #DEF4D6;
+
+.modal {
+
+	background: $modal;
+	border: 1px solid darken($modal, 20%);
+	padding: 1em 0.5em;
+	color: darken($modal, 80%);
+
+
+
+	h3 {
+
+		text-align: center;
+
+	}
+
+	a.close {
+
+	color: darken($modal, 80%);
+	text-decoration: none;
+	float: right;
+	margin-top: -20px;
+	right: 10px;
+	position: relative;
+
+	}
+
+}
+
 
 button  {
 
@@ -211,6 +246,49 @@ button  {
 header {}
 .logo {}
 .menu {}
+
+/* For Hire Callout
+-------------------------------------------------- */
+
+.for-hire {
+
+	color: $white;
+
+	.holder {
+		background: $special;
+		padding: 1em 0;
+		margin-top: 1em;
+		padding: 3.7em 0;
+
+	}
+
+	h3 {
+
+		margin-bottom: 2em;
+	}
+	
+
+	button {
+
+		border: 2px solid $white;
+		padding: 2em 1em;
+
+		&:hover {
+
+			background: $white;
+			border: 2px solid $white;
+
+
+		}
+	}
+
+	a {
+
+		color: $white;
+		font-size: 1.8em;
+
+	}
+}
 
 /* Intro
 -------------------------------------------------- */
@@ -237,7 +315,6 @@ padding: 1.75em 0;
 font-family: "AW Conqueror Sans";
 
 	button {
-
 		margin: 1em 0;
 	}
 }
@@ -248,9 +325,8 @@ font-family: "AW Conqueror Sans";
 -------------------------------------------------- */
 
 #Services {
+	
 
-
-	background: $fifth;
 	color: $fourth;
 
 	h3 {
@@ -264,9 +340,10 @@ font-family: "AW Conqueror Sans";
 		li {
 			padding: 3.75em 1.875em;
 			line-height: 1.6;
+			background: $fifth;
 			color: #fff;
 			min-height: 360px;  // fix needed to find convert to ems
-			border: 4px $primary solid;
+			border: 2px $primary solid;
 
 
 
@@ -331,33 +408,31 @@ svg {
 /* CTA
 -------------------------------------------------- */
 
-a {color:$fifth;
-	
-	&:hover {
-
-		color: $primary;
-	}
-
-}
-
-
 
 #CTA {
 
 	background: none;
-	text-align: center;
 	margin: 2em 0;
+	
 
 	h2 {
 
-		margin-bottom: 1em;
+		text-align: left;
 	}
 
 	button {
 
-		border: 2px solid $fifth;
-		color: $fifth;
-		margin: 0 auto;
+		border: 2px solid $white;
+		color: $primary;
+		text-align: center;
+
+
+		a {
+
+			color: $white;
+			font-size: 1.8em;
+
+		}
 
 				&:hover {
 
@@ -373,7 +448,7 @@ a {color:$fifth;
 
 	a {
 
-			font-size: 2em;
+			// font-size: 2em;
 	}
 
 }
@@ -391,16 +466,51 @@ a {color:$fifth;
 /* Testimonials
 -------------------------------------------------- */
 
-@import "testimonials";
+// @import "testimonials";
 
 #Testimonials {
 
 	background: $third;
 	color: $white;
+	line-height: 1.6;
+	font-size: 1.2em;
+
+		blockquote {
+
+			margin-bottom: 2em;
+			display: block;
+
+		}
+
+
+		cite {
+
+			display: block;
+			margin-top: 1.6em;
+			// font-size: 0.8em;
+			text-transform: normal;
+			color:darken( $third, 30% );
+
+			a {
+
+				color: darken($fifth, 10%);
+				text-decoration: none;
+				 border-bottom: 1px dotted darken($fifth, 10%);
+			}
+
+		}
 
 		li {
 
 			margin-bottom: 1em;
+			// border-bottom: 2px solid $primary;
+
+
+			hr {
+
+				padding: 1em 0;
+				// border-bottom: 2px solid $primary;
+			}
 		}
 }
 
