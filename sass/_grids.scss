@@ -84,7 +84,7 @@ $mobile-first:          true !default;
 /**
  * Set the spacing between your grid items.
  */
-$gutter:                10px !default;
+$gutter:                24px !default;
 
 
 /**
@@ -112,7 +112,7 @@ $pull:                  false !default;
  * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
  * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
  */
-$use-markup-fix:        false !default;
+$use-markup-fix:        true !default;
 
 
 /**
@@ -236,6 +236,7 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
         display:inline-block;           /* [1] */
         padding-left:$gutter;           /* [2] */
         vertical-align:top;             /* [3] */
+        margin-right: -1%;
         @if $mobile-first {
             width:100%;                 /* [4] */
         }
