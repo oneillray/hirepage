@@ -1,0 +1,27 @@
+/* Intro
+-------------------------------------------------- */
+
+.intro {
+
+	background: $third;
+	font-family: $special-font;
+	text-align: center;
+	color: $fourth;
+	padding: 1.2em 0;
+
+	h1 {
+
+		text-align: center;
+		color: inherit;
+
+
+		span {
+
+			
+			color: $secondary;
+		}
+	}
+
+
+}
+

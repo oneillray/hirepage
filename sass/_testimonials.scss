@@ -1,0 +1,97 @@
+#Testimonials {
+
+	background: $third;
+	color: $white;
+	line-height: 1.6;
+	font-size: 1.2em;
+	padding-top: 2em;
+
+
+	h2 {
+
+
+		color: $fourth;
+
+
+	}
+
+		blockquote {
+
+			margin-bottom: 2em;
+			display: block;
+
+		}
+
+		
+		
+
+
+		span {
+
+				border-radius: 50px;
+				height: 100px;
+				background: $primary;
+				width: 100px;
+			}
+
+
+		cite {
+
+
+
+
+			display: inline;
+			margin-top: 1.6em;
+			text-transform: normal;
+			color:$secondary;
+
+			a {
+
+				color: $fourth;
+				text-decoration: none;
+				 border-bottom: none;//1px dotted darken($fifth, 10%);
+			}
+
+		}
+
+		li {
+
+			margin-bottom: 1em;
+			// border-bottom: 2px solid $primary;
+
+
+			hr {
+
+				padding: 1em 0;
+				// border-bottom: 2px solid $primary;
+			}
+		}
+
+
+
+
+		figure {
+		  
+		float: left;
+		margin-right: 2%;
+		border-radius: 1.5625em;
+		height: 3.125em;
+		background: $primary;
+		width: 3.125em;
+		
+		}
+
+		cite {
+		  
+		display: inline-block;
+		margin-top: 0.2em;
+
+		}
+
+
+}
+
+
+.banner { position: relative; overflow: hidden; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }

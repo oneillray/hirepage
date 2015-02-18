@@ -1,41 +1,30 @@
 // start styling
 
 
-@import "grids";
-// @import "logo";
 
 /* Vars
 -------------------------------------------- */
 
-$primary: #28262C;
-$secondary: #2F584C;
-$third: #F24F5D;
-$fourth: #495780;
-$fifth: #7FF1E9;
+
+// http://coolors.co/0091fb-546a76-d0fef5-0cf574-0d324d
+
+
+
+$primary: #37EE95;  // luminous green
+$secondary: #F83C54; // luminous red
+$third: #E3E8F2; // grey
+$fourth: #2B3034; // dark grey
+$fifth: #0091FB; // bright blue
+
+
+$sixth: #D0FEF5; 
+
 
 $white: #fff; 
-$special: #83C064;
+$special: $fifth;
+$modal: #DEF4D6;
 
 
-.wrap {
-
-	max-width: 65em;
-	margin: 0 auto;
-}
-.colour-box {
-
-	width: 800px;
-
-	p {
-
-		padding: 3.75em 1.75em;
-
-	}
-}
-.color--1 {background-color: $primary}
-.color--2 {background-color: $secondary}
-.color--3 {background-color: $third}
-.color--4 {background-color: $fourth}
 
 
 /* Reset
@@ -54,79 +43,33 @@ footer, header, hgroup, main, nav, section, summary {
 }
 
 
-/* Typography
--------------------------------------------------- */
 
-
-$body-font: "Georgia";
-$headings-font: "Chaparral Pro";
-$special-font: "AW Conqueror Sans", Helvetica, sans-serif;
-
-body {
-  font: 100% $special-font, serif;
-  font-weight: 100;
-  letter-spacing: 1px;
-}
-
-
-
-h1 {
-
-	font-family: $special-font;
-	color: $white;
-	text-align: center;
-	font-size: 3em;
-
-}
-
-h2 {
-
-	border-bottom: 2px $primary solid;
-	color: $white;
-	padding-bottom: 0.3em;
-	text-align: center;
-	font-style: 0.8em;
-
-}
-
-h3 {
-
-	font-weight: 900;
-}
-
-h4 {
-
-	margin-bottom: 0.4em;
-	color: $white;
-	font-style: italic;
-	font-weight: 100;
-	font-family: $body-font;
-
-}
-
-
-
-a {
-
-	color:$fifth;
-	
-	&:hover {
-
-		color: $primary;
-	}
-
-}
-
-
+@import "typography";
+@import "grids";
+@import "introduction";
+@import "services";
 
 
 /* Body & Grid
 -------------------------------------------------- */
 
 
+.container {
+
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+
+section {
+
+	margin: 2em 0 2em 0;
+}
+
+
 body {
 
-	  background-color: $primary;
+	  background-color: $fourth;
 
 }
 
@@ -141,18 +84,32 @@ body {
 }
 
 
+.wrap {
 
-.grid {
-
-	max-width: 125em;
+	max-width: 65em;
 	margin: 0 auto;
 }
+.colour-box {
 
-.grid--center {
+	width: 800px;
+	color: white;
 
-	text-align: center;
-	margin: 0 auto;
+	h3, p {
+
+	padding: 3.75em 1.75em;
+	height: auto;
+	margin-right: 12px;
+
+	}
+
+
 }
+.color--1 {background-color: $primary}
+.color--2 {background-color: $secondary}
+.color--3 {background-color: $third}
+.color--4 {background-color: $fourth}
+
+
 
 
 /* Borders, Margins & Padding
@@ -194,10 +151,25 @@ body {
 
 
 
+hr {
+height: 1px;
+width: auto;
+}
+
+
+.heading {
+
+	margin-bottom: 3em;
+}
+
+
 /* UI
 -------------------------------------------------- */
-$modal: #DEF4D6;
 
+.pull-out {
+
+	color: $white;
+}
 .modal {
 
 	background: $modal;
@@ -227,23 +199,41 @@ $modal: #DEF4D6;
 }
 
 
-button  {
 
-	padding: 1em 2.5em;
-	width:100%;
-	border: 2px solid $fifth;
-	background: none;
+button {
 
-	a {
-		text-decoration: none;
+		border: 2px solid $primary;
+		color: $primary;
+		padding: 1em 0.8em;
+		background: none;
+		font-size: 1.2em;
+
+		text-align: center;
+
+			a {
+
+				color: $white;
+				font-size: 1.8em;
+
+			}
+
+			&:hover {
+
+				background: $primary;
+				color: $white;
+			}
 	}
-}
+
 
 
 /* Header
 -------------------------------------------------- */
 
-header {}
+header {
+
+	background: $fourth;
+
+}
 .logo {}
 .menu {}
 
@@ -268,20 +258,6 @@ header {}
 	}
 	
 
-	button {
-
-		border: 2px solid $white;
-		padding: 2em 1em;
-
-		&:hover {
-
-			background: $white;
-			border: 2px solid $white;
-
-
-		}
-	}
-
 	a {
 
 		color: $white;
@@ -290,103 +266,7 @@ header {}
 	}
 }
 
-/* Intro
--------------------------------------------------- */
 
-.intro {
-
-	color: $white;
-	font-family: $special-font;
-	text-align: center;
-	padding-bottom: 3.125em;
-
-	h2 {
-
-		font-size: 1.2em;
-	}
-
-}
-
-
-#Intro {
-background: url("Hero-images.png") no-repeat 0 #f8e4cd;
-display: block;
-padding: 1.75em 0;
-font-family: "AW Conqueror Sans";
-
-	button {
-		margin: 1em 0;
-	}
-}
-
-#Intro-blurb {}
-
-/* Services
--------------------------------------------------- */
-
-#Services {
-	
-
-	color: $fourth;
-
-	h3 {
-
-		font-family: $special-font;
-		color: $primary;
-		font-weight: bold;
-
-	}
-
-		li {
-			padding: 3.75em 1.875em;
-			line-height: 1.6;
-			background: $fifth;
-			color: #fff;
-			min-height: 360px;  // fix needed to find convert to ems
-			border: 2px $primary solid;
-
-
-
-				a {
-
-					margin-top: 1em;
-					text-transform: italic;
-					text-decoration: dotted;
-					color: $primary;
-					display: block;
-
-
-					
-				}
-	
-
-
-		}
-
-			li:hover {
-
-		
-				background: $primary;
-
-					h3 {
-
-						color: $fifth;
-					}
-
-
-					a {
-
-						color: $fifth;
-
-					}
-
-
-
-
-		}
-
-
-}
 
 
 /* Media
@@ -405,9 +285,6 @@ svg {
   }
 
 
-/* CTA
--------------------------------------------------- */
-
 
 #CTA {
 
@@ -420,31 +297,6 @@ svg {
 		text-align: left;
 	}
 
-	button {
-
-		border: 2px solid $white;
-		color: $primary;
-		text-align: center;
-
-
-		a {
-
-			color: $white;
-			font-size: 1.8em;
-
-		}
-
-				&:hover {
-
-			background: $fifth;
-			color: $primary;
-		}
-
-
-
-
-
-	}
 
 	a {
 
@@ -466,53 +318,8 @@ svg {
 /* Testimonials
 -------------------------------------------------- */
 
-// @import "testimonials";
+@import "testimonials";
 
-#Testimonials {
-
-	background: $third;
-	color: $white;
-	line-height: 1.6;
-	font-size: 1.2em;
-
-		blockquote {
-
-			margin-bottom: 2em;
-			display: block;
-
-		}
-
-
-		cite {
-
-			display: block;
-			margin-top: 1.6em;
-			// font-size: 0.8em;
-			text-transform: normal;
-			color:darken( $third, 30% );
-
-			a {
-
-				color: darken($fifth, 10%);
-				text-decoration: none;
-				 border-bottom: 1px dotted darken($fifth, 10%);
-			}
-
-		}
-
-		li {
-
-			margin-bottom: 1em;
-			// border-bottom: 2px solid $primary;
-
-
-			hr {
-
-				padding: 1em 0;
-				// border-bottom: 2px solid $primary;
-			}
-		}
-}
 
 /* Work
 -------------------------------------------------- */
@@ -527,3 +334,7 @@ svg {
 
 	border-bottom: none;
 }
+
+
+
+// @import "logo";
