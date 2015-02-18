@@ -27,15 +27,52 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 
-<!--  
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider.js"></script>
 
-<script src="//use.typekit.net/krr8fyp.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
 
--->
+  <!-- Google Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59900419-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  
+  $(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    directionNav: false,
+    animationLoop: true,
+    slideshow: false,
+    itemWidth: 270,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider').flexslider({
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+
+</script>
 
 
 </head>
@@ -76,7 +113,7 @@ with purpose driven goals to
 have a presence on the web.
           </h2>
           <a class="button fade-in one" href="mailto:info@raymondoneill.ie?subject=Project Enquiry&body=Hi Ray, I'd like to enquiry about your availablity for a project..." target="_blank">Send me a project request</a>
-          <p class="fade-in two">I’m accepting new projects from <b>Feburary 2015</b></p>
+          <p class="fade-in two">I’m accepting new projects from <b>March 2015</b></p>
         </div>
       </div>
     </div>
@@ -231,128 +268,12 @@ have a presence on the web.
           <h6>Think I might be suitable for an upcoming project?</h6>
         </div>
         <div class="four columns cta">
-           <a class="primary-btn button" href="#">Get in touch</a>
+           <a class="primary-btn button" href="mailto:info@raymondoneill.ie" target="_blank">Get in touch</a>
         </div>
       </div>
     </div>
   </section>
 
-<<<<<<< HEAD
-		<div class="grid--center">
-	 		<div class="modal grid__item palm--one-whole  lap--one-whole desk--one-whole">
-				<h3>I'm Available for hire from March 2015</h3>
-				<a href="" class="close">X</a>
-	 		</div>
- 		</div>
-
-
-	<section class="grid--center mt mb">
-<div class="grid__item palm--one-whole  lap--ten-twelfths desk--one-third">
-<h1>Made by Ray</h1>
-</div>
-
-	</section>
-
-	<section class="intro grid--center">
-		<h2 class="grid__item palm--ten-twelfths  lap--ten-twelfths desk--one-half">I help entrepreneurs and small businesses to have a presence on the web.You can <a href="mailto:info@raymondoneill.ie"> email me </a>or <a href="http://twitter.com/oneillray" target="_blank">tweet me</a> to get in touch</h2>
-
-	</section>
-
-	<section id="Services">
-
-
-		<div class="grid grid--center pt">
-			<div class="grid__item palm--one-third lap--two-twelfths desk--two-twelfths">
-			<h2>Services</h2>
-			<hr>
-			</div>
-		</div>
-
-			<ul class="grid">
-
-		    <li class="grid__item  lap--one-half desk--one-third">
-			    <h3>UI &amp; UX Design</h3>
-			    <h4>Mobile Deisgn, A/B Testing, Web Design</h4>
-		        <p>I have design in my blood. Please lego was my thing back in the day ( and still is ). In the 2002, I discovered computers when santa brought be a Gateway 2000. Then sh*t’s really kicked off. And it’s all history from there..</p>
-		        
-		    </li>
-			<li class="grid__item  no-border lap--one-half  desk--one-third">
-					<h3>Responsive Web Design</h3>
-					<h4>Sass, GIT, HTML5</h4>
-			        <p>You’re website is as good as dead if it isn’t responsive, meaning that if someone arrives on your website and they can’t find what they are looking for quickly then they will.</p>
-			    </li>
-
-			    <li class="grid__item  lap--one-half desk--one-third">
-				    <h3>Email Marketing</h3>
-				    <h4>Mailchimp &amp; Campaign Monitor</h4>
-			      	<p>Email marketing has a huge role to play on the success of a website. That’s why I am always delighted when a client approaches me about running an email campaign.  </p>
-			    </li>
-			    <li class="grid__item lap--one-half desk--one-third">
-				    <h3>Digital &amp; Web Design</h3>
-				    <h4>Animation, Website design</h4>
-			        <p>Email marketing has a huge role to play on the success of a website. That’s why I am always delighted when a client approaches me about running an email campaign. 
-					</p>
-			    </li>
-			    <li class="grid__item  lap--one-half desk--one-third">
-				    <h3>Client Training &amp; Documentation</h3>
-				    <h4>Animation, Website design</h4>
-			        <p>Email marketing has a huge role to play on the success of a website. That’s why I am always delighted when a client approaches me about running an email campaign. </p>
-		         </li>
-		         <li class="grid__item  lap--one-half desk--one-third">
-				    <h3>CMS Implementation</h3>
-				    <h4>Shopify, Craft &amp; Wordpress</h4>
-			        <p>Content Management Systems implementations is my core expertise. </p>
-		         </li>
-
-		 </ul>
-	</section>
-
-	<section id="CTA">
-		<div class="grid--center">
-			<h2 class="grid__item palm--ten-twelfths lap--ten-twelfths desk--five-twelfths">Think I might be suitable for an upcoming project?</h2>
-			<button class="grid__item palm--ten-twelfths  lap--ten-twelfths desk--three-twelfths"><a href="#">Send me a project request</a></button>
-		</div>
-	</section>
-
-	<section id="Testimonials">
-
-			<div class="grid grid--center pt">
-			<div class="grid__item palm--one-third lap--two-twelfths desk--two-twelfths">
-			<h2>Testimonials</h2>
-			<hr>
-			</div>
-		</div>
-
-	<ul class="grid--center"> 
-		<li class="grid__item palm--nine-tenths lap--one-whole desk--eight-twelfths">
-			<blockqoute>Ray was so efficient we ‘threw him into the deep end’, to undertake client meetings, provide CMS training and to help lead internal design discussion, especially related to digital design… His client liaison skills were characterised by seemingly infinite patience and good humour, always willing to go ‘the extra mile’ to support clients and others in our studio.</blockqoute>
-			<cite>Peter Struck - Director &nbsp; &nbsp;<a href="http://struckandspink.com.au">Struck &amp; Spink Design Studio</a></cite>
-			<hr />
-		</li>
-
-		<li class="grid__item palm--nine-tenths lap--one-whole desk--eight-twelfths">
-			<blockqoute>Ray proved himself to be accurate, creative and organised, constantly meeting and exceeding tight targets in an efficient manner. In the last 6 months of his employment here, Ray was also involved in UI design for online and mobile front-end products. This gave Ray an increased opportunity to show creativity and design flair, which he undoubtedly possesses, and he transitioned smoothly into this more creative role.</blockqoute>
-			<cite>Andrew - Communication Design Manager &nbsp; &nbsp;<a href="http://paddypower.com">Paddy Power</a></cite>
-			<hr />
-		</li>
-		<li class="grid__item  palm--nine-tenths lap--one-whole desk--eight-twelfths">
-			<blockqoute>Ray is a creative, bright and personable individual. He is highly self-motivated and well capable of achieving any goal he sets his mind to. Ray’s quick understanding of how to act as a team member in a very busy and hard working studio is a testimony of his resolve and superb working attitude.</blockqoute>
-			<cite>Marty Busch - Creative Director &nbsp; &nbsp;<a href="http://www.inthecompanyofhuskies.com/">In the Company of Huskies</a></cite>
-			<hr />
-		</li>
-		<li class="grid__item palm--nine-tenths lap--one-whole desk--eight-twelfths">
-			<blockqoute>Working with Ray has been a fantastic experience, from the start of the project to the finish he’s guided me through the project and really made things clear what’s needed to needed to build a good website. Overall I am delighted with Ray’s service and I look forward to working with him in the future</blockqoute>
-			<cite>David Traynor - Owner &nbsp; &nbsp;<a href="Ozteach.com">Ozteach.com</a></cite>
-			<hr />
-		</li>
-	</ul>
-		
-	</section>
-
-<script>
-	$("a.click").click(function(){
-  $("div.modal").hide();
-=======
 
   <!-- 
 
@@ -363,90 +284,68 @@ have a presence on the web.
   <section id="testimonials" class="testimonials">
     <div class="container">
       <div class="row">
-       
-           <div class="ten columns offset-by-one flexslider">
-            <ul class="slides">
-              <li>
-                
 
-                <blockquoute>
-                    <p> Ray was so efficient we ‘threw him into the deep end’, to undertake client meetings, provide CMS training and to help lead internal design discussion, especially related to digital design… His client liaison skills were characterised by seemingly infinite patience and good humour, always willing to go ‘the extra mile’ to support clients and others in our studio. 
+
+          <h3>Testimonials</h3>
+          <h6>What people have said about me</h6>
+    <h2 class="aboutquote">"</h2>
+
+  <div id="slider" class="flexslider">
+  <ul class="slides">
+    <li>
+      <p class="quote">Ray was so efficient we ‘threw him into the deep end’, to undertake client meetings, provide CMS training and to help lead internal design discussion, especially related to digital design… His client liaison skills were characterised by seemingly infinite patience and good humour, always willing to go ‘the extra mile’ to support clients and others in our studio. 
                     </p>        
-                <footer>
-                   <cite class="u-pull-right">
-                       <span class="face"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/_shahedk/128.jpg" alt=""></span>
-                       <p class="name">Peter Struck</p>
-                       <p class="title">Director @ Struck &amp; Spink Design Studio</p>            
-                 
-                  </cite>
-                </footer>
-
-                </blockquoute>
-
-              </li>
-              <li>
-                 <blockquoute>
-                   <p> Ray proved himself to be accurate, creative and organised, constantly meeting and exceeding tight targets in an efficient manner. In the last 6 months of his employment here, Ray was also involved in UI design for online and mobile front-end products. This gave Ray an increased opportunity to show creativity and design flair, which he undoubtedly possesses, and he transitioned smoothly into this more creative role.
-                   </p>
-                    
-                  <footer>
-                    <cite>
-                       <span class="face"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt=""></span>
-                        <p class="name">Andrew McQuilan</p>
-                        <p class="title">Communication Design Manager @ Paddy Power</p>            
-                      
-                    </cite>      
-                  </footer>
-
-                 </blockquoute>
-                
-              </li>
-              <li>
-                 <blockquoute>
-
-                   <p>
+    </li>
+    <li>
+    <p class="quote"> Ray proved himself to be accurate, creative and organised, constantly meeting and exceeding tight targets in an efficient manner. In the last 6 months of his employment here, Ray was also involved in UI design for online and mobile front-end products. This gave Ray an increased opportunity to show creativity and design flair, which he undoubtedly possesses, and he transitioned smoothly into this more creative role.
+    </p>
+    </li>
+    <li>
+      <p class="quote">
                      Ray is a creative, bright and personable individual. He is highly self-motivated and well capable of achieving any goal he sets his mind to. Ray’s quick understanding of how to act as a team member in a very busy and hard working studio is a testimony of his resolve and superb working attitude.
                    </p>
+    </li>
+    
+    <!-- items mirrored twice, total of 12 -->
+  </ul>
+</div>
+<div id="carousel" class="row flexslider">
+  <ul class="slides">
+    <li class="three columns">
+     
+         <img class="face" src="images/peter.jpg" alt="">
+         <p class="name">Peter Struck</p>
+         <p class="title">Struck &amp; Spink Design Studio</p>            
+   
+    </li>
+    <li class="three columns">
+     
+         <img class="face" src="images/andrew.jpg" alt="">
+          <p class="name">Andrew McQuilan</p>
+          <p class="title">Paddy Power</p>               
+    </li>
+    <li class="three columns">
 
-                   <footer>
-                       <cite>
-                          <span class="face"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/madebyray/128.jpg" alt=""></span>
-                          <p class="name">Marty Busch</p>
-                           <p class="title">Creative Director @ In the Company of Huskies</p>            
-                      </cite>
-                   </footer>
+        <img class="face" src="images/marty.jpg" alt="">
+        <p class="name">Marty Busch</p>
+         <p class="title">In the Company of Huskies</p>            
 
-                 </blockquoute>
-                
-              </li>
-              
-            </ul>
+    </li>
+  </ul>
+</div>
+
+
+
         </div>
       </div>
     </div>
   </section>
 
+
+
     <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider.js"></script>
-
-
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-   
-    $('#.flexslider').flexslider({            
-    controlNav: true,
-    directionNav: false
->>>>>>> 8661065ffaa312e3000f60308977df8f632e04b8
-});
-
-
-
-  });
-
-</script>
-
+  
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

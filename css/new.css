@@ -153,8 +153,9 @@ text-align: center;
 
 section.pullout {
 
-	background: #cbd1d9;
+	background: #00f798;
 	padding-top: 2em;
+	background-size: 4px 4px;
 }
 
 section.pullout h5 {
@@ -175,23 +176,51 @@ background: #fff;
 }
 
 
+.pullout .cta {
+
+
+}
+
 /* Testimonials
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#carousel  {
+
+
+	display: none;
+}
+
 
 section.testimonials {
 
 	
-	color: #fff;
+	color: #2b3034;
 	background: #e3e8f2;
 	padding-top: 2em;
 
 
 }
 
+section.testimonials h3 {
 
-blockquote p {
+	font-size: 2em;
+	border-bottom: 2px solid #f83c54;
+	color: #2b3034;
+	width: 10%;
+	margin-bottom: 10px;
+}
 
-	font-size: 6em;
+section.testimonials h6 {
+
+	font-size: 1.3125em;
+	color: #2b3034;
+}
+
+
+p.quote {
+
+	font-size: 120%;
+	line-height: 1.5;
 }
 
 
@@ -208,20 +237,41 @@ blockquote cite {
 	line-height: 1.5;
 	text-align: right;
 
-
-
 }
 
 
 
 
-cite .face {
+.face {
 
-float: right;
-height: 50px;
-width: 50px;
-background: red;
-margin-left: 17px;
+	display: inline;
+	float: left;
+	width:48px;
+	height: 48px;
+	height: auto;
+	padding-right: 10px;
+}
+
+
+
+.flexslider .slides img {
+
+	width: 48px;
+	display: block;
+}
+
+
+li.three.columns {
+
+	opacity: 0.6;
+	transition: opacity 0.5s ease;
+	margin-left: 5px;
+
+}
+
+li.three.columns.flex-active-slide {
+
+	opacity: 1;
 }
 
 	.name {
@@ -236,6 +286,26 @@ margin-left: 17px;
 
 		color: #2b3034;
 	}
+
+
+.aboutquote {
+font-size: 160px;
+line-height: 0px;
+color: #bec3c8;
+text-align: center;
+margin: 55px 0 30px;
+font-family: 'Baskerville italic', Georgia, serif;
+
+}
+
+h2.aboutquote {
+
+	padding-top: 30px;
+	font-family: Baskerville, serif;
+	font-style: italic;
+}
+
+
 
 
 .flexslider {
@@ -265,6 +335,7 @@ margin-left: 17px;
 a.grey-out,  .grey-out {
 
 	color: #e2e8f2;
+
 }
 
 
@@ -335,6 +406,48 @@ border-color: #2a2e32;
 }
 
 
+/* Animations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0;  } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+
+
 
 
 /* Media Queries
@@ -354,7 +467,27 @@ there.
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+
+	.quotation {
+
+		top: -11%;
+		right: 28%;
+	}
+
+	p.quote {
+
+		font-size: 160%;
+
+
+	}
+
+	#carousel {
+
+		display: block;
+	}
+
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
