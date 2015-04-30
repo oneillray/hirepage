@@ -2,31 +2,22 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>MadebyRay - Freelance Web designer Ray O'Neill based in Cork, Ireland</title>
-  <meta name="description" content="">
+  <title>MadebyRay - Freelance Designer & Front-end Developer Ray O'Neill based in Dublin, Ireland</title>
+  <meta name="description" content="Freelance Designer and Front-end Developer from Ireland">
   <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider.css">
+  <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/new.css">
   
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <link rel="icon" type="image/png" href="images/favicon.png">
 
@@ -34,9 +25,6 @@
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider.js"></script>
 
-
-  <!-- Google Analytics
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -49,37 +37,10 @@
 
 </script>
 
-<script>
-  
-  $(window).load(function() {
-  // The slider being synced must be initialized first
-  $('#carousel').flexslider({
-    animation: "slide",
-    controlNav: false,
-    directionNav: false,
-    animationLoop: true,
-    slideshow: false,
-    itemWidth: 270,
-    itemMargin: 5,
-    asNavFor: '#slider'
-  });
-   
-  $('#slider').flexslider({
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    sync: "#carousel"
-  });
-});
-
-</script>
-
-
 </head>
 <body>
 
-  <!-- Header
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <header>
       <div class="container">
         <div class="row">
@@ -113,7 +74,7 @@ with purpose driven goals to
 have a presence on the web.
           </h2>
           <a class="button fade-in one" href="mailto:info@raymondoneill.ie?subject=Project Enquiry&body=Hi Ray, I'd like to enquiry about your availablity for a project..." target="_blank">Send me a project request</a>
-          <p class="fade-in two">I’m accepting new projects from <b>March 2015</b></p>
+          <p class="fade-in two">I’m accepting new projects from <b>May 2015</b></p>
         </div>
       </div>
     </div>
@@ -254,13 +215,6 @@ have a presence on the web.
   </section>
 
 
-
-  <!-- 
-
-   CTA
-
-   -->
-
   <section class="pullout">
     <div class="container">
       <div class="row">
@@ -274,12 +228,6 @@ have a presence on the web.
     </div>
   </section>
 
-
-  <!-- 
-
-    Testimonials
-
-   -->
 
   <section id="testimonials" class="testimonials">
     <div class="container">
@@ -341,13 +289,31 @@ have a presence on the web.
     </div>
   </section>
 
-
-
-    <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
   
+  $(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    directionNav: false,
+    animationLoop: true,
+    slideshow: false,
+    itemWidth: 270,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider').flexslider({
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</script>
+
+  
 </body>
 </html>
