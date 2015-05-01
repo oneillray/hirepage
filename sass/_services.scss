@@ -2,55 +2,23 @@
 /* Services
 -------------------------------------------------- */
 
-#Services {
-	
-
-	color: $fourth;
-
-	hr {
-
-		background: $primary;
-	}
-
-	h2 {
-
-		color: $white;
-	}
-
-	h3 {
-
-		font-family: $special-font;
-		color: $primary;
-		font-size: 1.75em;
-		margin-bottom: 2em;
-
-	}
 
 
-	h4 {
+/*Services*/
 
-		color: $fifth(darken, 5%);
-	}
+section.what-i-do {
 
+	color: darken($primary, 20%);
 
+	svg {width: 5em;height: 5em; }
 
-		ul {
+	padding-top: 2em;
+	background: $secondary;
 
-		}
+	ul { text-align: center;}
 
-		li {
-			
-
-			color: $white;
-			line-height: 1.625;
-			list-style: disc;
-
-		}
-
-			li:hover {
-
-	
-		}
-
-
+	h5 { font-size: 1.6em; color: #fff}
 }
+
+
+

@@ -1,19 +1,11 @@
-// start styling
-
-
 
 /* Vars
 -------------------------------------------- */
 
-
-// http://coolors.co/0091fb-546a76-d0fef5-0cf574-0d324d
-
-
-
-$primary: #37EE95;  // luminous green
-$secondary: #F83C54; // luminous red
-$third: #E3E8F2; // grey
-$fourth: #2B3034; // dark grey
+$primary: #C5E3E2;  // teal
+$secondary: #19323C; // purple
+$third: #0F7255; // CTA green
+$fourth: darken($primary, 20%); // dark grey
 $fifth: #0091FB; // bright blue
 
 
@@ -27,314 +19,205 @@ $modal: #DEF4D6;
 
 
 
-/* Reset
--------------------------------------------------- */
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, main, nav, section, summary {
-  display: block;
-}
 
 
-
+@import "compass/reset";
 @import "typography";
 @import "grids";
 @import "introduction";
 @import "services";
-
-
-/* Body & Grid
--------------------------------------------------- */
-
-
-.container {
-
-	max-width: 1040px;
-	margin: 0 auto;
-}
-
-
-section {
-
-	margin: 2em 0 2em 0;
-}
-
-
-body {
-
-	  background-color: $fourth;
-
-}
-
-	
-.og {
-	background-color: orange;
-}
-
-
-.gr {
-	background-color: green;
-}
-
-
-.wrap {
-
-	max-width: 65em;
-	margin: 0 auto;
-}
-.colour-box {
-
-	width: 800px;
-	color: white;
-
-	h3, p {
-
-	padding: 3.75em 1.75em;
-	height: auto;
-	margin-right: 12px;
-
-	}
-
-
-}
-.color--1 {background-color: $primary}
-.color--2 {background-color: $secondary}
-.color--3 {background-color: $third}
-.color--4 {background-color: $fourth}
-
-
-
-
-/* Borders, Margins & Padding
--------------------------------------------------- */
-
-
-.bt {
-
-	border-top:1px solid #fff;
-}
-
-.bl {
-
-	border-left:1px solid #fff;
-
-}
-
-.bb {
-
-	border-bottom:1px solid #fff;
-
-}
-
-.mt {
-
-	margin-top: 2em;
-}
-
-.mb {
-
-	margin-bottom: 2em;
-}
-
-
-.pt {
-
-	padding: 2em 0;
-}
-
-
-
-hr {
-height: 1px;
-width: auto;
-}
-
-
-.heading {
-
-	margin-bottom: 3em;
-}
-
-
-/* UI
--------------------------------------------------- */
-
-.pull-out {
-
-	color: $white;
-}
-.modal {
-
-	background: $modal;
-	border: 1px solid darken($modal, 20%);
-	padding: 1em 0.5em;
-	color: darken($modal, 80%);
-
-
-
-	h3 {
-
-		text-align: center;
-
-	}
-
-	a.close {
-
-	color: darken($modal, 80%);
-	text-decoration: none;
-	float: right;
-	margin-top: -20px;
-	right: 10px;
-	position: relative;
-
-	}
-
-}
-
-
-
-button {
-
-		border: 2px solid $primary;
-		color: $primary;
-		padding: 1em 0.8em;
-		background: none;
-		font-size: 1.2em;
-
-		text-align: center;
-
-			a {
-
-				color: $white;
-				font-size: 1.8em;
-
-			}
-
-			&:hover {
-
-				background: $primary;
-				color: $white;
-			}
-	}
-
-
-
-/* Header
--------------------------------------------------- */
-
-header {
-
-	background: $fourth;
-
-}
-.logo {}
-.menu {}
-
-/* For Hire Callout
--------------------------------------------------- */
-
-.for-hire {
-
-	color: $white;
-
-	.holder {
-		background: $special;
-		padding: 1em 0;
-		margin-top: 1em;
-		padding: 3.7em 0;
-
-	}
-
-	h3 {
-
-		margin-bottom: 2em;
-	}
-	
-
-	a {
-
-		color: $white;
-		font-size: 1.8em;
-
-	}
-}
-
-
-
-
-/* Media
--------------------------------------------------- */
-
-img {
-
-	width: 100%;
-	height: auto;
-}
-
-
-svg {
-  width: 20%;
-  height: auto;
-  }
-
-
-
-#CTA {
-
-	background: none;
-	margin: 2em 0;
-	
-
-	h2 {
-
-		text-align: left;
-	}
-
-
-	a {
-
-			// font-size: 2em;
-	}
-
-}
-
-
-
-/* About
--------------------------------------------------- */
-
-#About {}
-
-.about--blurb {}
-.about--image {}
-
-/* Testimonials
--------------------------------------------------- */
-
+@import "animations";
+@import "pullout";
 @import "testimonials";
 
 
-/* Work
--------------------------------------------------- */
 
-#Work {}
+html, body {
+
+		background: $secondary;
+		font-size: 15px;
+
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+
+	color: #2a2e32;
+	font-family: $body-font;
+}
 
 
-/* HACK : /
--------------------------------------------------- */
+h1 {
 
-.no-border {
+	font-size: 1.2em;
+	line-height: 2;
+	font-weight: 500;
 
-	border-bottom: none;
+}
+
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/*header*/
+
+h1 a {
+
+	color: #fff;
+	text-decoration: none;
+
+}
+
+	h1 a:hover {
+
+		color: $primary;
+	}
+
+
+	nav{
+		
+	    list-style:none;
+	    margin:0;
+	    padding:0;
+
+	}
+
+
+		ul.nav {
+
+		text-align: right;
+		line-height: 2;
+
+		}
+
+
+	.nav li{
+	    display:inline;
+	    text-align: right;
+	}
+	.nav a{
+	    display:inline-block;
+	    padding: 0 10px;
+	    color: #fff;
+	    text-decoration: none;
+
+	}
+
+
+	.nav.button {
+
+  height: 38px;
+  padding: 0 30px;
+  line-height: 38px;
+	}
+
+
+
+
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a.grey-out,  .grey-out {
+
+	color: lighten($primary, 5%);
+
+}
+
+
+figure {
+
+
+background: #fff;
+min-height: 300px;
+margin: 0;
+
 }
 
 
 
-// @import "logo";
+
+
+/*  UI
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button {
+
+	border: 2px solid #fff;
+	color: #fff;
+
+	&:hover {
+
+		background-color: #fff;
+		color: $secondary;
+		border: 2px solid #fff;
+
+	
+		}
+}
+
+
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+	.quotation {
+
+		top: -11%;
+		right: 28%;
+	}
+
+	p.quote {
+
+		font-size: 160%;
+
+
+	}
+
+	#carousel {
+
+		display: block;
+	}
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
+	html, body, {
+
+		font-size: 120%;
+	}
+
+	.container {
+
+		max-width: 1040px;
+	}
+
+}
+

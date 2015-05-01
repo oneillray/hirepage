@@ -2,9 +2,9 @@
 -------------------------------------------------- */
 
 
-$body-font: "Consolas";
-$headings-font: "Chaparral Pro";
-$special-font: "AW Conqueror Sans", Helvetica, sans-serif;
+$body-font: 'Brandon Grotesque', sans-serif;
+$headings-font: 'Clarendon Heavy', serif;
+$special-font: $headings-font, sans-serif;
 
 body {
   font: 100% $body-font, serif;
@@ -17,8 +17,6 @@ body {
 
 h1 {
 
-	font-family: $special-font;
-	color: $secondary;
 	text-align: center;
 }
 
@@ -48,11 +46,11 @@ h4 {
 
 a {
 
-	color:$fifth;
+	color:$secondary;
 	
 	&:hover {
 
-		color: $primary;
+		color: darken($secondary, 5%);
 	}
 
 }

@@ -3,10 +3,12 @@
 
 .intro {
 
-	background: $third;
-	font-family: $special-font;
+	background: url('../images/bg.jpg');
+	background-size: cover;
+	max-height: 500px;
+	font-family: $body-font;
 	text-align: center;
-	color: $fourth;
+	color: #fff;
 	padding: 1.2em 0;
 
 	h1 {
@@ -25,3 +27,24 @@
 
 }
 
+
+.intro h2 {
+
+	font-size: 2.4em;
+	line-height: 1.6;
+
+	span {
+
+		font-family: $headings-font;
+		font-style: italic;
+
+	}
+
+}
+
+
+.available-from {
+
+	text-decoration: underline;
+	text-decoration-line: dotted;
+}
