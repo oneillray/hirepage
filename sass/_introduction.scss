@@ -1,9 +1,10 @@
 /* Intro
 -------------------------------------------------- */
 
-.intro {
+section#intro {
 
 	background: url('../images/bg.jpg');
+	background-attachment: fixed;
 	background-size: cover;
 	max-height: 500px;
 	font-family: $body-font;
@@ -11,37 +12,33 @@
 	color: #fff;
 	padding: 1.2em 0;
 
-	h1 {
+	h2 {
 
-		text-align: center;
-		color: inherit;
-
+	text-align: center;
+	color: inherit;	
+	font-size: 2.4em;
+	line-height: 1.2;
 
 		span {
+		
+		color: $secondary;
+		font-family: $headings-font;
+		font-style: italic;
 
-			
-			color: $secondary;
 		}
 	}
 
 
 }
 
+.intro-inner {
 
-.intro h2 {
+	@include outer-container(1040px);
+	@include pad(10px default);
 
-	font-size: 2.4em;
-	line-height: 1.6;
 
-	span {
-
-		font-family: $headings-font;
-		font-style: italic;
-
-	}
 
 }
-
 
 .available-from {
 

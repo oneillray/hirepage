@@ -1,0 +1,53 @@
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+
+	@include outer-container(1040px);
+	//@include pad(default);
+  	height: 90px;
+
+	h1 {
+
+		@include span-columns(4);
+	}
+
+
+	nav {
+		
+	   @include span-columns(8);	
+
+		ul {
+
+		text-align: right;
+		line-height: 2;
+
+		}
+
+		li {
+	    display:inline;
+	    text-align: right;
+
+	    a {
+		    display:inline-block;
+		    padding: 0 10px;
+		    color: $secondary;
+		    text-decoration: none;
+
+		}
+
+
+	}
+
+
+	button {
+
+	  height: 38px;
+	  padding: 0 30px;
+	  line-height: 38px;
+	}
+
+}
+
+
+}

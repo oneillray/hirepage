@@ -4,9 +4,9 @@
 
 $primary: #C5E3E2;  // teal
 $secondary: #19323C; // purple
-$third: #0F7255; // CTA green
+$third: #61E786; // CTA green
 $fourth: darken($primary, 20%); // dark grey
-$fifth: #0091FB; // bright blue
+$fifth: #f2f6ff; // grey blue
 
 
 $sixth: #D0FEF5; 
@@ -17,50 +17,38 @@ $special: $fifth;
 $modal: #DEF4D6;
 
 
+// Type vars
+
+$body-font: 'Brandon Grotesque', sans-serif;
+$headings-font: 'Clarendon Heavy', serif;
+$special-font: $headings-font, sans-serif;
 
 
 
-
-@import "compass/reset";
+@import "normalize";
+//@import "compass/reset";
+@import "bourbon/bourbon";
+//@import "grid-settings";
+@import "neat/neat";
 @import "typography";
-@import "grids";
+@import "nav";
+@import "ui";
 @import "introduction";
 @import "services";
-@import "animations";
-@import "pullout";
-@import "testimonials";
+@import "portfolio";
+// @import "animations";
+// @import "pullout";
+// @import "testimonials";
+
+@import "footer";
 
 
 
-html, body {
 
-		background: $secondary;
-		font-size: 15px;
-
-}
-
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-body {
-
-	color: #2a2e32;
-	font-family: $body-font;
-}
-
-
-h1 {
-
-	font-size: 1.2em;
-	line-height: 2;
-	font-weight: 500;
-
-}
 
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 
 
 /*header*/
@@ -76,47 +64,6 @@ h1 a {
 
 		color: $primary;
 	}
-
-
-	nav{
-		
-	    list-style:none;
-	    margin:0;
-	    padding:0;
-
-	}
-
-
-		ul.nav {
-
-		text-align: right;
-		line-height: 2;
-
-		}
-
-
-	.nav li{
-	    display:inline;
-	    text-align: right;
-	}
-	.nav a{
-	    display:inline-block;
-	    padding: 0 10px;
-	    color: #fff;
-	    text-decoration: none;
-
-	}
-
-
-	.nav.button {
-
-  height: 38px;
-  padding: 0 30px;
-  line-height: 38px;
-	}
-
-
-
 
 
 
@@ -140,28 +87,17 @@ margin: 0;
 }
 
 
+hr {
 
-
-
-/*  UI
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.button {
-
-	border: 2px solid #fff;
-	color: #fff;
-
-	&:hover {
-
-		background-color: #fff;
-		color: $secondary;
-		border: 2px solid #fff;
-
-	
-		}
+	margin: 0 auto;
 }
 
 
+ul,li {
+
+	list-style: none;
+	padding: 0;
+}
 
 
 /* Media Queries
@@ -214,10 +150,6 @@ there.
 		font-size: 120%;
 	}
 
-	.container {
-
-		max-width: 1040px;
-	}
 
 }
 

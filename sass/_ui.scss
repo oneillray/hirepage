@@ -1,0 +1,29 @@
+/*  UI
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button {
+
+	color: $white;
+	border: 2px solid currentColor;
+	padding: 1% 2%;
+
+
+	&:hover {
+
+		background-color: #fff;
+		color: $secondary;
+		border: 2px solid #fff;
+
+	
+		}
+}
+
+
+.primary-cta {
+
+	color: $third;
+	border: 2px solid currentColor;
+
+}
+
+
