@@ -3,3 +3,5 @@ stylesheet.html
 test.html
 sass/
 test/
+.sass-cache/
+stylesheets/
