@@ -1,0 +1,36 @@
+#work {
+
+@include outer-container(1040px);
+
+}
+
+.portfolio-inner {
+
+  background: darken($primary, 30%);
+
+}
+
+
+
+  .project-info, .project-hero {
+    @include span-columns(6);
+
+  }
+
+
+
+  .project-info {
+
+
+    img { max-width: 100%; height: auto}
+
+
+    p {
+
+    font-size: 0.8em;
+    line-height: 1.6;
+  }
+
+
+}
+

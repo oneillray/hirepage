@@ -1,0 +1,37 @@
+footer {
+
+	background: darken($secondary, 5%);
+	padding: 2em 0;
+	font-size: 0.6em;
+
+
+	h3,h4,ul,li,a {	color: $primary;}
+	
+	section {
+
+		@include outer-container(1040px);
+		border: 2px solid lighten($secondary, 2%);
+		padding: 0 2em;
+
+
+
+	}
+
+
+
+	.col {
+
+		@include span-columns(4);
+	}
+}
+
+
+.social {
+
+	@include span-columns(4);
+}
+
+.colophon {
+
+	@include span-columns(4);
+}

@@ -1,7 +1,6 @@
 bower_components/
 stylesheet.html
 test.html
-sass/
 test/
 .sass-cache/
-stylesheets/
+test/

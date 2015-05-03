@@ -1,0 +1,25 @@
+section#hire-me {
+
+
+	@include outer-container(1040px);
+	padding-bottom: 2em;
+
+
+	p {
+
+		@include span-columns(6);
+		@include omega(2n);
+	}
+
+
+	#services>li {
+
+
+		@include span-columns(3);
+		@include omega(3n);
+
+	}
+
+
+	
+}
