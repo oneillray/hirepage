@@ -453,20 +453,24 @@ html {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* line 5, ../sass/_typography.scss */
 html, body {
-  background: #f2f6ff;
-  font-size: 14px;
-  color: #93aaa9;
+  background: #f3f2e9;
+  font-size: 12px;
+  color: #80c2c0;
 }
 
 /* line 13, ../sass/_typography.scss */
 body {
   font-family: "Brandon Grotesque", sans-serif, serif;
   font-weight: 100;
-  color: #80c2c0;
   letter-spacing: 1px;
 }
 
-/* line 23, ../sass/_typography.scss */
+/* line 20, ../sass/_typography.scss */
+h1, h2, h3, h4 {
+  color: #19323C;
+}
+
+/* line 25, ../sass/_typography.scss */
 h1 {
   font-size: 1.2em;
   line-height: 2;
@@ -474,32 +478,31 @@ h1 {
   text-align: center;
 }
 
-/* line 33, ../sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 h2 {
   padding-bottom: 0.3em;
   font-style: 0.8em;
 }
 
-/* line 40, ../sass/_typography.scss */
+/* line 42, ../sass/_typography.scss */
 h3 {
   font-weight: 900;
 }
 
-/* line 45, ../sass/_typography.scss */
+/* line 47, ../sass/_typography.scss */
 h4 {
   margin-bottom: 0.4em;
-  color: #19323C;
   font-style: italic;
   font-weight: 100;
   font-family: "Brandon Grotesque", sans-serif;
 }
 
-/* line 57, ../sass/_typography.scss */
+/* line 58, ../sass/_typography.scss */
 a {
   color: #19323C;
   text-decoration: none;
 }
-/* line 62, ../sass/_typography.scss */
+/* line 63, ../sass/_typography.scss */
 a:hover {
   color: #11232a;
 }
@@ -512,6 +515,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   height: 90px;
+  font-size: 0.8em;
 }
 /* line 20, ../sass/bourbon/addons/_clearfix.scss */
 header::after {
@@ -525,12 +529,13 @@ header h1 {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
+  text-align: left;
 }
 /* line 89, ../sass/neat/grid/_span-columns.scss */
 header h1:last-child {
   margin-right: 0;
 }
-/* line 16, ../sass/_nav.scss */
+/* line 17, ../sass/_nav.scss */
 header nav {
   float: left;
   display: block;
@@ -541,24 +546,28 @@ header nav {
 header nav:last-child {
   margin-right: 0;
 }
-/* line 20, ../sass/_nav.scss */
+/* line 21, ../sass/_nav.scss */
 header nav ul {
   text-align: right;
   line-height: 2;
 }
-/* line 27, ../sass/_nav.scss */
+/* line 28, ../sass/_nav.scss */
 header nav li {
   display: inline;
   text-align: right;
 }
-/* line 31, ../sass/_nav.scss */
+/* line 32, ../sass/_nav.scss */
 header nav li a {
   display: inline-block;
   padding: 0 10px;
-  color: #19323C;
+  color: rgba(25, 50, 60, 0.6);
   text-decoration: none;
 }
-/* line 43, ../sass/_nav.scss */
+/* line 38, ../sass/_nav.scss */
+header nav li a:hover {
+  opacity: 1;
+}
+/* line 50, ../sass/_nav.scss */
 header nav button {
   height: 38px;
   padding: 0 30px;
@@ -582,8 +591,14 @@ header nav button {
 
 /* line 22, ../sass/_ui.scss */
 .primary-cta {
-  color: #61E786;
+  color: #2791b1;
   border: 2px solid currentColor;
+}
+/* line 27, ../sass/_ui.scss */
+.primary-cta:hover {
+  background: #2791b1;
+  border: 2px solid #2791b1;
+  color: #fff;
 }
 
 /* Intro
@@ -605,15 +620,20 @@ section#intro h2 {
   color: inherit;
   font-size: 2.4em;
   line-height: 1.2;
+  font-weight: 100;
 }
-/* line 22, ../sass/_introduction.scss */
+/* line 23, ../sass/_introduction.scss */
 section#intro h2 span {
   color: #19323C;
   font-family: "Clarendon Heavy", serif;
   font-style: italic;
 }
+/* line 32, ../sass/_introduction.scss */
+section#intro h3 {
+  color: #fff;
+}
 
-/* line 34, ../sass/_introduction.scss */
+/* line 40, ../sass/_introduction.scss */
 .intro-inner {
   max-width: 1040px;
   margin-left: auto;
@@ -627,7 +647,7 @@ section#intro h2 span {
   display: table;
 }
 
-/* line 43, ../sass/_introduction.scss */
+/* line 49, ../sass/_introduction.scss */
 .available-from {
   text-decoration: underline;
   text-decoration-line: dotted;
@@ -640,7 +660,7 @@ section#services {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background: #f2f6ff;
+  background: #f3f2e9;
 }
 /* line 20, ../sass/bourbon/addons/_clearfix.scss */
 section#services::after {
@@ -678,11 +698,221 @@ section#services .service-type:last-child {
   margin-right: 0;
 }
 
+/* line 1, ../sass/_portfolio.scss */
+#work {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, ../sass/bourbon/addons/_clearfix.scss */
+#work::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 7, ../sass/_portfolio.scss */
+.portfolio-inner {
+  background: #5eb1ae;
+}
+
+/* line 15, ../sass/_portfolio.scss */
+.project-info, .project-hero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, ../sass/neat/grid/_span-columns.scss */
+.project-info:last-child, .project-hero:last-child {
+  margin-right: 0;
+}
+
+/* line 25, ../sass/_portfolio.scss */
+.project-info img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 28, ../sass/_portfolio.scss */
+.project-info p {
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+
+/* line 1, ../sass/_about.scss */
+section#about-me {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+/* line 20, ../sass/bourbon/addons/_clearfix.scss */
+section#about-me::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 8, ../sass/_about.scss */
+section#about-me p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, ../sass/neat/grid/_span-columns.scss */
+section#about-me p:last-child {
+  margin-right: 0;
+}
+/* line 78, ../sass/neat/grid/_omega.scss */
+section#about-me p:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 83, ../sass/neat/grid/_omega.scss */
+section#about-me p:nth-child(2n+1) {
+  clear: left;
+}
+/* line 14, ../sass/_about.scss */
+section#about-me img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border: 4px solid #fff;
+  max-width: 100%;
+  height: auto;
+}
+/* line 89, ../sass/neat/grid/_span-columns.scss */
+section#about-me img:last-child {
+  margin-right: 0;
+}
+
+/* line 1, ../sass/_hire-me.scss */
+section#hire-me {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+/* line 20, ../sass/bourbon/addons/_clearfix.scss */
+section#hire-me::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 8, ../sass/_hire-me.scss */
+section#hire-me p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 89, ../sass/neat/grid/_span-columns.scss */
+section#hire-me p:last-child {
+  margin-right: 0;
+}
+/* line 78, ../sass/neat/grid/_omega.scss */
+section#hire-me p:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 83, ../sass/neat/grid/_omega.scss */
+section#hire-me p:nth-child(2n+1) {
+  clear: left;
+}
+/* line 15, ../sass/_hire-me.scss */
+section#hire-me #services > li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 89, ../sass/neat/grid/_span-columns.scss */
+section#hire-me #services > li:last-child {
+  margin-right: 0;
+}
+/* line 78, ../sass/neat/grid/_omega.scss */
+section#hire-me #services > li:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 83, ../sass/neat/grid/_omega.scss */
+section#hire-me #services > li:nth-child(3n+1) {
+  clear: left;
+}
+
+/* Animations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 5, ../sass/_animations.scss */
+a {
+  transition: all 0.5s ease-in-out;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 17, ../sass/_animations.scss */
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* line 32, ../sass/_animations.scss */
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+/* line 38, ../sass/_animations.scss */
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+/* line 44, ../sass/_animations.scss */
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
 /* line 1, ../sass/_footer.scss */
 footer {
   background: #11232a;
   padding: 2em 0;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 /* line 8, ../sass/_footer.scss */
 footer h3, footer h4, footer ul, footer li, footer a {
@@ -741,37 +971,30 @@ footer .col:last-child {
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*header*/
-/* line 55, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 h1 a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 h1 a:hover {
   color: #C5E3E2;
 }
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 72, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 a.grey-out, .grey-out {
   color: #d6ebeb;
 }
 
-/* line 79, ../sass/style.scss */
-figure {
-  background: #fff;
-  min-height: 300px;
-  margin: 0;
-}
-
-/* line 89, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 hr {
   margin: 0 auto;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 ul, li {
   list-style: none;
   padding: 0;
@@ -789,18 +1012,18 @@ there.
 /* Larger than phablet (also point when grid becomes active) */
 /* Larger than tablet */
 @media (min-width: 750px) {
-  /* line 121, ../sass/style.scss */
+  /* line 117, ../sass/style.scss */
   .quotation {
     top: -11%;
     right: 28%;
   }
 
-  /* line 127, ../sass/style.scss */
+  /* line 123, ../sass/style.scss */
   p.quote {
     font-size: 160%;
   }
 
-  /* line 134, ../sass/style.scss */
+  /* line 130, ../sass/style.scss */
   #carousel {
     display: block;
   }
@@ -808,7 +1031,7 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  /* line 147, ../sass/style.scss */
+  /* line 143, ../sass/style.scss */
   html, body {
     font-size: 120%;
   }

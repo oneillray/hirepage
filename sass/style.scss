@@ -4,9 +4,11 @@
 
 $primary: #C5E3E2;  // teal
 $secondary: #19323C; // purple
-$third: #61E786; // CTA green
+$third: #2791b1; // CTA green
 $fourth: darken($primary, 20%); // dark grey
-$fifth: #f2f6ff; // grey blue
+$fifth: #f3f2e9; // grey blue
+
+
 
 
 $sixth: #D0FEF5; 
@@ -36,7 +38,9 @@ $special-font: $headings-font, sans-serif;
 @import "introduction";
 @import "services";
 @import "portfolio";
-// @import "animations";
+@import "about";
+@import "hire-me";
+@import "animations";
 // @import "pullout";
 // @import "testimonials";
 
@@ -76,15 +80,6 @@ a.grey-out,  .grey-out {
 
 }
 
-
-figure {
-
-
-background: #fff;
-min-height: 300px;
-margin: 0;
-
-}
 
 
 hr {

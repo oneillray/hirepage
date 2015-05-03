@@ -5,8 +5,8 @@
 html, body {
 
 		background: $fifth;
-		font-size: 14px;
-		color: shade($primary, 25%);
+		font-size: 12px;
+		color: darken($primary, 20%);
 
 }
 
@@ -14,11 +14,13 @@ body {
 
   font-family:$body-font, serif ;
   font-weight: 100;
-  color: $fourth;
   letter-spacing: 1px;
 }
 
+h1, h2, h3, h4 {
 
+	color: $secondary;
+}
 
 h1 {
 
@@ -45,7 +47,6 @@ h3 {
 h4 {
 
 	margin-bottom: 0.4em;
-	color: $secondary;
 	font-style: italic;
 	font-weight: 100;
 	font-family: $body-font;

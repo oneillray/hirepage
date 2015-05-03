@@ -4,12 +4,13 @@
 header {
 
 	@include outer-container(1040px);
-	//@include pad(default);
   	height: 90px;
+  	font-size: 0.8em;
 
 	h1 {
 
 		@include span-columns(4);
+		text-align: left;
 	}
 
 
@@ -31,8 +32,14 @@ header {
 	    a {
 		    display:inline-block;
 		    padding: 0 10px;
-		    color: $secondary;
+		    color: rgba($secondary, 0.6);
 		    text-decoration: none;
+
+		&:hover {
+
+			opacity: 1;
+		}
+
 
 		}
 
