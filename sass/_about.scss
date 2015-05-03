@@ -9,6 +9,10 @@ section#about-me {
 
 		@include span-columns(6);
 		@include omega(2n);
+
+		 @include media($tablet) {
+     		 @include span-columns(12);
+   		 }
 	}
 
 	img {

@@ -1,6 +1,19 @@
-#work {
+/* Portfolio
+-------------------------------------------------- */
 
-@include outer-container(1040px);
+#work {}
+
+.intro-inner {
+
+  @include outer-container(1040px);
+
+}
+
+
+article:nth-child(2n) {
+
+  background: darken($fifth, 5%);
+
 
 }
 
@@ -14,6 +27,22 @@
 
   .project-info, .project-hero {
     @include span-columns(6);
+    @include media($tablet) {
+
+      @include span-columns(12);
+    }
+
+  }
+
+  .project-hero {
+
+
+        img { max-width: 112%;  height: auto}
+
+  left: 8em;
+  width: 48%;
+  position: relative;
+  overflow: hidden;
 
   }
 
@@ -21,16 +50,74 @@
 
   .project-info {
 
-
-    img { max-width: 100%; height: auto}
-
-
     p {
 
     font-size: 0.8em;
     line-height: 1.6;
+
   }
 
 
 }
 
+/* Portfolio Single 
+-------------------------------------------------- */
+
+ul.project-details {
+
+  display: inline-flex;
+  border: 2px solid;
+  width: 100%;
+
+      @include media($tablet) {
+         display: block;
+       }
+
+      li {
+      display: inline;
+      padding: 2% 3%;
+      font-size: 0.8em;
+      border-right: 2px solid;
+
+      @include media($tablet) {
+         display: block;
+         font-size: 1em;
+       }
+
+
+        &:last-child {
+
+          border-right: none;
+        }
+    }
+}
+
+
+#project-single {
+
+
+  @include outer-container($max-width);
+  padding-bottom: 2em;
+
+    p {
+
+    @include span-columns(6);
+    @include omega(2n);
+
+     @include media($tablet) {
+         @include span-columns(12);
+       }
+  }
+
+
+  img {
+
+
+    @include span-columns(12);
+    max-width: 100%;
+    height: auto;
+
+  }
+
+
+}

@@ -3,8 +3,12 @@
 
 section#intro {
 
-	background: url('../images/bg.jpg');
+	background:  linear-gradient(
+      rgba(128, 194, 192, 0.6), 
+      rgba(128, 194, 192, 0.6)
+    ), url('../images/bg.jpg');
 	background-attachment: fixed;
+
 	background-size: cover;
 	max-height: 500px;
 	font-family: $body-font;

@@ -11,6 +11,11 @@ header {
 
 		@include span-columns(4);
 		text-align: left;
+
+		a {
+
+			color: darken($fifth, 5%);
+		}
 	}
 
 

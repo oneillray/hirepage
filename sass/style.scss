@@ -30,7 +30,7 @@ $special-font: $headings-font, sans-serif;
 @import "normalize";
 //@import "compass/reset";
 @import "bourbon/bourbon";
-//@import "grid-settings";
+@import "grid-settings";
 @import "neat/neat";
 @import "typography";
 @import "nav";
@@ -114,37 +114,14 @@ there.
 /* Larger than tablet */
 @media (min-width: 750px) {
 
-	.quotation {
-
-		top: -11%;
-		right: 28%;
-	}
-
-	p.quote {
-
-		font-size: 160%;
-
-
-	}
-
-	#carousel {
-
-		display: block;
-	}
-
-}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
-
 	html, body, {
 
 		font-size: 120%;
 	}
-
-
 }
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
 
