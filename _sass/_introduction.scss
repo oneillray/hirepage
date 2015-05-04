@@ -1,0 +1,57 @@
+/* Intro
+-------------------------------------------------- */
+
+section#intro {
+
+	background:  linear-gradient(
+      rgba(128, 194, 192, 0.6), 
+      rgba(128, 194, 192, 0.6)
+    ), url('http://cl.ly/image/2D1p1d2w1x0p/download/bg.jpg');
+	background-attachment: fixed;
+
+	background-size: cover;
+	max-height: 500px;
+	font-family: $body-font;
+	text-align: center;
+	color: $white;
+	padding: 1.2em 0;
+
+	h2 {
+
+	text-align: center;
+	color: inherit;	
+	font-size: 2.4em;
+	line-height: 1.2;
+	font-weight: 100;
+
+		span {
+		
+		color: $secondary;
+		font-family: $headings-font;
+		font-style: italic;
+
+		}
+	}
+
+	h3 {
+
+		color: $white;
+	}
+
+
+}
+
+.intro-inner {
+
+	@include outer-container($max-width);
+	@include pad(10px default);
+
+
+
+}
+
+.available-from {
+
+	text-decoration: underline;
+	text-decoration-line: dotted;
+}

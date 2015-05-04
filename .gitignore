@@ -1,5 +1,2 @@
-bower_components/
-stylesheet.html
-test.html
-.sass-cache/
-test/
+_site
+.sass-cache

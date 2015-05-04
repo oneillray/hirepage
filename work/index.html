@@ -1,0 +1,27 @@
+---
+layout: default
+title: Work
+---
+
+<section id="work">
+	<div class="intro-inner">
+		<h2>Portfolio</h2>
+		<p>Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive research, wireframing, design & development. This process allows me to create great product with client goals in mind.</p>
+	</div>
+
+	{% for post in site.categories['work'] %}
+	<article class="{%cycle 'left', 'right'%}">
+		<div class="intro-inner">
+			<h4 class="work-intro">{{post.title}}</h4>
+			<div class="project-info">
+			{{post.content}}
+			<a class="button primary-cta" href="#">View Case Study</a>
+			<a class="button" href="{{post.site_url}}">View Website</a>
+			</div>
+			<div class="project-hero">
+				<img src="http://cl.ly/image/3G0l141n2D3a/download/portfolio-hero.png" alt="@TODO">
+			</div>
+		</div>			
+	</article>
+	{% endfor %}
+</section>
