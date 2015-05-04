@@ -1,0 +1,148 @@
+
+
+/* Testimonials
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#carousel  {
+
+
+	display: none;
+}
+
+
+section.testimonials {
+
+	
+	color: $fourth;
+	background: $primary;
+	padding-top: 2em;
+
+
+}
+
+section.testimonials h3 {
+
+	font-size: 2em;
+	border-bottom: 2px solid $secondary;
+	color: $fourth;
+	width: 10%;
+	margin-bottom: 10px;
+}
+
+section.testimonials h6 {
+
+	font-size: 1.3125em;
+	color: $fourth;
+}
+
+
+p.quote {
+
+	font-size: 120%;
+	line-height: 1.5;
+}
+
+
+cite {
+
+	text-align: right;
+}
+
+
+blockquote cite {
+
+	font-family: $headings-font;
+	font-size: 2em;
+	line-height: 1.5;
+	text-align: right;
+
+}
+
+
+
+
+.face {
+
+	display: inline;
+	float: left;
+	width:48px;
+	height: 48px;
+	height: auto;
+	padding-right: 10px;
+}
+
+
+
+.flexslider .slides img {
+
+	width: 48px;
+	display: block;
+}
+
+
+li.three.columns {
+
+	opacity: 0.6;
+	transition: opacity 0.5s ease;
+	margin-left: 5px;
+
+}
+
+li.three.columns.flex-active-slide {
+
+	opacity: 1;
+}
+
+	.name {
+
+		color: $secondary;
+		margin-bottom: 0;
+
+
+	}
+
+	.title	{
+
+		color: $fourth;
+	}
+
+
+.aboutquote {
+font-size: 160px;
+line-height: 0px;
+color: darken($primary, 5%);
+text-align: center;
+margin: 55px 0 30px;
+font-family: 'Baskerville italic', Georgia, serif;
+
+}
+
+h2.aboutquote {
+
+	padding-top: 30px;
+	font-family: $headings-font;
+	font-style: italic;
+}
+
+
+
+
+.flexslider {
+
+	margin: 0 0 60px;
+	background: none; 
+	border: none; 
+	position: relative;
+	 -webkit-border-radius: 0; 
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	 border-radius: 0; 
+	 -webkit-box-shadow: none; 
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	 box-shadow: none; 
+	zoom: 1;
+
+
+}
+

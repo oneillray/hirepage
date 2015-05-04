@@ -1,0 +1,26 @@
+
+/* Services
+-------------------------------------------------- */
+
+
+section#services {
+
+	@include outer-container;
+
+	// padding: 5em 0;
+	background: $fifth;
+
+	svg {width: 5em;height: 5em; }
+	ul { text-align: center;}
+	h5 { font-size: 1.6em; color: $secondary}
+	li { list-style: none;}
+
+	.service-type {
+
+		@include span-columns(3);
+
+	}
+}
+
+
+
