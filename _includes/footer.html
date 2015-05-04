@@ -1,0 +1,58 @@
+<footer>
+  <section>
+    <div class="col">
+    <h3>Contact info</h3>
+    <li>Email:<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+     {% if site.github_username %}
+       <li> Github: <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a>
+        </li>
+        {% endif %}
+           {% if site.twitter_username %}
+       <li> Twitter: <a href="https://twitter.com/{{ site.twitter_username }}">{{ site.twitter_username }}</a>
+        </li>
+        {% endif %}    
+                 {% if site.instagram_username %}
+       <li> Instagram <a href="https://instagram.com/{{ site.instagram_username }}">{{ site.instagram_username }}</a>
+        </li>
+        {% endif %}  
+                       {% if site.codepen_username %}
+       <li> Codepen: <a href="https://codepen.com/{{ site.codepen_username }}">{{ site.codepen_username }}</a>
+        </li>
+        {% endif %} 
+                    {% if site.dribbble_username %}
+       <li> Dribbble: <a href="https://dribbble.com/{{ site.dribbble_username }}">{{ site.dribbble_username }}</a>
+        </li>
+        {% endif %}
+    <p>&copy; 2015 Ray O'Neill {{ site.title }} </p>
+  </div>
+  <div class="social">
+    <h3>Elsewhere</h3>
+    <ul>
+     {% if site.github_username %}
+       <li> Github: <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a>
+        </li>
+        {% endif %}
+           {% if site.twitter_username %}
+       <li> Twitter: <a href="https://twitter.com/{{ site.twitter_username }}">{{ site.twitter_username }}</a>
+        </li>
+        {% endif %}    
+                 {% if site.instagram_username %}
+       <li> Instagram <a href="https://instagram.com/{{ site.instagram_username }}">{{ site.instagram_username }}</a>
+        </li>
+        {% endif %}  
+                       {% if site.codepen_username %}
+       <li> Codepen: <a href="https://codepen.com/{{ site.codepen_username }}">{{ site.codepen_username }}</a>
+        </li>
+        {% endif %} 
+                    {% if site.dribbble_username %}
+       <li> Dribbble: <a href="https://dribbble.com/{{ site.dribbble_username }}">{{ site.dribbble_username }}</a>
+        </li>
+        {% endif %}
+    </ul>
+  </div>
+<div class="colophon">
+    <h3>Colophon</h3>
+    <p>{{ site.description }}</p>
+  </div>
+  </section>
+</footer>

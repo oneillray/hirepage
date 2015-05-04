@@ -1,0 +1,59 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+/* Custom Vars
+-------------------------------------------- */
+
+$primary: #C5E3E2;  // teal
+$secondary: #19323C; // purple
+$third: #2791b1; // CTA green
+$fourth: darken($primary, 20%); // dark grey
+$fifth: #f3f2e9; // grey blue
+$sixth: #D0FEF5; 
+$white: #fff; 
+$special: $fifth;
+$modal: #DEF4D6;
+
+
+// Type vars
+
+$body-font: 'Brandon Grotesque', sans-serif;
+$headings-font: 'Clarendon Heavy', serif;
+$special-font: $headings-font, sans-serif;
+
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+ul,li {
+
+	list-style: none;
+	padding: 0;
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+
+        "normalize",
+		"bourbon/bourbon",
+		"grid-settings",
+		"neat/neat",
+		"typography",
+		"nav",
+		"ui",
+		"introduction",
+		"services",
+		"portfolio",
+		"about",
+		"hire-me",
+		"animations",
+		"footer"
+
+
