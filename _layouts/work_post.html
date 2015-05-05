@@ -1,29 +1,18 @@
-{% include header.html %}
+---
+layout: default
+---
 
-<section id="work">
-  <div class="intro-inner">
-    <h2>Portfolio</h2>
-    <p>Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive research, wireframing, design & development. This process allows me to create great product with client goals in mind.</p>
-  </div>
-
-  {% for post in site.categories['work'] %}
+<section id="portfolio-single">
+  <article class="intro-inner">
+    {% if page.title %}
+    <h2>{{ page.title }}</h2>
+{% endif %}
+   {% if post.desc %}
+    <p> {{ post.desc }}</p>
+{% endif %}
+	{% if site_url %}
+    <p><a href="{{ site_url }}">View Website</a></p>
+{% endif %}
+<div class="entry-content">{{ content }}</div>
   <article>
-    <div class="intro-inner">
-      <h4 class="work-intro">{{post.title}}</h4>
-      <div class="project-info">
-      <p>{{post.content}}</p>
-      </div>
-      <p>
-        <a class="button primary-cta" href="#">View Case Study</a>
-        <a class="button" href="{{post.site_url}}" target="_blank">View Website</a>
-      </p>
-      <div class="project-hero">
-        <img src="http://cl.ly/image/2D1p1d2w1x0p/download/bg.jpg" alt="@TODO">
-      </div>
-    </div>      
-  </article>
-  {% endfor %}
 </section>
-
-
-{% include footer.html %}

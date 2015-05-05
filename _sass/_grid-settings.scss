@@ -2,7 +2,7 @@
 
 // Change the grid settings
 $column: 90px;
-$gutter: 5px;
+$gutter: 20px;
 $grid-columns: 12;
 $max-width: 1140px;
 
@@ -10,5 +10,5 @@ $visual-grid: true;
 
 
 // Define your breakpoints
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(max-width 480px 4);
+$tablet: new-breakpoint(max-width 768px);
+$mobile: new-breakpoint(max-width 480px);

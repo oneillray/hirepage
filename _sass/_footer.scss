@@ -5,32 +5,41 @@ footer {
 
 
 	h3,h4,ul,li,a {	color: $primary;}
+
+	a:hover {color: lighten($primary,20%)}
 	
 	section {
 
 		@include outer-container($max-width);
-		border: 2px solid lighten($secondary, 2%);
 		padding: 0 2em;
 
-
-
 	}
 
 
+	button {
 
-	.col {
+		font-size: 0.6em;
+		line-height: 1.6;
+	}
+
+
+	li>button {
+
+		margin-top: 1em;
+	}
+
+	.col,.social,.colophon  {
 
 		@include span-columns(4);
+		@include media($tablet) {
+
+     		 @include span-columns(12);
+    	}
 	}
 }
 
 
-.social {
+.tcs {
 
-	@include span-columns(4);
-}
-
-.colophon {
-
-	@include span-columns(4);
+	color: (lighten($secondary, 5%));
 }
