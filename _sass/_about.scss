@@ -5,8 +5,10 @@ section#about-me {
 	padding-bottom: 2em;
 
 
-	.left, .right {
+	p {
 
+
+		padding-right: 5%;
 		@include span-columns(6);
 		@include omega(2n);
 
@@ -15,8 +17,6 @@ section#about-me {
    		 }
 	}
 
-	.left  {float: left;}
-	.right {float: left;clear: both;}
 
 	img {
 
