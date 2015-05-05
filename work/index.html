@@ -6,15 +6,16 @@ title: Work
 <section id="portfolio-all">
 	<div class="intro-inner">
 		<h2>Portfolio</h2>
-		<p>Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive research, wireframing, design & development. This process allows me to create great product with client goals in mind.</p>
+		<p>Below you can see some projects I've been working on lately.</p>
 	</div>
 
 	{% for post in site.categories['work'] %}
-	<li>
-	<a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
-	</a>
-			<h4>{{post.title}}</h4>
-			<p>{{ post.desc }}</p>
-	</li>
+	<article>
+		<a href="{{ post.url }}">
+		<img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
+				<h3>{{post.title}}</h3>
+				<p>{{ post.skills }}</p>
+		</a>
+	</article>
 	{% endfor %}
 </section>

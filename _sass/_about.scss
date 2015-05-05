@@ -5,11 +5,21 @@ section#about-me {
 	padding-bottom: 2em;
 
 
+	h2 {
+		@include span-columns(10);
+		@include shift(1);
+
+		 @include media($tablet) {
+     		 @include span-columns(12);
+   		 }
+	}
+
+
 	p {
 
 
-		padding-right: 5%;
-		@include span-columns(6);
+		@include span-columns(10);
+		@include shift(1);
 		@include omega(2n);
 
 		 @include media($tablet) {
