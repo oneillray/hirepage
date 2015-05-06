@@ -4,8 +4,8 @@
 section#intro {
 
 	background:  linear-gradient(
-      rgba(128, 194, 192, 0.6), 
-      rgba(128, 194, 192, 0.6)
+      rgba(128, 194, 192, 0.3), 
+      rgba(128, 194, 192, 0.3)
     ), url('/assets/bg2.jpg');
 	background-attachment: fixed;
 	background-size: cover;
@@ -26,9 +26,15 @@ section#intro {
 	font-size: 2.4em;
 	line-height: 1.2;
 	font-weight: 100;
-	// @include span-columns(6);
-	// @include shift(3);
-	// @include reset-all;
+	width: 70%;
+  	margin: 0 auto;
+  	margin-bottom: 1em;
+  	margin-top: 2em;
+
+	@include media($mobile){
+
+		width: 100%;		
+	}
 
 		span {
 		

@@ -12,7 +12,7 @@
 
   article:nth-child(2n+2) {
 
-    background: darken($fifth, 5%);
+ //   background: darken($fifth, 10%);
 
 
   }
@@ -21,7 +21,7 @@
 
 .portfolio-inner {
 
-  background: darken($primary, 30%);
+background: darken($primary, 30%);
 
 }
 
@@ -38,19 +38,54 @@
 
   .project-hero {
 
+     position: relative;
 
-        img { max-width: 112%;  height: auto}
+       @media only screen and (max-width: 768px){
+        width: 100%;
+      }
 
-  left: 8em;
-  width: 48%;
-  position: relative;
-  overflow: hidden;
+       @media only screen and (min-width: 768px){
+
+       left: 2em;
+       width: 48%;
+       overflow: hidden;
+
+
+       }
+      
+      @media only screen and (min-width: 1150px) and (max-width: 1359px) {
+        left: 8em;
+      
+      }
+
+      @media only screen and (min-width: 1359px) and (max-width: 1546px){
+      
+        left: 29%;
+  
+      }
+
+
+      img { 
+
+      max-width: 100%; height: auto;
+        @media only screen and (min-width: 768px){
+          max-width: 150%; 
+        }
+
+    }
 
   }
 
 
 
   .project-info {
+
+    text-align: left;
+    @include media($tablet) {
+
+      text-align: center;
+
+    }
 
   h4 {
 
@@ -69,8 +104,11 @@
 
 .view-more {
 
-  font-size: 2em;
-  background: darken($fifth, 15%);
+  font-size: 1.2em;
+   @include media($tablet) {
+      font-size: 0.8em;
+   }
+  background: darken($fifth, 5%);
   margin-bottom: 7em;
 
   div {
@@ -95,6 +133,24 @@
   }
 
 
+/* Portfolio homepage 
+-------------------------------------------------- */
+
+h6.work-skills {
+
+  font-size: 1em;
+  margin: 0;
+}
+
+
+.project-intro--btns {
+
+  margin-top: 15%;
+}
+
+
+
+
 /* Portfolio Single 
 -------------------------------------------------- */
 
@@ -108,8 +164,8 @@
     @include span-columns(10);
     @include shift(1);
 
-    @include media($mobile) {
-    @include span-columns(12);
+    @include media ($mobile) {
+       @include span-columns(12);
     }
 
   }
@@ -126,27 +182,32 @@
 
 #portfolio-all {
 
-  @include outer-container($max-width);
+  @include outer-container;
 
 
   article {
 
-
+    @include span-columns(3);
+    @include omega(5n);
     text-align: center;
 
-    @include span-columns(4);
-    @include omega(4n);
+    @include media($mobile){
 
-      @include media($mobile) {
-      img {width: auto;}
       @include span-columns(12);
-      }
+    }
+
+     img {
+      max-width: 100%;
+      margin: auto;
+    }
+
+
 
   }
 
 
   h4 {margin-top: 1em}
-  h3 {font-weight: 300; }
+  h3 {font-weight: 300; top: 10px; position: relative;; }
 }
 
 
@@ -157,7 +218,7 @@
 
 
       @include span-columns(12);
-      max-width: 100%;
+//      max-width: 100%;
       height: auto;
 
     }

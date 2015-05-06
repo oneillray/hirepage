@@ -17,21 +17,21 @@ layout: default
     <h2 class="tc">Some of my Work</h2>
   </div>
 
-  {% for post in site.categories['work']  limit:3 %}
+  {% for post in site.categories['work'] limit:2 %}
   <article>
     <div class="intro-inner">
-      <h4 class="work-intro">{{post.title}}</h4>
-      <h6 class="work-intro">{{post.skills}}</h6>
       <div class="project-info">
+       <h3 class="work-intro">{{post.title}}</h3>
+      <h6 class="work-skills">{{post.skills}}</h6>
       <p>{{ post.desc }}</p>
-      <p>
+      <p class="project-intro--btns ">
         <a class="button primary-cta" href="{{ post.url }}">View Case Study</a>
         <a class="button" href="{{post.site_url}}" target="_blank">View Website</a>
       </p>
       </div>
       
       <div class="project-hero">
-        <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
+        <img src="{{ post.hero }}" alt="{{ post.thumbnail-desc }}">
       </div>
     </div>      
   </article>
