@@ -1,19 +1,21 @@
 /* Portfolio
 -------------------------------------------------- */
 
-#work {}
+#work {
 
-.intro-inner {
+  .intro-inner {
 
-  @include outer-container($max-width);
+    @include outer-container($max-width);
 
-}
+  }
 
 
-article:nth-child(2n) {
+  article:nth-child(2n+2) {
 
-  background: darken($fifth, 5%);
+    background: darken($fifth, 5%);
 
+
+  }
 
 }
 
@@ -50,74 +52,114 @@ article:nth-child(2n) {
 
   .project-info {
 
-    p {
+  h4 {
 
-    font-size: 0.8em;
-    line-height: 1.6;
+    font-size: 1em;
 
+    p>button {
+
+      margin-top: 2em;
+    }
   }
 
 
 }
+
+
+
+.view-more {
+
+  font-size: 2em;
+  background: darken($fifth, 15%);
+  margin-bottom: 7em;
+
+  div {
+
+    text-align: center;
+    @include span-columns(6);
+    background: inherit; 
+    padding: 4% 0;
+
+  }
+
+  .dribbble {
+
+    &:hover {background: #ea4c89}
+
+  }
+  .view-all {
+
+    &:hover { background: $primary;}
+  }
+
+  }
+
 
 /* Portfolio Single 
 -------------------------------------------------- */
 
-ul.project-details {
 
-  display: inline-flex;
-  border: 2px solid;
-  width: 100%;
+#portfolio-single {
 
-      @include media($tablet) {
-         display: block;
-       }
+  @include outer-container($max-width);
 
-      li {
-      display: inline;
-      padding: 2% 3%;
-      font-size: 0.8em;
-      border-right: 2px solid;
+  article {
 
-      @include media($tablet) {
-         display: block;
-         font-size: 1em;
-       }
+    @include span-columns(10);
+    @include shift(1);
 
-
-        &:last-child {
-
-          border-right: none;
-        }
+    @include media($mobile) {
+    @include span-columns(12);
     }
+
+  }
+
+
+
+
 }
 
 
-#project-single {
+/* Portfolio All 
+-------------------------------------------------- */
 
+
+#portfolio-all {
 
   @include outer-container($max-width);
-  padding-bottom: 2em;
 
-    p {
 
-    @include span-columns(6);
-    @include omega(2n);
+  article {
 
-     @include media($tablet) {
-         @include span-columns(12);
-       }
+
+    text-align: center;
+
+    @include span-columns(4);
+    @include omega(4n);
+
+      @include media($mobile) {
+      img {width: auto;}
+      @include span-columns(12);
+      }
+
   }
 
+
+  h4 {margin-top: 1em}
+  h3 {font-weight: 300; }
+}
+
+
+#portfolio-all, #portfolio-single {
+  
 
   img {
 
 
-    @include span-columns(12);
-    max-width: 100%;
-    height: auto;
+      @include span-columns(12);
+      max-width: 100%;
+      height: auto;
+
+    }
 
   }
-
-
-}
