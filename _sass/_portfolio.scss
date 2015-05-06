@@ -39,17 +39,16 @@ background: darken($primary, 30%);
   .project-hero {
 
      position: relative;
+     width: 48%;
+     overflow: hidden;
 
        @media only screen and (max-width: 768px){
         width: 100%;
       }
 
-       @media only screen and (min-width: 768px){
+       @media only screen and (min-width: 769px) and (max-width: 1150px){
 
        left: 2em;
-       width: 48%;
-       overflow: hidden;
-
 
        }
       
