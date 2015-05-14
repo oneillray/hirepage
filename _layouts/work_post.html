@@ -10,11 +10,12 @@ layout: default
    {% if post.desc %}
     <p> {{ post.desc }}</p>
 {% endif %}
-	{% if site_url %}
-    <p><a href="{{ site_url }}">View Website</a></p>
+{% if page.site_url %}
+<p><a href="{{ page.site_url }}" target="_blank" class="button">Go to website</a></p>
 {% endif %}
 <div class="entry-content">{{ content }}</div>
-
-<p class="tc"><a href="{{ site_url }}" class="button">Go to website</a></p>
+{% if page.site_url %}
+<p class="tc"><a href="{{ page.site_url }}" target="_blank" class="button">Go to website</a></p>
+{% endif %}
   <article>
 </section>
