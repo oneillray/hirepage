@@ -16,3 +16,9 @@ resume_url: http://represent.io/rayoneill
 
 # Build settings
 markdown: kramdown
+
+# Collects for other Post types
+collections:
+  references:
+    output: true
+    permalink: /references/:path/
