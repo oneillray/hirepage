@@ -48,7 +48,7 @@ layout: default
 
 <section class="journal">
 <ul class="posts">  
-	{% for post ==! in site.categories['work'] %}  
+	{% for post =! in site.categories['work'] %}  
 	   <li>  
 		   <span>{{ post.date | date_to_string }}</span> &raquo;  
 		   <a href="{{ BASE_PATH }}{{ post.url }}">  
