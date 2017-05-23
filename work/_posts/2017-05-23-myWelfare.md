@@ -3,7 +3,7 @@ layout: work_post
 title: myWelfare iOS App 
 site_url: http://creganehall.ie
 permalink: /work/myWelfare.html
-thumbnail: /assets/portfolio_creganehall-thumb.jpg
+thumbnail: /assets/on-boarding-experience.jpg
 thumbnail-desc: "my Welfare App"
 hero: /assets/on-boarding-experience.jpg
 skills: "User Research, User interface design"
