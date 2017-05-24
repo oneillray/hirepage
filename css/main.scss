@@ -12,15 +12,15 @@ $secondary: #19323C; // purple
 $third: #2791b1; // CTA green
 $fourth: darken($primary, 20%); // dark grey
 $fifth: #f3f2e9; // grey blue
-$sixth: #D0FEF5; 
-$white: #fff; 
+$sixth: #D0FEF5;
+$white: #fff;
 $special: $fifth;
 $modal: #DEF4D6;
 
 
 // Type vars
 
-$body-font: 'Brandon Grotesque', sans-serif;
+$body-font: Helvetica, 'Brandon Grotesque', sans-serif;
 $headings-font: 'Clarendon Heavy', serif;
 $special-font: $headings-font, sans-serif;
 
@@ -64,5 +64,3 @@ ul,li {
 		"hire-me",
 		"animations",
 		"footer"
-
-
