@@ -1,56 +1,56 @@
-<footer>
-  <section>
-    <div class="col">
-    <h3>Contact info</h3>
-    <li>Email:<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-           {% if site.twitter_username %}
-       <li> Twitter: <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">{{ site.twitter_username }}</a>
+<footer class="container">
+  <section class="row">
+    <div class="col-md-4">
+      <h3>Contact info</h3>
+      <li>Email:<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      {% if site.twitter_username %}
+      <li> Twitter: <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">{{ site.twitter_username }}</a>
+      </li>
+      {% endif %} {% if site.skype_username %}
+      <li> Skype : <a href="skype:{{ site.skype_username }} ?call">{{ site.skype_username }}</a>
+      </li>
+      {% endif %}
+      <p><a class="button" href="https://calendly.com/madebyray" target="_blank">Book a meeting</a></p>
+    </div>
+    <div class="social col-md-4">
+      <h3>Elsewhere</h3>
+      <ul>
+        {% if site.github_username %}
+        <li> Github: <a href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a>
         </li>
-        {% endif %} 
-                   {% if site.skype_username %}
-       <li> Skype : <a href="skype:{{ site.skype_username }} ?call">{{ site.skype_username }}</a>
+        {% endif %} {% if site.instagram_username %}
+        <li> Instagram <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">{{ site.instagram_username }}</a>
         </li>
-        {% endif %}   
-        <p><a class="button" href="https://calendly.com/madebyray" target="_blank">Book a meeting</a></p>                 
-  </div>
-  <div class="social">
-    <h3>Elsewhere</h3>
-    <ul>
-     {% if site.github_username %}
-       <li> Github: <a href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a>
+        {% endif %} {% if site.codepen_username %}
+        <li> Codepen: <a href="https://codepen.com/{{ site.codepen_username }}" target="_blank">{{ site.codepen_username }}</a>
         </li>
-        {% endif %}   
-                 {% if site.instagram_username %}
-       <li> Instagram <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">{{ site.instagram_username }}</a>
+        {% endif %} {% if site.dribbble_username %}
+        <li> Dribbble: <a href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">{{ site.dribbble_username }}</a>
         </li>
-        {% endif %}  
-                       {% if site.codepen_username %}
-       <li> Codepen: <a href="https://codepen.com/{{ site.codepen_username }}" target="_blank">{{ site.codepen_username }}</a>
+        {% endif %} {% if site.pinterest_username %}
+        <li> Pinterest: <a href="https://pinterest.com/{{ site.pinterest_username }}" target="_blank">{{ site.pinterest_username }}</a>
         </li>
-        {% endif %} 
-                    {% if site.dribbble_username %}
-       <li> Dribbble: <a href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">{{ site.dribbble_username }}</a>
-        </li>
-        {% endif %}
-                           {% if site.pinterest_username %}
-       <li> Pinterest: <a href="https://pinterest.com/{{ site.pinterest_username }}" target="_blank">{{ site.pinterest_username }}</a>
-        </li>
-        {% endif %}
- {% if site.spotify_username %}
-       <li> Spotify: <a href="spotify:user:{{ site.spotify_username }}" target="_blank">{{ site.pinterest_username }}</a>
+        {% endif %} {% if site.spotify_username %}
+        <li> Spotify: <a href="spotify:user:{{ site.spotify_username }}" target="_blank">{{ site.pinterest_username }}</a>
         </li>
         {% endif %}
 
-        
-    </ul>
-  </div>
-<div class="colophon">
-    <h3>Colophon</h3>
-    <p>{{ site.description }}</p>
-  </div>
+
+      </ul>
+    </div>
+    <div class="colophon col-md-4">
+      <h3>Colophon</h3>
+      <p>{{ site.description }}</p>
+    </div>
   </section>
   <section class="tcs">
-            <p>&copy; 2015 Ray O'Neill {{ site.title }} </p>
+    <p>&copy; 2017 Ray O'Neill {{ site.title }} </p>
 
   </section>
 </footer>
+
+<script id="__bs_script__">
+  //<![CDATA[
+  document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+  //]]>
+</script>

@@ -1,0 +1,94 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$body-font: sans-serif;
+
+* {
+font-family: 'Work Sans', sans-serif;
+
+}
+.project-detail {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .row {
+    margin: 20px 0;
+  }
+}
+
+.blockqoute {
+  font-family: Georgia;
+  font-style: italic;
+  width: 1000px;
+  margin: 2em auto;
+}
+
+
+header {
+  height: 40vh;
+  background: #F6F6F5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-preview {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  color: #717171;
+  // font-size: 20px;
+}
+
+.bg-grey {
+  background: #77878B;
+}
+
+.bg-dark-grey {
+  background: #343334;
+}
+
+.stacked-case .col-md-6 {
+  padding: 4em 2em;
+  box-sizing: border-box;
+}
+
+
+
+/*
+* Work index + single
+*/
+
+a.project-item {
+  margin: 24px;
+  text-decoration: none;
+  &:hover{
+      text-decoration: none !important;
+  }
+}
+
+.project {
+    &__title{}
+    &__skills{
+        font-size: 0.8rem;
+    }
+}
+
+.desc {
+    font-size: 0.8rem;
+}
+
+/*
+* Footer
+*/
+
+
+footer {
+    margin-top: 48px;
+}

@@ -1,6 +1,6 @@
 ---
 layout: work_post
-title: myWelfare iOS App 
+title: myWelfare iOS App
 site_url: http://creganehall.ie
 permalink: /work/myWelfare.html
 thumbnail: /assets/on-boarding-experience.jpg
@@ -8,6 +8,7 @@ thumbnail-desc: "my Welfare App"
 hero: /assets/on-boarding-experience.jpg
 skills: "User Research, User interface design"
 desc: "Welfare app for College"
+tldr: "The aim of this app is the encourage the user to keep their personal, contact and career / education information up to date."
 
 ---
 
@@ -15,7 +16,7 @@ desc: "Welfare app for College"
 
 # Case Study: myWelfare
 ### Design Team: Ray O’Neill
-### Design Methods Used: Paper Prototyping, user testing, User Interface Design, User Personas, User Scenarios, 
+### Design Methods Used: Paper Prototyping, user testing, User Interface Design, User Personas, User Scenarios,
 ### Timeline:
 
 # Project Outcome

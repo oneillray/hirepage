@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+  {% include header.html %}
 
-  <section id="about-me">
-
-  <h2>{{page.title}}</h2>
-        {{ content }}
+  <section id="about-me" class="container">
+    <h2>{{page.title}}</h2>
+    <div>
+      {{ content }}
+    </div>
   </section>
 
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-  </body>
+
+  <script id="__bs_script__">
+    //<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+    //]]>
+  </script>
+</body>
 
 </html>

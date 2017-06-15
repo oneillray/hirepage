@@ -1,7 +1,7 @@
 # Site settings
 title: madebyray
 email: info@raymondoneill.ie
-description: This website was hand crafted using jekyll and hosted with Github pages. Type is set in Brandon Grotesque and served up by Typekit. The website itself was built using Boubon, Sass, Compass & Neat for Grids. 
+description: This website was hand crafted using jekyll and hosted with Github pages. Type is set in Worksans and served up by Googlefonts. The website itself was built using good ol' bootstrap beacuse life too damn short not too. 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: madebyray

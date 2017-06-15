@@ -1,13 +1,17 @@
-<header>
-  <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-  <nav>
-    <ul>
-      {% for page in site.pages %}
-          {% if page.title %}
-          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-        <li><a href="mailto:info@raymondoneill.ie" target="_blank">Get in touch</a></li>
-    </ul>
-  </nav>
+<header class="">
+    <div class="container">
+        <div class="row">
+          <h6 class="col-md-6 nav-link"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h6>
+          <nav class="col-md-6">
+            <ul class="nav">
+              {% for page in site.pages %}
+                  {% if page.title %}
+                <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                  {% endif %}
+                {% endfor %}
+              <a class="nav-link" href="mailto:info@raymondoneill.ie" target="_blank">Get in touch</a>
+            </ul>
+          </nav>
+        </div>
+    </div>
 </header>

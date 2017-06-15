@@ -3,18 +3,24 @@ layout: default
 title: Work
 ---
 
-<section id="portfolio-all">
+<section id="portfolio-all" >
 	<div class="intro-inner">
-		<h2>Portfolio</h2>
-		<p>Below you can see some projects I've been working on lately.</p>
+		<h2>Selected Work</h2>
+		<p>Here are some case studies of projects that have recently been completed</p>
 	</div>
 
-	{% for post in site.categories['work'] %}
+	{% for post in site.categories['work'] limit:3 %}
 	<article>
-		<a href="{{ post.url }}">
-		<img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
-				<h3>{{post.title}}</h3>
-				<p>{{ post.skills }}</p>
+		<a href="{{ post.url }}" class="row project-item">
+			<div class="col-md-6">
+				<h3 class="project__title">{{post.title}}</h3>
+				<h4 class="project__skills">{{ post.skills }}</h4>
+				<p class="desc">{{post.tldr}}</p>
+				<button class="btn btn-primary">View Case Study</button>
+			</div>
+
+		<img class="col-md-6 img-preview" src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
+
 		</a>
 	</article>
 	{% endfor %}
