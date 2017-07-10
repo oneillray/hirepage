@@ -5,13 +5,29 @@
 
 <body>
 
-  {% include header.html %}
+    <!-- open header -->
+        <header class="">
+            <div class="container">
+                <div class="row">
+      {% include header.html %}
+
+      <h2 class="col-md-6">{{page.page-primary}}</h2>
+      <h4 class="col-md-8">{{page.page-secondary}}</h4>
+      </header>
+      </div>
+      </div>
+      <!-- close header -->
+
 
   <section id="about-me" class="container">
-    <h2>{{page.title}}</h2>
-    <div>
-      {{ content }}
-    </div>
+      <div class="row">
+         <div class="col-md-8">
+             <div>
+               {{ content }}
+             </div>
+
+         </div>
+      </div>
   </section>
 
 

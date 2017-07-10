@@ -2,24 +2,110 @@
 layout: default
 ---
 
-<section id="portfolio-single">
-  <article class="intro-inner">
-    {% if page.title %}
-    <h2>{{ page.title }}</h2>
-{% endif %}
-   {% if post.desc %}
-    <p> {{ post.desc }}</p>
-{% endif %}
-	{% if site_url %}
-    <p><a href="{{ site_url }}">View Website</a></p>
-{% endif %}
-<div class="entry-content">{{ content }}</div>
+
+
+
+
+<section id="portfolio-single container">
+
+<!-- <div class="row project-meta project-meta--horizontal">
+    {% if page.skills %}
+    <div class="col-md-4">
+        <h6>Project Details</h6>
+        {{ page.skills }}
+    </div>
+    {% endif %}
+
+    {% if page.year %}
+    <div class="col-md-4">
+        <h6>Year</h6>
+        {{ page.year }}
+    </div>
+    {% endif %}
+
+    {% if page.scope %}
+    <div class="col-md-4">
+        <h6>Project Scope</h6>
+        {{ page.scope }}
+    </div>
+    {% endif %}
+
+    {% if page.role %}
+    <div class="col-md-4">
+        <h6>Project Role</h6>
+        {{ page.role }}
+    </div>
+    {% endif %}
+
+    {% if page.methods %}
+    <div class="col-md-4">
+        <h6>Methods Used</h6>
+        {{ page.methods }}
+    </div>
+    {% endif %}
+
+    {% if page.duration %}
+    <div class="col-md-4">
+        <h6>Project Duration</h6>
+        {{ page.duration }}
+    </div>
+    {% endif %}
+</div> -->
+
+  <article class="intro-inner row">
+
+<div class="col-md-4 project-meta">
+
+    {% if page.skills %}
+    <div class="">
+        <h6>Project Details</h6>
+        {{ page.skills }}
+    </div>
+    {% endif %}
+
+    {% if page.year %}
+    <div class="">
+        <h6>Year</h6>
+        {{ page.year }}
+    </div>
+    {% endif %}
+
+    {% if page.scope %}
+    <div class="">
+        <h6>Project Scope</h6>
+        {{ page.scope }}
+    </div>
+    {% endif %}
+
+    {% if page.role %}
+    <div class="">
+        <h6>Project Role</h6>
+        {{ page.role }}
+    </div>
+    {% endif %}
+
+    {% if page.methods %}
+    <div class="">
+        <h6>Methods Used</h6>
+        {{ page.methods }}
+    </div>
+    {% endif %}
+
+    {% if page.duration %}
+    <div class="col-md-4">
+        <h6>Project Duration</h6>
+        {{ page.duration }}
+    </div>
+    {% endif %}
+
+</div>
+<div class="entry-content col-md-8">{{ content }}</div>
 
 <p class="tc"><a href="{{ site_url }}" class="button">Go to website</a></p>
   <article>
 </section>
 
-<section class="project-detail">
+<!-- <section class="project-detail">
     <div class="row">
   <h2 class="text-center blockqoute">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa soluta quas eaque. Tempore, ipsa, ab?</h2>
   </div>
@@ -33,12 +119,10 @@ layout: default
     <img src="https://cl.ly/2g3i1c3g0C0m/download/in-iPhone.png" alt="" />
   </div>
 </div>
-
   <div class="row">
     <h2>User onboarding</h2>
     <img src="https://cl.ly/2n0V3N190j3h/download/myWelfare-onboard.jpg" alt="" />
   </div>
-
   <div class="row ">
     <div class="col-md-4">
   <h5>Project Aim</h5>
@@ -83,4 +167,4 @@ View appointments, contact their job officer and view the documents they need fo
   </div>
 
   </div>
-</section>
+</section> -->

@@ -2,6 +2,8 @@
 layout: about
 title: Hire me
 permalink: /hire-me/
+page-primary: Work with me
+page-secondary: I take on freelance projects from time to time
 ---
 Hi I’m Ray, a Freelance Digital Designer and Front-End Developer based in Dublin.I have worked with multinational brands such as Paddy Power, Guinness, and Porsche in numerous capacities.
 

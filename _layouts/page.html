@@ -1,11 +1,26 @@
 ---
 layout: default
 ---
+
+
+
+<!-- open header -->
+    <header class="">
+        <div class="container">
+            <div class="row">
+  {% include header.html %}
+
+   <h2 class="col-md-6">{{page.page-primary}}</h2>
+   <h4 class="col-md-8">{{page.page-secondary}}</h4>
+  </header>
+  </div>
+  </div>
+  <!-- close header -->
+
 <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+  <!-- <header class="post-header">
+  </header> -->
 
   <article class="post-content">
     {{ content }}

@@ -1,28 +1,44 @@
 ---
 layout: default
 title: Home
+page-primary: "I design &amp; build websites for start-ups, local businesses and passionate entrepreneurs."
+page-secondary: "get in touch"
 ---
-<section id="homepage__intro" class="row">
-  <div class="intro-inner">
-    <h1 class="f1 lh-title">I design &amp; build websites for start-ups, local businesses and passionate entrepreneurs.
-</h1>
-    <a class="link dim blue" href="mailto:info@raymondoneill.ie">Send me a project request</a>
-    <h3 class="f1 lh-title">I’m accepting new projects from <span class="available-from">June 2017</span></h3>
-  </div>
+
+
+<section id="homepage__intro" class="row padding-vert" >
+<div class="col-md-6">
+    <h6>About Me</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</div>
+
+<div class="col-md-6">
+    <h6>Design Toolkit</h6>
+<ul class="toolkit">
+    <li>Design Sprint</li>
+    <li>User Testing</li>
+    <li>Interactive Prototing (Invision / Framer)</li>
+    <li>User Flow &amp; Wireframing</li>
+    <li>Design Specs</li>
+</ul>
+</p>
+</div>
 </section>
 
 
-<section id="work">
-  <div class="intro-inner">
-    <h2 class="tc">Some of my Work</h2>
-  </div>
 
-  {% for post in site.categories['work'] limit:3 %}
-  <article>
-    <div class="intro-inner">
-      <h4 class="work-intro">{{post.title}}</h4>
-      <h6 class="work-intro">{{post.skills}}</h6>
-      <div class="project-info">
+
+<section id="work">
+  {% for post in site.categories['work'] %}
+  <article class="container">
+
+    <div class="row">
+      <div class="project-info col-md-4">
+
+          <h4 class="work-intro">{{post.title}}</h4>
+          <h6 class="work-intro">{{post.skills}}</h6>
+
+
         <p>{{ post.desc }}</p>
         <p>
           <a class="button primary-cta" href="{{ post.url }}">View Case Study</a>
@@ -30,18 +46,22 @@ title: Home
         </p>
       </div>
 
-      <div class="project-hero">
+      <div class="project-hero col-md-8">
         <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
       </div>
     </div>
   </article>
   {% endfor %}
-  <div class="view-more">
-    <div class="dribbble">
+  <div class="view-more row">
+    <div class="dribbble col-md-6">
+      <button type="button" class="btn btn-primary" name="button">
       <a href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank"><h3>View Dribbble</h3></a>
+  </button>
     </div>
-    <div class="view-all">
-      <a href="/work"><h3>View More</h3></a>
+    <div class="view-all col-md-6">
+        <button type="button" class="btn btn-primary" name="button">
+      <a href="/work"><h3>View all work</h3></a>
+  </button>
     </div>
   </div>
 </section>

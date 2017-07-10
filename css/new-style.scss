@@ -6,7 +6,7 @@
 $body-font: sans-serif;
 
 * {
-font-family: 'Work Sans', sans-serif;
+// font-family: 'Work Sans', sans-serif; // remove the google font dependancy for now
 
 }
 .project-detail {
@@ -26,9 +26,21 @@ font-family: 'Work Sans', sans-serif;
 }
 
 
+/*
+* Header
+*/
+
 header {
   height: 40vh;
   background: #F6F6F5;
+
+  h2 {
+      margin-top: 10vh;
+  }
+  h4 {
+      font-weight: 100;
+      opacity: 0.5;
+  }
 }
 
 img {
@@ -85,10 +97,81 @@ a.project-item {
 }
 
 /*
+* CV
+*/
+.row--cv {
+    margin-top: 1em;
+}
+
+
+/*
 * Footer
 */
 
+// bootstrap over-writes
+
+.btn.btn-primary a {
+    color: #fff;
+}
+
+h6 {
+    opacity: 0.5;
+}
 
 footer {
     margin-top: 48px;
+}
+
+
+// helpers
+
+.padding-vert {
+    padding: 4em 0;
+}
+
+.break {
+    border: solid 2px #000
+}
+
+// toolkit
+
+.toolkit {
+    column-count: 2;
+}
+
+// project padding-vert
+
+.project-meta {
+    &--horizontal {
+        padding: 4em 0;
+    }
+    &--vertical {}
+    div {
+        padding: 1em 0;
+    }
+}
+
+// project-specifc style
+
+$ikeaMe: #FFD700;
+$myWelfare: #8EC63F;
+.ikeaMe header {
+    background: #FFD700;
+}
+
+
+.myWelfare header {
+    background: rgba(142, 198, 63, 1.0);
+
+    h4 {
+        color: #fff;
+        opacity: 1;
+    }
+}
+
+.myWelfare header a {
+    color: #fff ;
+}
+.myWelfare button {
+    background: darken(#8EC63F, 20%)
 }
