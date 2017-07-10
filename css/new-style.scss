@@ -26,9 +26,36 @@ $body-font: sans-serif;
 }
 
 
+
+/*
+* Typography
+*/
+
+
+h2, .h2 {
+    font-size: 32px !important;
+    line-height: 48px !important;
+    position: relative !important;
+    margin-bottom: 48px !important;
+}
+
+h3, .h3 {
+  font-size: 22px !important;
+  color: #21242C !important;
+  line-height: 40px !important;
+  font-weight: 500 !important;
+}
+
+p {
+  margin: 16px 0 32px;
+}
+
+
+
 /*
 * Header
 */
+
 
 header {
   height: 40vh;
@@ -37,6 +64,7 @@ header {
   h2 {
       margin-top: 10vh;
   }
+
   h4 {
       font-weight: 100;
       opacity: 0.5;
