@@ -1,7 +1,8 @@
 # Site settings
-title: madebyray
+title: Ray O'Neill
+subtitle: Designer
 email: info@raymondoneill.ie
-description: This website was hand crafted using jekyll and hosted with Github pages. Type is set in Worksans and served up by Googlefonts. The website itself was built using good ol' bootstrap beacuse life too damn short not too. 
+description: This website was hand crafted using jekyll and hosted with Github pages. Type is set in Worksans and served up by Googlefonts. The website itself was built using good ol' bootstrap beacuse life too damn short not too.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: madebyray
@@ -14,5 +15,8 @@ pinterest_username: madebyray
 codepen_username: oneillray
 resume_url: http://represent.io/rayoneill
 
+collections:
+    projects:
+        output: true
 # Build settings
 markdown: kramdown

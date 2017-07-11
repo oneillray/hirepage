@@ -7,26 +7,37 @@ page-secondary:  Here are some case studies of projects that have recently been 
 ---
 
 
-<section id="portfolio-all" >
 
-	{% for post in site.categories['work'] limit:3 %}
-	<article class="projet-list">
-		<a href="{{ post.url }}" class="row project-item">
-			<div class="col-md-6">
-				<h3 class="project__title">{{post.title}}</h3>
-				<h4 class="project__skills">{{ post.skills }}</h4>
-				<p class="desc">{{post.tldr}}</p>
-				<button class="btn btn-primary">View Case Study</button>
-			</div>
+<section id="portfolio-all">
 
-		<img class="col-md-6 img-preview" src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
+	{% for post in site.categories['work'] %}
+    <article class="work-item padding-vert">
+   	 <div class="container">
+   		 <div class="row">
+   		   <div class="project-info col-md-4">
 
-		</a>
-	</article>
+   			   <h4 class="work-intro">{{post.title}}</h4>
+   			   <h6 class="work-intro">{{post.skills}}</h6>
 
-<hr>
-	{% endfor %}
 
+   			 <p>{{ post.desc }}</p>
+   			 <p>
+   				 <button class="btn btn-primary">View Case Study</button>
+   			 </p>
+   		   </div>
+
+   		   <div class="col-md-4">
+
+   		   </div>
+
+   		   <div class="project-hero col-md-4">
+   			 <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
+   		   </div>
+   		 </div>
+   	 </div>
+   	 <hr>
+    </article>
+    {% endfor %}
 
 	<div class="row">
 		<div class="col-md-6">

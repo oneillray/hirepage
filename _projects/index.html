@@ -1,0 +1,27 @@
+---
+layout: default
+page-primary: Past Projects
+page-secondary: I've done quite a bit in my time as a designer. View some more of work that over the last six years of my career </p>
+---
+
+
+<section id="portfolio-all container old-work" >
+
+
+	<article class="project-list row ">
+		{% for project in site.projects limit:12 %}
+
+		<a href="{{ project.permalink }}" class="project-item col-md-3">
+				<img class="img-thumb" src="{{ project.thumbnail }}" alt="{{ post.thumbnail-desc }}">
+				<h5 class="project__title">{{project.title}}</h5>
+				<p class="desc">{{project.year}}</p>
+				<button class="btn btn-primary"> View project </button>
+		</a>
+		<hr>
+		{% endfor %}
+
+	</article>
+
+
+
+</section>

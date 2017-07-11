@@ -1,12 +1,14 @@
 ---
-layout: work_post
-title: Tiernans Real Estate
+layout: project
+title: Ozteach.com
 site_url: http://ozteach.com
-permalink: /work/tiernans.html
-thumbnail: /assets/portfolio_tiernans-thumb.jpg
+permalink: /project/ozteach.html
+thumbnail: /assets/portfolio_ozteach-thumb.png
 thumbnail-desc: "Ozteach.com Image"
+hero: /assets/portfolio_ozteach-hero.png
 skills: "Design, Front-end Development, Back-end Development, Wordpress, UX, Content Strategy"
 desc: "A clear, decisive website for a new startup company"
+page-primary: "Ozteach.com"
 ---
 
 <img src="/assets/portfolio_ozteach-macbook.png" alt="">

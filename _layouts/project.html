@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+
+<section id="project-single container">
+
+<div class="row project-meta project-meta--horizontal">
+    {% if page.skills %}
+    <div class="col-md-4">
+        <h6>Project Details</h6>
+        {{ page.skills }}
+    </div>
+    {% endif %}
+
+    {% if page.year %}
+    <div class="col-md-4">
+        <h6>Year</h6>
+        {{ page.year }}
+    </div>
+    {% endif %}
+
+    {% if page.scope %}
+    <div class="col-md-4">
+        <h6>Project Scope</h6>
+        {{ page.scope }}
+    </div>
+    {% endif %}
+
+    {% if page.role %}
+    <div class="col-md-4">
+        <h6>Project Role</h6>
+        {{ page.role }}
+    </div>
+    {% endif %}
+
+    {% if page.methods %}
+    <div class="col-md-4">
+        <h6>Methods Used</h6>
+        {{ page.methods }}
+    </div>
+    {% endif %}
+
+    {% if page.duration %}
+    <div class="col-md-4">
+        <h6>Project Duration</h6>
+        {{ page.duration }}
+    </div>
+    {% endif %}
+</div>
+
+  <article class="intro-inner padding-vert row">
+
+<div class="entry-content col-md-8">{{ content }}</div>
+
+<p class="tc"><a href="{{ url }}" class="button">See live website </a></p>
+  <article>
+</section>

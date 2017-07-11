@@ -8,43 +8,32 @@ page-secondary: "get in touch"
 
 <section id="work">
   {% for post in site.categories['work'] %}
-  <article class="container">
+  <article class="work-item padding-vert">
+      <div class="container">
+          <div class="row">
+            <div class="project-info col-md-4">
 
-    <div class="row">
-      <div class="project-info col-md-4">
-
-          <h4 class="work-intro">{{post.title}}</h4>
-          <h6 class="work-intro">{{post.skills}}</h6>
+                <h4 class="work-intro">{{post.title}}</h4>
+                <h6 class="work-intro">{{post.skills}}</h6>
 
 
-        <p>{{ post.desc }}</p>
-        <p>
-          <a class="button primary-cta" href="{{ post.url }}">View Case Study</a>
-          <a class="button" href="{{post.site_url}}" target="_blank">View Website</a>
-        </p>
+              <p>{{ post.desc }}</p>
+              <p>
+                <a class="button primary-cta" href="{{ post.url }}">View Case Study</a>
+                <a class="button" href="{{post.site_url}}" target="_blank">View Website</a>
+              </p>
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="project-hero col-md-4">
+              <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
+            </div>
+          </div>
       </div>
-
-      <div class="col-md-4">
-
-      </div>
-
-      <div class="project-hero col-md-4">
-        <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
-      </div>
-    </div>
+      <hr>
   </article>
-  <hr>
   {% endfor %}
-  <!-- <div class="view-more row">
-    <div class="dribbble col-md-6">
-      <button type="button" class="btn btn-primary" name="button">
-      <a href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank"><h3>View Dribbble</h3></a>
-  </button>
-    </div>
-    <div class="view-all col-md-6">
-        <button type="button" class="btn btn-primary" name="button">
-      <a href="/work"><h3>View all work</h3></a>
-  </button>
-    </div>
-  </div> -->
 </section>
