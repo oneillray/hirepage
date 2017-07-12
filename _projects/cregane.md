@@ -9,11 +9,11 @@ skills: "Web Design, Web Development, Content-Strategy"
 desc: "An elegant one-page website"
 page-primary: CreganeHall.com
 page-secondary: The aim of this app is the encourage the user to keep their personal, contact and career / education information up to date. Within the app the user is be able to
-permalink: /work/irishRail.html
 hero: /assets/portfolio_creganehall-hero.jpg
 skills: "User Research, User interface design"
 role: Web Design, Web Development, Content-Strategy"
 scope: "Wordpress CMS"
+year: 2016
 ---
 
 <img src="/assets/portfolio_cregane-hall-full.jpg" alt="">

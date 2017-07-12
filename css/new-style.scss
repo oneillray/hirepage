@@ -140,6 +140,11 @@ a.project-item {
 }
 
 
+.single-column {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 /*
 * Footer
 */
@@ -188,26 +193,26 @@ footer {
 }
 
 // project-specifc style
-
-$ikeaMe: #FFD700;
-$myWelfare: #8EC63F;
-.ikeaMe header {
-    background: #FFD700;
-}
-
-
-.myWelfare header {
-    background: rgba(142, 198, 63, 1.0);
-
-    h4 {
-        color: #fff;
-        opacity: 1;
-    }
-}
-
-.myWelfare header a {
-    color: #fff ;
-}
-.myWelfare button {
-    background: darken(#8EC63F, 20%)
-}
+//
+// $ikeaMe: #FFD700;
+// $myWelfare: #8EC63F;
+// .ikeaMe header {
+//     background: #FFD700;
+// }
+//
+//
+// .myWelfare header {
+//     background: rgba(142, 198, 63, 1.0);
+//
+//     h4 {
+//         color: #fff;
+//         opacity: 1;
+//     }
+// }
+//
+// .myWelfare header a {
+//     color: #fff ;
+// }
+// .myWelfare button {
+//     background: darken(#8EC63F, 20%)
+// }

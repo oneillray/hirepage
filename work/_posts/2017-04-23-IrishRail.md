@@ -11,7 +11,8 @@ skills: "User Research, User interface design"
 desc: Irish Rail website redesign
 role: UX / UI Designer / Researcher
 scope: "User validated Interactive Prototype"
-
+duration: 3 months
+year: 2016
 ---
 
 

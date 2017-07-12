@@ -3,168 +3,88 @@ layout: default
 ---
 
 
+<div class="container">
+    <div class="project-meta project-meta--horizontal row">
+
+        {% if page.year %}
+        <div class="col-md-4">
+            <h6>Year</h6>
+            {{ page.year }}
+        </div>
+        {% endif %}
 
 
 
-<section id="portfolio-single container">
+        {% if page.role %}
+        <div class="col-md-4">
+            <h6>Project Role</h6>
+            {{ page.role }}
+        </div>
+        {% endif %}
 
-<!-- <div class="row project-meta project-meta--horizontal">
-    {% if page.skills %}
-    <div class="col-md-4">
-        <h6>Project Details</h6>
-        {{ page.skills }}
+
+        {% if page.duration %}
+        <div class="col-md-4">
+            <h6>Project Duration</h6>
+            {{ page.duration }}
+        </div>
+        {% endif %}
     </div>
-    {% endif %}
-
-    {% if page.year %}
-    <div class="col-md-4">
-        <h6>Year</h6>
-        {{ page.year }}
-    </div>
-    {% endif %}
-
-    {% if page.scope %}
-    <div class="col-md-4">
-        <h6>Project Scope</h6>
-        {{ page.scope }}
-    </div>
-    {% endif %}
-
-    {% if page.role %}
-    <div class="col-md-4">
-        <h6>Project Role</h6>
-        {{ page.role }}
-    </div>
-    {% endif %}
-
-    {% if page.methods %}
-    <div class="col-md-4">
-        <h6>Methods Used</h6>
-        {{ page.methods }}
-    </div>
-    {% endif %}
-
-    {% if page.duration %}
-    <div class="col-md-4">
-        <h6>Project Duration</h6>
-        {{ page.duration }}
-    </div>
-    {% endif %}
-</div> -->
-
-  <article class="intro-inner padding-vert row">
-
-<div class="col-md-4 project-meta">
-
-    {% if page.skills %}
-    <div class="">
-        <h6>Project Details</h6>
-        {{ page.skills }}
-    </div>
-    {% endif %}
-
-    {% if page.year %}
-    <div class="">
-        <h6>Year</h6>
-        {{ page.year }}
-    </div>
-    {% endif %}
-
-    {% if page.scope %}
-    <div class="">
-        <h6>Project Scope</h6>
-        {{ page.scope }}
-    </div>
-    {% endif %}
-
-    {% if page.role %}
-    <div class="">
-        <h6>Project Role</h6>
-        {{ page.role }}
-    </div>
-    {% endif %}
-
-    {% if page.methods %}
-    <div class="">
-        <h6>Methods Used</h6>
-        {{ page.methods }}
-    </div>
-    {% endif %}
-
-    {% if page.duration %}
-    <div class="col-md-4">
-        <h6>Project Duration</h6>
-        {{ page.duration }}
-    </div>
-    {% endif %}
-
 </div>
-<div class="entry-content col-md-8">{{ content }}</div>
+
+
+<section id="portfolio-single" class="single-column">
+
+
+<article class="project-content padding-vert">
+
+<!-- <div class="col-md-4 project-meta">
+
+    {% if page.skills %}
+    <div class="">
+        <h6>Project Details</h6>
+        {{ page.skills }}
+    </div>
+    {% endif %}
+
+    {% if page.year %}
+    <div class="">
+        <h6>Year</h6>
+        {{ page.year }}
+    </div>
+    {% endif %}
+
+    {% if page.scope %}
+    <div class="">
+        <h6>Project Scope</h6>
+        {{ page.scope }}
+    </div>
+    {% endif %}
+
+    {% if page.role %}
+    <div class="">
+        <h6>Project Role</h6>
+        {{ page.role }}
+    </div>
+    {% endif %}
+
+    {% if page.methods %}
+    <div class="">
+        <h6>Methods Used</h6>
+        {{ page.methods }}
+    </div>
+    {% endif %}
+
+    {% if page.duration %}
+    <div class="col-md-4">
+        <h6>Project Duration</h6>
+        {{ page.duration }}
+    </div>
+    {% endif %}
+
+</div> -->
+<div class="entry-content col-md-12">{{ content }}</div>
 
 <p class="tc"><a href="{{ site_url }}" class="button">Go to website</a></p>
-  <article>
+  </article>
 </section>
-
-<!-- <section class="project-detail">
-    <div class="row">
-  <h2 class="text-center blockqoute">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa soluta quas eaque. Tempore, ipsa, ab?</h2>
-  </div>
-<div class="row ">
-  <div class="col-md-4">
-    <h2>Project Name</h2>
-  <h4> Project Overview</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi velit molestias aspernatur delectus eius aliquam minima quam facere nam excepturi?</p>
-  </div>
-    <div class="col-md-4 offset-md-3">
-    <img src="https://cl.ly/2g3i1c3g0C0m/download/in-iPhone.png" alt="" />
-  </div>
-</div>
-  <div class="row">
-    <h2>User onboarding</h2>
-    <img src="https://cl.ly/2n0V3N190j3h/download/myWelfare-onboard.jpg" alt="" />
-  </div>
-  <div class="row ">
-    <div class="col-md-4">
-  <h5>Project Aim</h5>
-  </div>
-    <div class="col-md-8"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet excepturi officiis impedit illo autem perspiciatis quaerat veritatis blanditiis tempore ullam!</p>
-  <p>Sed quae, voluptatibus aperiam unde officia voluptas earum, eius iure! Culpa, praesentium distinctio. Doloremque praesentium sequi, porro assumenda laudantium modi.</p>
-  <p>Earum ad est quae doloribus dolor accusantium asperiores harum, laborum, adipisci alias quod. Dolorum, dolor rem cupiditate, incidunt quia in.</p>
-  <p>Sed veniam odit culpa. Animi impedit commodi porro recusandae at, unde reiciendis provident accusamus esse, consequatur a sequi facere iste.</p></div>
-    </div>
-
-
-
-    <div class="row ">
-    <div class="col-md-4">
-  <h5>User Research</h5>
-  </div>
-    <div class="col-md-8"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet excepturi officiis impedit illo autem perspiciatis quaerat veritatis blanditiis tempore ullam!</p>
-  <p>Sed quae, voluptatibus aperiam unde officia voluptas earum, eius iure! Culpa, praesentium distinctio. Doloremque praesentium sequi, porro assumenda laudantium modi.</p>
-  <p>Earum ad est quae doloribus dolor accusantium asperiores harum, laborum, adipisci alias quod. Dolorum, dolor rem cupiditate, incidunt quia in.</p>
-  <p>Sed veniam odit culpa. Animi impedit commodi porro recusandae at, unde reiciendis provident accusamus esse, consequatur a sequi facere iste.</p>
-
-      </div>
-    </div>
-
-  <div class="row stacked-case">
-
-  <div class="col-md-6">
-  <h4>User Research</h4>
-  <p>My ideas for this project so to design an iOS app that will help job seekers help get themselves prepared for applying for social welfare assistance. Within the app the user will be able to: Get access to general information about social welfare Receive notifications of their application
-View appointments, contact their job officer and view the documents they need for an upcoming appointment.</p>
-  </div>
-  <div class="col-md-6 bg-grey"></div>
-
-  </div>
-  <div class="row stacked-case">
-
-  <div class="col-md-6 bg-dark-grey"></div>
-        <div class="col-md-6">
-  <h4>Initial Ideas</h4>
-  <p>My ideas for this project so to design an iOS app that will help job seekers help get themselves prepared for applying for social welfare assistance. Within the app the user will be able to: Get access to general information about social welfare Receive notifications of their application
-View appointments, contact their job officer and view the documents they need for an upcoming appointment.</p>
-  </div>
-
-  </div>
-</section> -->
