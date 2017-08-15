@@ -18,5 +18,5 @@ resume_url: http://represent.io/rayoneill
 collections:
     projects:
         output: true
-# Build settings
-markdown: kramdown
+    case-studies:
+        output: true

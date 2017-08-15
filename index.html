@@ -6,34 +6,104 @@ page-secondary: "get in touch"
 ---
 
 
-<section id="work">
-  {% for post in site.categories['work'] %}
-  <article class="work-item padding-vert">
-      <div class="container">
-          <div class="row">
-            <div class="project-info col-md-4">
+<section class="cv container">
 
-                <h4 class="work-intro">{{post.title}}</h4>
-                <h6 class="work-intro">{{post.skills}}</h6>
+
+  <div class="cv__section experience row">
+      <h4 class="cv__section__title cv__item">Experience</h4>
+      <div class="cv__section__item__contents">
+
+      <div class="cv__item">
+            <div class="cv__section__item">User Experience Designer
+            <span class="cv__meta">The Irish Times ltd</span>
+            </div>
+           <div class="cv__section__item">July 2015 - Present</div>
+
+      </div>
+      <div class="cv__item">
+            <div class="cv__section__item">Web Designer
+            <span class="cv__meta">Struck & Spink (Melbourne)</span>
+            </div>
+           <div class="cv__section__item">2014</div>
+
+      </div>
+      <div class="cv__item">
+            <div class="cv__section__item">Production Designer
+            <span class="cv__meta">Paddy Power</span>
+            </div>
+           <div class="cv__section__item">2011-2013</div>
+
+      </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  <div class="cv__section education row">
+      <h4 class="cv__section__title cv__item">Education</h4>
+      <div class="cv__section__item__contents">
+
+      <div class="cv__item">
+            <div class="cv__section__item">MSc User Experience Design
+            <span class="cv__meta">IADT</span>
+            </div>
+           <div class="cv__section__item">2017-2018</div>
+
+      </div>
+
+      <div class="cv__item">
+            <div class="cv__section__item">Interaction Design
+            <span class="cv__meta">Hochschule Darmstadt</span>
+            </div>
+           <div class="cv__section__item">2012-2013</div>
+
+      </div>
+      <div class="cv__item">
+            <div class="cv__section__item">BA in Mutlimedia
+            <span class="cv__meta">CIT</span>
+            </div>
+           <div class="cv__section__item">2007-2011</div>
+
+      </div>
+      </div>
+
+
+    </div>
+
+</section>
+<section id="work">
+    <article class="work-item padding-vert">
+
+        <div class="container">
+            <h4 class="row">Selected Work</h4>
+
+            <div class="row">
+
+  {% for casestudy in site.case-studies limit:2 %}
+
+            <div class="project-info col-md-6">
+
+                <img src="{{ casestudy.thumbnail }}" alt="{{ casestudy.thumbnail-desc }}">
+
+
+                <h4 class="work-intro">{{casestudy.title}}</h4>
+                <h6 class="work-intro">{{casestudy.skills}}</h6>
 
 
               <p>{{ post.desc }}</p>
               <p>
-                <a class="button primary-cta" href="{{ post.url }}">View Case Study</a>
-                <a class="button" href="{{post.site_url}}" target="_blank">View Website</a>
+                <a class="button primary-cta" href="{{ casestudy.url }}">View Case Study</a>
               </p>
             </div>
 
-            <div class="col-md-4">
+            {% endfor %}
 
-            </div>
-
-            <div class="project-hero col-md-4">
-              <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
-            </div>
           </div>
       </div>
       <hr>
   </article>
-  {% endfor %}
+
 </section>

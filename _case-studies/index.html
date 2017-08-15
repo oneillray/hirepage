@@ -1,27 +1,26 @@
 ---
 layout: default
-title: Case Studies
-page-primary: Case Studies
-page-secondary:  Here are some case studies of projects that have recently been completed</p>
-
+page-primary:  Case Studies
+page-secondary: A deep dive into some of the more interesting projects
 ---
+
 
 
 
 <section id="portfolio-all">
 
-	{% for post in site.categories['work'] %}
-	<a href="{{post.permalink}}">
+	{% for casestudy in site.case-studies %}
+	<a href="{{casestudy.permalink}}">
     <article class="work-item padding-vert">
    	 <div class="container">
    		 <div class="row">
    		   <div class="project-info col-md-4">
 
-   			   <h4 class="work-intro">{{post.title}}</h4>
-   			   <h6 class="work-intro">{{post.skills}}</h6>
+   			   <h4 class="work-intro">{{casestudy.title}}</h4>
+   			   <h6 class="work-intro">{{casestudy.skills}}</h6>
 
 
-   			 <p>{{ post.desc }}</p>
+   			 <p>{{ casestudy.desc }}</p>
    			 <p>
    				 <button class="btn btn-primary">View Case Study</button>
    			 </p>
@@ -32,7 +31,7 @@ page-secondary:  Here are some case studies of projects that have recently been 
    		   </div>
 
    		   <div class="project-hero col-md-4">
-   			 <img src="{{ post.thumbnail }}" alt="{{ post.thumbnail-desc }}">
+   			 <img src="{{ casestudy.thumbnail }}" alt="{{ casestudy.thumbnail-desc }}">
    		   </div>
    		 </div>
    	 </div>

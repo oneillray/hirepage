@@ -2,9 +2,9 @@
 layout: work_post
 year: October 2015
 page-primary: Election Design System
-Page-secondary:
+Page-secondary: General Election 2016, NI Election 2016, NI Assembly 2017, UK Election 2017
 scope: Living Style Guide & front-end build
-permalink: project/it-election.html
+permalink: /case-study/it-election.html
 duration: 1 year
 ---
 
@@ -16,7 +16,7 @@ Elections are the bread and butter of the Irish Times. A independent news compan
 
 With that we came up way of allowing Journalist to publish the results as they were coming through via laptop or an iPad. This information was then instantly saved to the database and in return published to our Election coverage website via an API.
 
-As I was lead Designer for this project, My goal was to come up with a flexible design system that would not only display the information that would work well across all devices but that could easily be rolled out for other types of election like the Irish general election, U.K. Elections and N.I Ireland Elections and US Election. In addition, the system needed extensible enough for future use, while still be easy to manage.
+> As lead Designer for this project, My goal was to come up with a flexible design system that would not only display the information that would work well across all devices but that could easily be rolled out for other types of election like the Irish general election, U.K. Elections and N.I Ireland Elections and US Election. In addition, the system needed extensible enough for future use, while still be easy to manage.
 
 ### Challenges
 

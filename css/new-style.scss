@@ -1,7 +1,12 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
+// @import "cv";
+
+// import reset
+// @import "reset";
 
 $body-font: sans-serif;
 
@@ -9,6 +14,25 @@ $body-font: sans-serif;
 // font-family: 'Work Sans', sans-serif; // remove the google font dependancy for now
 
 }
+
+// test body fade
+body { -webkit-animation:fadein 1.2s; animation:fadein 1.2s }
+@-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
+@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+
+// blockqoute styles
+
+blockquote {
+    color: #000;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    font: 300 22px/32px $body-font;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+
 .project-detail {
   max-width: 1400px;
   margin: 0 auto;
@@ -190,6 +214,67 @@ footer {
     div {
         padding: 1em 0;
     }
+}
+
+
+/*
+*
+* CV
+*
+*/
+
+
+
+// cv section
+
+.cv__section {
+   font-size: 1.2em;
+   max-width: 1000px;
+  display: flex;
+  padding: 2em 0;
+  border-bottom: 1px solid #000;
+  justify-content: space-between;
+  text-align: left;
+
+  &.row {
+      flex-wrap: nowrap;
+  }
+
+  &--intro {
+    display: block !important;
+  }
+
+ &__title {
+      font-weight: 600;
+      flex-basis: 20%;
+      line-height: 1.6;
+    }
+
+  &__sub-title {
+    opacity: 0.5;
+  }
+}
+
+.cv__section__item__contents {
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+
+.cv__item {
+    display: flex;
+/*     @media screen (min-width: 600px){
+        display: flex;
+  } */
+    justify-content: space-between;
+    padding: 1em 0;
+    line-height: 1.6;
+}
+
+.cv__meta {
+  display: block;
+  opacity: 0.5;
+  line-height: 1;
 }
 
 // project-specifc style
