@@ -15,11 +15,15 @@ pinterest_username: madebyray
 codepen_username: oneillray
 resume_url: http://represent.io/rayoneill
 # SEO Stuff - http://vrepin.org/vr/JekyllMeta/
-summary: How to add metadata to the Jekyll-based site: google sitemap xml, Open Graph and plain old "meta"-tags.
-tags: [user,experience,designer,dublin,blog,iadt,ux]
+# summary: How to add metadata to the Jekyll-based site: google sitemap xml, Open Graph and plain old "meta"-tags.
+# tags: [user,experience,designer,dublin,blog,iadt,ux]
 
 collections:
     projects:
         output: true
     case-studies:
         output: true
+
+
+gems:
+  - jekyll-seo-tag
