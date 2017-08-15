@@ -36,7 +36,7 @@ body { -webkit-animation:fadein 1.2s; animation:fadein 1.2s }
 // blockqoute styles
 
 blockquote {
-    color: #000;
+    color: $primary-text-color;
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
     font: 300 22px/32px $body-font;
@@ -67,6 +67,10 @@ blockquote {
 * Typography
 */
 
+body, p {
+    color: $primary-text-color;
+}
+
 
 h2, .h2 {
     font-size: 32px;
@@ -77,7 +81,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 22px !important;
-  color: #21242C !important;
+  color: $secondary-text-color !important;
   line-height: 40px !important;
   font-weight: 500 !important;
 }
@@ -88,7 +92,7 @@ p {
 
 
 a {
-    color: $primary-color;
+    color: $secondary-text-color;
 }
 
 /*
@@ -99,17 +103,17 @@ a {
     justify-content: flex-end;
 
     a {
-        color: $primary-color;
+        color: $primary-text-color;
     }
 }
 
 
 header {
   height: 40vh;
-  background: #F6F6F5;
+  background: $divider-color;
 
   a {
-      color: $primary-color;
+      color: $primary-text-color;
   }
 
   h2 {
@@ -196,18 +200,26 @@ a.project-item {
 * Footer
 */
 
+
+
 // bootstrap over-writes
 
 .btn.btn-primary a {
     color: #fff;
 }
 
-h6 {
-    opacity: 0.5;
-}
+// h6 {
+//     opacity: 0.5;
+// }
 
 footer {
     margin-top: 48px;
+
+    ul, li {
+        list-style: none;
+        margin-left: 0;
+        padding: 0;
+    }
 }
 
 

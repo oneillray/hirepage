@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Home
-page-primary: "I design &amp; build websites for start-ups, local businesses and passionate entrepreneurs."
-page-secondary: "get in touch"
+page-primary: "UXD Student and Designer living in Dublin"
 ---
 
 
@@ -12,7 +11,7 @@ page-secondary: "get in touch"
   <div class="cv__section experience row">
       <div class="cv__section__title cv__item">
       <h4 class=""> Experience </h4>
-          <div class="see-all"><a href="#">View detail</a></div>
+          <!-- <div class="see-all"><a href="#">View detail</a></div> -->
       </div>      <div class="cv__section__item__contents">
 
       <div class="cv__item">
@@ -47,15 +46,15 @@ page-secondary: "get in touch"
   <div class="cv__section education row">
             <div class="cv__section__title cv__item">
             <h4 class=""> Education </h4>
-                <div class="see-all"><a href="#">View details</a></div>
+                <!-- <div class="see-all"><a href="#">View details</a></div> -->
             </div>
       <div class="cv__section__item__contents">
 
       <div class="cv__item">
             <div class="cv__section__item">MSc User Experience Design
-            <span class="cv__meta">IADT</span>
+            <span class="cv__meta">Institute of Art, Design + Technology</span>
             </div>
-           <div class="cv__section__item">2017-2018</div>
+           <div class="cv__section__item">2017- Present</div>
 
       </div>
 
@@ -77,38 +76,5 @@ page-secondary: "get in touch"
 
 
     </div>
-
-</section>
-<section id="work">
-    <article class="work-item padding-vert">
-
-        <div class="container">
-            <h4 class="row">Selected Work</h4>
-
-            <div class="row">
-
-  {% for casestudy in site.case-studies limit:2 %}
-
-            <div class="project-info col-md-6">
-
-                <img src="{{ casestudy.thumbnail }}" alt="{{ casestudy.thumbnail-desc }}">
-
-
-                <h4 class="work-intro">{{casestudy.title}}</h4>
-                <h6 class="work-intro">{{casestudy.skills}}</h6>
-
-
-              <p>{{ post.desc }}</p>
-              <p>
-                <a class="button primary-cta" href="{{ casestudy.url }}">View Case Study</a>
-              </p>
-            </div>
-
-            {% endfor %}
-
-          </div>
-      </div>
-      <hr>
-  </article>
 
 </section>
