@@ -5,7 +5,7 @@ email: info@raymondoneill.ie
 description: This is personal website of user experience designer, Ray O'Neill who is a Msc UXD Student at IADT, Dublin
 colophon: This website was hand crafted using jekyll and hosted with Github pages. Type is set in Worksans and served up by Googlefonts. The website itself was built using good ol' bootstrap beacuse life too damn short not too.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://madebyray.com" # the base hostname & protocol for your site
 twitter_username: madebyray
 github_username:  oneillray
 instagram_username: oneillray
@@ -14,7 +14,7 @@ spotify_username: raysayhey
 skype_username: oneillray
 pinterest_username: madebyray
 codepen_username: oneillray
-resume_url: http://represent.io/rayoneill
+resume_url: http://madebyray.com
 # SEO Stuff - http://vrepin.org/vr/JekyllMeta/
 # summary: How to add metadata to the Jekyll-based site: google sitemap xml, Open Graph and plain old "meta"-tags.
 # tags: [user,experience,designer,dublin,blog,iadt,ux]
