@@ -14,8 +14,7 @@
     </div>
     <div class="social col-md-4">
       <h6>Elsewhere</h6>
-      <ul>
-        {% endif %} {% if site.codepen_username %}
+      <ul>{% if site.codepen_username %}
         <li> Codepen: <a href="https://codepen.com/{{ site.codepen_username }}" target="_blank">{{ site.codepen_username }}</a>
         </li>
         {% endif %} {% if site.dribbble_username %}
