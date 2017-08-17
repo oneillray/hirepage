@@ -14,21 +14,11 @@
     </div>
     <div class="social col-md-4">
       <h6>Elsewhere</h6>
-      <ul>
-        {% if site.github_username %}
-        <li> Github: <a href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a>
-        </li>
-        {% endif %} {% if site.instagram_username %}
-        <li> Instagram <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">{{ site.instagram_username }}</a>
-        </li>
-        {% endif %} {% if site.codepen_username %}
+      <ul>{% if site.codepen_username %}
         <li> Codepen: <a href="https://codepen.com/{{ site.codepen_username }}" target="_blank">{{ site.codepen_username }}</a>
         </li>
         {% endif %} {% if site.dribbble_username %}
         <li> Dribbble: <a href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">{{ site.dribbble_username }}</a>
-        </li>
-        {% endif %} {% if site.pinterest_username %}
-        <li> Pinterest: <a href="https://pinterest.com/{{ site.pinterest_username }}" target="_blank">{{ site.pinterest_username }}</a>
         </li>
         {% endif %} {% if site.spotify_username %}
         <li> Spotify: <a href="spotify:user:{{ site.spotify_username }}" target="_blank">{{ site.pinterest_username }}</a>
