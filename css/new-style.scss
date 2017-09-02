@@ -105,6 +105,12 @@ a {
     a {
         color: $primary-text-color;
     }
+
+    &--next-link{
+        justify-content: space-around;
+        font-size: 1.2em;
+        text-decoration: underline;
+    }
 }
 
 
