@@ -43,14 +43,14 @@ layout: default
 
   </article>
 
-  <div class="nav nav--next-link">
-  {% if page.previous.url %}
-
-    <a class="prev" href="{{page.previous.url}}"><span class="small">&laquo; Previous Project</span><h4>{{page.previous.title}}</h4></a>
-  {% endif %}
-  {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}"><span class="small">Next Project &raquo;<span><h4>{{page.next.title}}</h4></a>
-  {% endif %}
-</div>
-
 </section>
+
+<div class="container nav nav--next-link">
+{% if page.previous.url %}
+
+  <a class="prev" href="{{page.previous.url}}"><span class="small">&laquo; Previous Project</span><h4>{{page.previous.title}}</h4></a>
+{% endif %}
+{% if page.next.url %}
+  <a class="next" href="{{page.next.url}}"><span class="small">Next Project &raquo;<span><h4>{{page.next.title}}</h4></a>
+{% endif %}
+</div>

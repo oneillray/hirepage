@@ -11,7 +11,7 @@ $primary-color-text:   #FFFFFF;
 $accent-color:         #607D8B;
 $primary-text-color:   #212121;
 $secondary-text-color: #757575;
-$divider-color:        #BDBDBD;
+$divider-color:        #CAD5CF; //#efefef; // #BDBDBD;
 
 
 @charset "utf-8";
@@ -95,6 +95,10 @@ a {
     color: $secondary-text-color;
 }
 
+.cv__item a {
+    text-decoration: underline;
+}
+
 /*
 * Header
 */
@@ -107,9 +111,18 @@ a {
     }
 
     &--next-link{
+        border-top: 1px solid;
+        padding-top: 3em;
+        @media screen and (max-width: 700px){
+            padding-top: 1.5em;
+        }
         justify-content: space-around;
         font-size: 1.2em;
         text-decoration: underline;
+
+        .small {
+            text-decoration: none;
+        }
     }
 }
 
@@ -206,6 +219,14 @@ a.project-item {
 * Footer
 */
 
+footer {
+    border-top: 1px solid;
+    padding: 4em 0;
+    @media screen and (max-width: 700px){
+        padding: 2em 0;
+    }
+}
+
 
 
 // bootstrap over-writes
@@ -290,9 +311,36 @@ footer {
   justify-content: space-between;
   text-align: left;
 
+&.case-study {
+    flex-wrap: wrap;
+    border-bottom: none;
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .material-icons {
+        vertical-align: middle;
+        position: absolute;
+        right: 13px;
+        top: 13px;
+    }
+
+    &__link {
+        position: relative;
+    }
+
+    &__item {
+        flex-basis: 45%;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+}
+
   &.row {
       @media screen and (min-width: 1030px){
-          flex-wrap: nowrap;
+          flex-wrap: nowrap !important;
       }
   }
 
@@ -315,12 +363,6 @@ footer {
   }
 }
 
-.cv__section__item__contents {
-    flex-basis: 100%;
-    justify-content: space-between;
-}
-
-
 .cv__item {
     display: flex;
 /*     @media screen (min-width: 600px){
@@ -337,13 +379,41 @@ footer {
   line-height: 1;
 }
 
+.cv__section__item__contents {
+    flex-basis: 100%;
+}
+
+.cv__section__detail {
+    flex-basis: 65%;
+    margin-left: 10%;
+}
+
+.cv__section__item.cv__section__period {
+    font-size: 0.8em;
+}
+
+.cv__section__detail ul {
+    margin-top: 30px;
+    margin-left: 0;
+    list-style: none;
+    padding: 0;
+    font-size: 0.8em;
+}
+
+.cv__section__item.cv__section__detail li {
+    margin-bottom: 1em;
+}
+
+
+
+
 // project-specifc style
 //
-// $ikeaMe: #FFD700;
-// $myWelfare: #8EC63F;
-// .ikeaMe header {
-//     background: #FFD700;
-// }
+
+.ikeaMe header {
+    background: #FFD700;
+
+}
 //
 //
 // .myWelfare header {
@@ -361,3 +431,92 @@ footer {
 // .myWelfare button {
 //     background: darken(#8EC63F, 20%)
 // }
+
+// Case Study Section
+
+$ikeaMe: #FFD700;
+$myWelfare: #8EC63F;
+$joey: #37474F;
+$itMobile: #BD363C;
+
+
+$projects: (
+	'joey'      : $joey,
+	'it-mobile' : $itMobile,
+	'ikea'  : $ikeaMe,
+	'welfare'   : $myWelfare
+);
+
+
+@each $name, $project in $projects {
+
+	.case-study__item--#{$name} {
+        transition: all ease-in-out 0.5s;
+        cursor: pointer;
+        &:hover {
+            background: $project;
+            color: #fff;
+            p {
+                color: #fff;
+            }
+            h3 {
+                color: #fff;
+            }
+            a {
+                color: #fff;
+            }
+        }
+        color: $project;
+        border-color: $project;
+    h3 {
+     color: $project;
+    }
+    a {
+        color: $project;
+    }
+}
+}
+
+.case-study__items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 123%;
+}
+
+.case-study__item {
+    padding: 2% 2%;
+    border: 1px solid;
+    margin: 20px 2%;
+    flex-basis: 46%;
+    position: relative;
+
+
+    // &--ikea {
+    //     color: currentColor;
+    //     border-color: $ikeaMe;
+    //     a {
+    //         color: $ikeaMe;
+    //     }
+    // }
+    // &--mywelfare {
+    //     color: currentColor;
+    //     border-color: $myWelfare;
+    //     a {
+    //         color: $myWelfare;
+    //     }
+    // }
+    // &--joey {
+    //     color: currentColor;
+    //     border-color: $joey;
+    //     a {
+    //         color: $joey;
+    //     }
+    // }
+    // &--itMobile {
+    //     color: currentColor;
+    //     border-color: $itMobile;
+    //     a {
+    //         color: $itMobile;
+    //     }
+    // }
+}
