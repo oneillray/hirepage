@@ -4,7 +4,7 @@ subtitle: Designer
 email: info@raymondoneill.ie
 description: This is personal website of user experience designer, Ray O'Neill who is a Msc UXD Student at IADT, Dublin
 colophon: This website was hand crafted using jekyll and hosted with Github pages. Type is set in Worksans and served up by Googlefonts. The website itself was built using good ol' bootstrap beacuse life too damn short not too.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "hirepage" # the subpath of your site, e.g. /blog/
 # url: "http://madebyray.com" # the base hostname & protocol for your site
 twitter_username: madebyray
 github_username:  oneillray
