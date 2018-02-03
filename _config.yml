@@ -26,7 +26,7 @@ collections:
         output: true
 
 
-gems:
+plugins:
   - jekyll-seo-tag
 
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
