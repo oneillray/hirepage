@@ -1,23 +1,43 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- open header -->
+        <header class="">
+            <div class="container">
+                <div class="row">
+
+
+      {% include header.html %}
+
+      <h2 class="col-md-6">{{page.page-primary}}</h2>
+      <h4 class="col-md-8">{{page.page-secondary}}</h4>
+      </div>
+      </div>
+            </header>
+
+
+
 <div class="post">
 
-  <!-- open header -->
-      <header class="">
           <div class="container">
-              <div class="row">
-    {% include header.html %}
-
      <h2 class="post-title">{{ page.title }}</h2>
-     <h4 class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h4>
-    </header>
-    </div>
-    </div>
-    <!-- close header -->
+     <h4 class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</h4>
+         </div>
 
-  <article class="post-content">
+
+     <article class="post-content container">
     {{ content }}
   </article>
 
-</div>
+
+    </div>
+
+  {% include footer.html %}
+
+</body>
+
+</html>

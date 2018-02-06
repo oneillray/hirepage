@@ -26,9 +26,7 @@
       <ul class="row">
         {% for book in site.data.reading %}
               <li class="list-unstyled">
-            <a href="{{ book.id }}">
-              {{ book.title }}
-            </a>
+           <b> {{ book.title }}</b>
 
             <span> <i>by</i> 
                 {{ book.author[0].given }} {{ book.author[0].family }}
