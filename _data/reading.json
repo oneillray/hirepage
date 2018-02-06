@@ -216,31 +216,5 @@
 				]
 			]
 		}
-	},
-	{
-		"id": "http://zotero.org/users/3808536/items/JCZJR4JX",
-		"type": "webpage",
-		"title": "Design Portfolio of Adham Dannaway",
-		"container-title": "Adham Dannaway",
-		"abstract": "10 must-read UI design books for user experience designers.",
-		"URL": "http://www.adhamdannaway.com",
-		"issued": {
-			"date-parts": [
-				[
-					"2015",
-					10,
-					26
-				]
-			]
-		},
-		"accessed": {
-			"date-parts": [
-				[
-					"2017",
-					11,
-					6
-				]
-			]
-		}
 	}
 ]
