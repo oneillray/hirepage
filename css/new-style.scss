@@ -11,6 +11,7 @@ $primary-color-text:   #FFFFFF;
 $accent-color:         #607D8B;
 $primary-text-color:   #212121;
 $secondary-text-color: #757575;
+// current col
 $divider-color:        #CAD5CF; //#efefef; // #BDBDBD;
 
 
@@ -20,10 +21,10 @@ $divider-color:        #CAD5CF; //#efefef; // #BDBDBD;
 // import reset
 // @import "reset";
 
-$body-font: sans-serif;
+$body-font: Avenir, sans-serif;
 
 * {
-font-family: 'Work Sans', sans-serif; // remove the google font dependancy for now
+font-family: Avenir, 'Work Sans', sans-serif; // remove the google font dependancy for now
 
 }
 
@@ -97,6 +98,8 @@ a {
 
 .cv__item a {
     text-decoration: underline;
+    // color: $primary-text-color;//darken($di-color, 50%);
+
 }
 
 /*
@@ -273,6 +276,10 @@ footer {
     }
 }
 
+.tr {
+  text-align: right;
+}
+
 // toolkit
 
 .toolkit {
@@ -377,6 +384,10 @@ footer {
   display: block;
   opacity: 0.5;
   line-height: 1;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .cv__section__item__contents {
@@ -529,3 +540,34 @@ $projects: (
     line-height: 2.4;
   }
 }
+
+
+// PRINT
+
+
+@media print {
+   body {
+   font-size : 16px;
+   line-height: 1.5;
+   }
+
+   nav {
+    display: none;
+   }
+
+   h1 {
+    font-size: 2em
+   }
+
+   h2 {
+    font-size: 1.5em;
+   }
+
+   h3 {
+    font-size: 1em;
+    font-weight: bold;
+
+   }
+}
+
+
