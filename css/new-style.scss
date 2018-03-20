@@ -542,6 +542,24 @@ $projects: (
 }
 
 
+//  reading list
+
+#reading {
+
+  .list-unstyled {
+    flex-basis: calc(33% - 32px);
+    @media screen and (max-width: 768px){
+      flex-basis: calc(50% - 32px); 
+    }
+    @media screen and (max-width: 574px){
+      flex-basis: 100%; 
+    }
+    margin: 16px;
+    padding: 16px;
+    border: 1px solid #ddd;
+}
+}
+
 // PRINT
 
 

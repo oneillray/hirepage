@@ -13,7 +13,7 @@
       </div>
     </div>
     <!-- close header -->
-    <section id="reading" class="container">
+    <section class="container">
       <div class="row">
         <div class="col-md-8">
           <div>
@@ -22,11 +22,11 @@
         </div>
       </div>
     </section>
-    <section class="container" id="list">
+    <section id="reading"  class="container" id="list">
       <ul class="row">
         {% for book in site.data.reading %}
               <li class="list-unstyled">
-           <b> {{ book.title }}</b>
+           <h4> {{ book.title }}</h4>
 
             <span> <i>by</i> 
                 {{ book.author[0].given }} {{ book.author[0].family }}
