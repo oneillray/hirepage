@@ -12,6 +12,12 @@ skills: "User Research, User interface design"
 desc: "Welfare app for College"
 role: UX / UI Designer
 scope: "5 weeks"
+duration: 2 Months
+role: UX & UI Design / User Testing
+scope: "User validated Interactive Prototype"
+duration: 3 months
+year: 2016
+
 tldr: "The aim of this app is the encourage the user to keep their personal, contact and career / education information up to date."
 page-primary: myWelfare iOS App
 ---

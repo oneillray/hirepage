@@ -113,6 +113,10 @@ a {
         color: $primary-text-color;
     }
 
+    .active {
+      border-bottom: 3px solid #000;
+    }
+
     &--next-link{
         border-top: 1px solid;
         padding-top: 3em;
