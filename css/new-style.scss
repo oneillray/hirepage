@@ -9,7 +9,7 @@ $primary-color:        #009688;
 $primary-color-light:  #B2DFDB;
 $primary-color-text:   #FFFFFF;
 $accent-color:         #607D8B;
-$primary-text-color:   #212121;
+$primary-text-color:   #292b2c;
 $secondary-text-color: #757575;
 // current col
 $divider-color:        #CAD5CF; //#efefef; // #BDBDBD;
@@ -70,6 +70,10 @@ blockquote {
 
 body, p {
     color: $primary-text-color;
+    font-size: 24px;
+    @media screen and (max-width: 800px){
+      font-size: 16px;
+    }
 }
 
 
@@ -125,10 +129,15 @@ a {
         }
         justify-content: space-around;
         font-size: 1.2em;
-        text-decoration: underline;
+
 
         .small {
-            text-decoration: none;
+            opacity: 0.3 !important;
+            font-size: 16px;
+        }
+        
+        a.prev {
+          text-align: right;
         }
     }
 }
@@ -293,6 +302,10 @@ footer {
 // project padding-vert
 
 .project-meta {
+
+    h6 {
+      opacity: 0.3;
+    }
     &--horizontal {
         padding: 4em 0;
     }
@@ -427,6 +440,12 @@ footer {
 
 .ikeaMe header {
     background: #FFD700;
+
+}
+
+
+.IrishRail header {
+    background: #019DDC;
 
 }
 //
@@ -591,5 +610,7 @@ $projects: (
 
    }
 }
+
+
 
 

@@ -18,17 +18,17 @@ year: 2016
 
 ## Project Outcome
 
-The aim of this app is the encourage the user to keep their personal, contact and career / education information up to date.
-Within the app the user is be able to:
-
-* Get access to general information about social welfare
-Receive notifications of their application
-* View appointments, contact their job officer and view the documents they need for an upcoming appointment.
-sl
+The aim of this project was to **understand** the major pain points with the Irish rail website and to address those issues through redesigns the online experience of irishrail.ie
 
 
+## Project Approach
 
+#### There was three months to carry out research, test a prototype and iterate on a final design. We took a UCD (user centered design approach to this assignment by breaking up the project in  four main parts. 
 
+1. Understand the users of irishrail.ie and their needs
+2. Map out their user journey
+3. Identify the major pain points with irishrail.ie
+4. Prototype & test a new solution
 
 ![ {{ page.desc }} ]({{ site.url }}/assets/irishRail/unity and flow.jpg)
 
