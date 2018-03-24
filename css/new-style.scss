@@ -241,6 +241,12 @@ footer {
     @media screen and (max-width: 700px){
         padding: 2em 0;
     }
+
+    .footer-nav {
+      font-size: 0.8em;
+      display: flex;
+      justify-content: space-between;
+    }
 }
 
 
