@@ -9,34 +9,38 @@ thumbnail-desc: Irish Rail website redesign
 hero: /assets/irishRail/Search Resultsv4.jpg
 skills: "User Research, User interface design"
 desc: Irish Rail website redesign
-role: UX / UI Designer / Researcher
+role: user research, user interface 
 scope: "User validated Interactive Prototype"
-duration: 3 months
+duration: eight weeks
 year: 2016
 ---
 
 
-## Project Outcome
+## Project Aim
 
-The aim of this project was to **understand** the major pain points with the Irish rail website and to address those issues through redesigns the online experience of irishrail.ie
+The project was born out of our experiences of frustration from  using irish-rail services. To further, we need Irish rail touched the lives of millions of irish citizens so we wanted to listen, understand and improve their experience. 
 
 
 ## Project Approach
 
-#### There was three months to carry out research, test a prototype and iterate on a final design. We took a UCD (user centered design approach to this assignment by breaking up the project in  four main parts. 
+#### There was only eight weeks to carry out research, test a prototype and iterate on a final design. Our process was first to understand who Irish Rail customers were, the problems they were having and the top things they needed the online services to do.  From there, we defined the problem. Next we hypothesised some solutions and tested those designs as interactive prototypes. Finally, we learned what worked and what needed improving.
+
 
 1. Understand the users of irishrail.ie and their needs
-2. Map out their user journey
+2. Define the problem statement.
 3. Identify the major pain points with irishrail.ie
 4. Prototype & test a new solution
+
 
 ![ {{ page.desc }} ]({{ site.url }}/assets/irishRail/unity and flow.jpg)
 
 
-### 1. Research
-Through both primary and secondary qualitative and quantitative research, the following issues emerged:
+### 1. Understanding Rail Customers
 
-* Understanding the space and the problems through literature  reviews
+We used surveys, interviews to help understand the needs of Irish rail customers. To first understand who the types of customers were we design an online survey and distributed to friends and family and through social media. 
+
+
+
 
 ### Main Problems
 
