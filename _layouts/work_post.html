@@ -22,6 +22,13 @@ layout: default
         </div>
         {% endif %}
 
+         {% if page.client %}
+        <div class="col-md-4">
+            <h6>Client</h6>
+            {{ page.client }}
+        </div>
+        {% endif %}
+
 
         {% if page.duration %}
         <div class="col-md-4">

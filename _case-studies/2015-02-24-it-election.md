@@ -1,11 +1,14 @@
 ---
 layout: work_post
 year: October 2015
-page-primary: Election Design System
-Page-secondary: General Election 2016, NI Election 2016, NI Assembly 2017, UK Election 2017
+page-primary: Election living Design System
+page-secondary: Living Style guide for editorial projects throughout the irishtimes website and mobile apps
 scope: Living Style Guide & front-end build
-permalink: /case-study/it-election.html
-duration: 1 year
+thumbnail: /assets/election/el-card.png
+hero: /assets/election/ni-election-card-Expanded.png
+permalink: /case-study/election-2016.html
+duration: 8 months
+client: The Irish Times
 ---
 
 
