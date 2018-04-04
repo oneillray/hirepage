@@ -70,7 +70,7 @@ blockquote {
 
 body, p {
     color: $primary-text-color;
-    font-size: 24px;
+    font-size: 20px;
     @media screen and (max-width: 800px){
       font-size: 16px;
     }
@@ -145,7 +145,7 @@ a {
 
 header {
   height: 40vh;
-  background: $divider-color;
+  // background: $divider-color;
 
   a {
       color: $primary-text-color;
