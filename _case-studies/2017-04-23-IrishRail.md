@@ -18,7 +18,7 @@ year: 2016
 
 ## Project Aim
 
-The project was born out of our experiences of frustration from  using irish-rail services. To further, we need Irish rail touched the lives of millions of irish citizens so we wanted to listen, understand and improve their experience. 
+The project was born out of our experiences of frustration from  using irish-rail services. To further, we need Irish rail *touched the lives of millions of irish citizens so we wanted* to listen, understand and improve their experience. 
 
 
 ## Project Approach
