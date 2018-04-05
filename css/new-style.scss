@@ -586,18 +586,44 @@ $projects: (
 
 #reading {
 
+  h3 {
+    opacity: 1;
+    color: #292b2c;
+  }
+
+  h4, h6 {
+    font-weight: 100;
+    opacity: 0.5;
+}
+  }
+
   .list-unstyled {
-    flex-basis: calc(33% - 32px);
-    @media screen and (max-width: 768px){
-      flex-basis: calc(50% - 32px); 
-    }
-    @media screen and (max-width: 574px){
-      flex-basis: 100%; 
-    }
+    display: flex;
+    // flex-basis: calc(33% - 32px);
+    // @media screen and (max-width: 768px){
+    //   flex-basis: calc(50% - 32px); 
+    // }
+    // @media screen and (max-width: 574px){
+    //   flex-basis: 100%; 
+    // }
     margin: 16px;
     padding: 16px;
-    border: 1px solid #ddd;
+    // border: 1px solid #ddd;
+
 }
+
+
+
+.book-info {
+  margin-left: 20px;
+}
+
+.book-image {
+  min-width: 200px;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 // PRINT
