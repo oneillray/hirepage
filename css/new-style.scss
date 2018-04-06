@@ -499,7 +499,7 @@ $projects: (
 	'joey'      : $joey,
 	'it-mobile' : $itMobile,
 	'ikea'  : $ikeaMe,
-	'welfare'   : $myWelfare,
+	'myWelfare'   : $myWelfare,
   'irishRail'   : $irishRail
 );
 
@@ -507,10 +507,14 @@ $projects: (
 @each $name, $project in $projects {
 
 	.case-study__item--#{$name} {
+        color: #fff;
+        border: 1px solid $project;
         transition: all ease-in-out 0.5s;
         cursor: pointer;
+        background-color: $project; 
+
         &:hover {
-            background: $project;
+        box-shadow: 0 5px 20px 0 rgba(0,0,0,0.44);
             color: #fff;
             p {
                 color: #fff;
@@ -520,15 +524,16 @@ $projects: (
             }
             a {
                 color: #fff;
+                text-decoration: none;
             }
         }
-        color: $project;
+        color: #fff;
         border-color: $project;
     h3 {
-     color: $project;
+     color: #fff !important;
     }
-    a {
-        color: $project;
+    a, p {
+      color: darken($project, 15%);
     }
 }
 }
@@ -539,11 +544,14 @@ $projects: (
     flex-basis: 123%;
 }
 
+.case-study__link {
+  display: block;
+} 
+
 .case-study__item {
     padding: 2% 2%;
-    border: 1px solid;
     margin: 20px 2%;
-    flex-basis: 46%;
+    flex-basis: 100%;
     position: relative;
 
 
@@ -575,6 +583,18 @@ $projects: (
     //         color: $itMobile;
     //     }
     // }
+
+      &--irishRail {
+        color: currentColor;
+        background-image: url('/assets/irishRail/ir-insitu-thumb.png');
+        background-size: 371px 219px;
+        background-repeat: no-repeat;
+        background-position: 110% 110%;
+
+        a {
+            color: $irishRail;
+        }
+    }
 }
 
 
