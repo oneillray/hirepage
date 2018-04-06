@@ -4,9 +4,9 @@ title: Irish Rail Redesign
 page-primary: Irish Rail Website Redesign
 page-secondary: The aim of this app is the encourage the user to keep their personal, contact and career / education information up to date. Within the app the user is be able to
 permalink: /case-study/irishRail.html
-thumbnail: /assets/irishRail/ir-insitu.png
+thumbnail: /assets/irishRail/Search Resultsv4.jpg
 thumbnail-desc: Irish Rail website redesign
-hero: /assets/irishRail/ir-insitu.png
+hero: /assets/irishRail/Search Resultsv4.jpg
 skills: "User Research, User interface design"
 desc: Irish Rail website redesign
 role: user research, user interface 
@@ -15,6 +15,8 @@ duration: Eight weeks
 year: 2016
 ---
 
+
+![](/assets/irishRail/ir-insitu.png)
 
 ## Overview
 
@@ -28,7 +30,8 @@ There was only eight weeks to carry out research, test a prototype and iterate o
 4. Prototype & test a new solution
 
 
-< inset image of process > 
+![our design process for this project](/assets/irishRail/design-process.png)
+
 
 ## Phase 1: Understanding the users
 
@@ -40,44 +43,47 @@ The main reason for gathering data at all is to glean information about somethin
 4. Evaluate the top user tasks of the Irish Rail website.
 5. Evaluate the efficiency of the Irish Rail website and measure it against user experience. 
 
-Interviews were done with **6 participants** in total. From our initial survey research we learned that there was about a 50/50 split in leisure travellers and commuters so we decided to talk to both as part of research.
 
-### Observation
+### Online Survey 
+
+To get a broader understanding of who the irish rail customers are and how the user the service, we sent sent our a survey. The survey finding showed that the top issues with website were with the user interface of the website, the lack of flexibility with the booking process and the inability to quickly train information. 
+
+We also learned that some of the major issues with the website were also the top tasks that customers used the website for. Check train times, buying rail tickets and seat availability were the major features that customers used online. 
+
+
+### Contextual Enquiry
+
+Interviews and observations were done with **6 participants** in total. From our initial survey research we learned that there was about a 50/50 split in leisure travellers and commuters so we decided we'd talk to both as part of research.
 
 One of the best ways to understand people’s experiences is to see them for ourselves [^Kuniavsky, 2012]. Direct observation was carried out in a controlled environment on interview participants so that we could fully understand the issues that the users were having and to see how they carried out a specific task. 
 
 <img src="https://n00162913.files.wordpress.com/2017/02/screenshot-2017-02-05-23-37-25.png?w=739" alt="">
 
-
 <div>
-    <img class="float-right" src="https://n00162913.files.wordpress.com/2017/02/img_8329.jpg?w=350" alt="">
-
-<h3> Card Sorting </h3>
-
-<p>We then asked our interviewees to sort the cards from top to bottom going from most important to least important to their needs
-</p>
+        <img class="float-right" src="https://n00162913.files.wordpress.com/2017/02/img_8329.jpg?w=350" alt="">
+    
+    <h3> Card Sorting </h3>
+    
+<p>We used card sorted to help understand the top tasks carried by our commuter participants. Since some of us on the team we're commuters ourselves, we knew that they was going to be only handful of features that a commuter needs from the website. So we asked them to sort the tasks as cards from top to bottom going from most important to least important to their needs
+    </p>
 </div>
 
-![ {{ page.desc }} ]({{ site.url }}/assets/irishRail/ir-results-data-sketch.png)
 
-### Main Problems
-
-1. Major UI Issues
-2. Reserving Seats
-3. Booking Process
+![the top findings from our online survey (n=50)](/assets/irishRail/ir-survey-findings.png)
 
 
 ## Phase 2: Defining our users & gathering requirements
 
-#### User Persona
-
 Through user research I defined the user archetype that helped to guide in making product features, navigations and design decisions. Here is the persona that was created for this project.
+
+
+#### User Persona
 
 <img src="https://n00162913.files.wordpress.com/2017/02/persona.jpg?w=739" alt="">
 
 #### User Scenario
 
-> This is John. He’s 26 and works in Cork as IT professional. John’s from Galway and goes home to visit family and friends usually once a month. John generally purchase his ticket in advance of travel often during work. He also does some planning through the Irish Rail website such as checking train times and prices. John also books a return ticket altogether he needs to flexibility because his plans might change. John expects booking a train online to be swift and simple, especially if he has to do it nearly every month. John is frustrated by the fact he needs to collect a physical ticket for a something he paid for online. John also, finds it annoying when he does not get the seat he selected.
+![our design process for this project](/assets/irishRail/ir-scenario.png)
 
 ## 3. Ideation + Prototyping
 
@@ -85,9 +91,8 @@ We had about one week to conceptualise and test the first iteration of prototype
 
 We utilised [Jobs to be do ](https://www.intercom.com/books/jobs-to-be-done) from Intercom to help use figure out what some of these task might look like.
 
-1. **When** I commute, **I want** to know the departure times quickly, **so I won't** miss my train.
-2. **When** I go home for the weekend, **I want to** be able to book a open ticket, **so that I can** have some flexibility on what time return.
-3. **When** I book a train ticket, **I want to** be able to a specific seat, **so I know it** be suitable for my needs.
+![](/assets/irishRail/ir-job-story.png)
+
 
 From here we mapped out how the user journey might look like by co-designing the user flow by way of white boarding. 
 
@@ -149,6 +154,9 @@ Final Prototype can be viewed [here]()
 ![](/assets/irishRail/ir-final-4v4.jpg)
 ![](/assets/irishRail/ir-final-5v4.jpg)
 
+
+
+![](/assets/irishRail/ir-insitu.png)
 
 
 ## Key Learnings
