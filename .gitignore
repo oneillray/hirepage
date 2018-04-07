@@ -2902,3 +2902,5 @@ vendor/cache/ruby/2.5.0/specifications/rouge-3.1.1.gemspec
 vendor/cache/ruby/2.5.0/specifications/safe_yaml-1.0.4.gemspec
 vendor/cache/ruby/2.5.0/specifications/sass-3.5.5.gemspec
 vendor/cache/ruby/2.5.0/specifications/sass-listen-4.0.0.gemspec
+hirepage.sublime-project
+hirepage.sublime-workspace
