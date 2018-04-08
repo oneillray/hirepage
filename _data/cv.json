@@ -1,99 +1,36 @@
-{
-  "basics": {
-    "name": "",
-    "label": "",
-    "picture": "",
-    "email": "",
-    "phone": "",
-    "degree": "",
-    "website": "",
-    "summary": "",
-    "highlights": null,
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "",
-      "countryCode": "",
-      "region": ""
-    },
-    "profiles": [
+[
+  
+  {
+    "id": "http://zotero.org/users/3808536/items/24UAARVN",
+    "type": "book",
+    "title": "OBSERVING THE USER EXPERIENCE A PRACTITIONER'S GUIDE TO USER RESEARCH",
+    "publisher": "Elsevier Science & Technology",
+    "edition": "2nd Revised edition edition",
+    "image" : "https://images-na.ssl-images-amazon.com/images/I/51jVKjwOL2L._SL200_.jpg",
+    "source": "Amazon",
+    "skills": [
+      "User Experience Design",
+      "User Interface Design",
+      "Product Designer",
+      "Rapid Prototyping",
+      "User Research",
+      "User Testing"
+    ],
+
+    "author": [
       {
-        "network": "",
-        "username": "",
-        "url": ""
+        "family": "Goodman",
+        "given": "Elizabeth"
       }
-    ]
-  },
-  "work": [
-    {
-      "company": "",
-      "position": "",
-      "website": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        ""
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2012",
+          10,
+          22
+        ]
       ]
     }
-  ],
-  "additionalWork": [
-    {
-      "company": "",
-      "position": "",
-      "website": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        ""
-      ]
-    }
-  ],
-  "workLabel": "",
-  "additionalWorkLabel": "",
-  "education": [
-    {
-      "institution": "",
-      "area": "",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "",
-      "gpa": "",
-      "courses": [
-        ""
-      ]
-    }
-  ],
-  "publications": [
-    {
-      "name": "",
-      "publisher": "",
-      "releaseDate": "",
-      "website": "",
-      "summary": "",
-      "isbn": ""
-    }
-  ],
-  "additionalPublications": [
-    {
-      "name": "",
-      "publisher": "",
-      "releaseDate": "",
-      "website": "",
-      "summary": "",
-      "isbn": ""
-    }
-  ],
-  "publicationsLabel": "",
-  "additionalPublicationsLabel": "",
-  "skills": [
-    {
-      "name": "",
-      "level": "",
-      "keywords": [
-        ""
-      ]
-    }
-  ]
-}
+  }
+]

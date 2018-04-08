@@ -29,7 +29,7 @@ font-family: Avenir, 'Work Sans', sans-serif; // remove the google font dependan
 }
 
 // test body fade
-body { -webkit-animation:fadein 1.2s; animation:fadein 1.2s }
+body { -webkit-animation:fadein 1.2s; animation:fadein 1.2s; }
 @-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
 
@@ -498,7 +498,7 @@ $irishRail: #029DDC;
 $projects: (
 	'joey'      : $joey,
 	'it-mobile' : $itMobile,
-	'ikea'  : $ikeaMe,
+	'ikeaMe'  : $ikeaMe,
 	'myWelfare'   : $myWelfare,
   'irishRail'   : $irishRail
 );
@@ -590,10 +590,21 @@ $projects: (
         background-size: 371px 219px;
         background-repeat: no-repeat;
         background-position: 110% 110%;
+    }
+    &--ikeaMe {
+        color: currentColor;
+        background-image: url('/assets/ikeaMe/ikea-screen1.jpg');
+        background-size: 371px 219px;
+        background-repeat: no-repeat;
+        background-position: 110% 110%;
+    }
+    &--myWelfare {
+        color: currentColor;
+        background-image: url('/assets/in-iPhone.jpg');
+        background-size: 371px 219px;
+        background-repeat: no-repeat;
+        background-position: 110% 110%;
 
-        a {
-            color: $irishRail;
-        }
     }
 }
 
@@ -606,6 +617,15 @@ $projects: (
   }
 }
 
+// Image captions
+
+.caption {
+  text-align: center;
+    display: block;
+    font-size: 1em;
+    opacity: 0.4;
+
+}
 
 //  reading list
 

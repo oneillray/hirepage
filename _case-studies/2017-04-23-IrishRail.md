@@ -2,11 +2,11 @@
 layout: work_post
 title: Irish Rail Redesign
 page-primary: Irish Rail Website Redesign
-page-secondary: The aim of this app is the encourage the user to keep their personal, contact and career / education information up to date. Within the app the user is be able to
+page-secondary: Redesigning the online experience of booking a train online.
 permalink: /case-study/irishRail.html
-thumbnail: /assets/irishRail/Search Resultsv4.jpg
+thumbnail: /assets/irishRail/ir-insitu.png
 thumbnail-desc: Irish Rail website redesign
-hero: /assets/irishRail/Search Resultsv4.jpg
+hero: /assets/irishRail/ir-insitu.png
 skills: "User Research, User interface design"
 desc: Irish Rail website redesign
 role: user research, user interface 
@@ -14,7 +14,6 @@ scope: "User validated Interactive Prototype"
 duration: Eight weeks
 year: 2016
 ---
-
 
 ![](/assets/irishRail/ir-insitu.png)
 
@@ -30,7 +29,8 @@ There was only eight weeks to carry out research, test a prototype and iterate o
 4. Prototype & test a new solution
 
 
-![our design process for this project](/assets/irishRail/design-process.png)
+{% include image.html file="irishRail/design-process.png" description="our design process for this project." %}
+
 
 
 ## Phase 1: Understanding the users
@@ -68,8 +68,7 @@ One of the best ways to understand people’s experiences is to see them for our
     </p>
 </div>
 
-
-![the top findings from our online survey (n=50)](/assets/irishRail/ir-survey-findings.png)
+{% include image.html file="irishRail/ir-survey-findings.png" description="the top findings from our online survey" %}
 
 
 ## Phase 2: Defining our users & gathering requirements
@@ -83,7 +82,8 @@ Through user research I defined the user archetype that helped to guide in makin
 
 #### User Scenario
 
-![our design process for this project](/assets/irishRail/ir-scenario.png)
+{% include image.html file="irishRail/ir-scenario.png" description="The User scenario that we used to guide us when designing solutions" %}
+
 
 ## 3. Ideation + Prototyping
 
@@ -96,7 +96,7 @@ We utilised [Jobs to be do ](https://www.intercom.com/books/jobs-to-be-done) fro
 
 From here we mapped out how the user journey might look like by co-designing the user flow by way of white boarding. 
 
-< insert image of white boarding > 
+![](/assets/irishRail/it-whiteboarding.jpg)
 
 Once we had a general idea of the user journey we  began to work in paper for our first iteration so it meant that we could quickly try now ideas and not become attached to them if they didn't work. 
 
