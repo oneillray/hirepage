@@ -8,7 +8,7 @@ thumbnail: /assets/irishRail/ir-insitu.png
 thumbnail-desc: Irish Rail website redesign
 hero: /assets/irishRail/ir-insitu.png
 skills: "User Research, User interface design"
-desc: Irish Rail website redesign
+desc: Irish Rail website redesign for IADT College project where I carried out user research, practiced iterative design & validated through usability testing.
 role: user research, user interface 
 scope: "User validated Interactive Prototype"
 duration: Eight weeks

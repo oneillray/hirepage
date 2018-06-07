@@ -10,6 +10,8 @@ permalink: /case-study/election-2016.html
 duration: 6 months
 client: The Irish Times
 role: Lead Designer
+desc: I designed  a flexible design system, built html components that were used across elections in 2016 & 2017.  
+
 ---
 
 ## Project Objective
