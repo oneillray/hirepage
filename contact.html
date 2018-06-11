@@ -1,0 +1,67 @@
+---
+layout: default
+title: contact
+page-primary: "Contact Me"
+page-secondary: "Have a project in mind? get in touch "
+---
+
+
+<section class="container">
+    <form class="row" id="contactform" method="POST">
+        <div class="form-group">
+                <input class="" type="text" name="name" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+                <input type="email" name="_replyto" placeholder="Your email">
+        </div>
+
+        <div class="form-group">
+                <select class="form-control" name= "PriceRange" id="exampleFormControlSelect1">
+                  <option>€1,000</option>
+                  <option>€2,000</option>
+                  <option>€3,000</option>
+                  <option>€4,000</option>
+                  <option>€5,000</option>
+                </select>
+        </div>
+        <div class="form-group form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="UX/UI">
+                  UX / UI Design
+                </label>
+              </div>
+              <div class="form-group form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="User Research / User Testing">
+                <label class="form-check-label" for="exampleRadios2">
+                  User Research  / User Testing
+                </label>
+              </div>
+              <div class="form-group form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="User Research" >
+                    <label class="form-check-label" for="exampleRadios3">
+                      Web Design / Graphic Design
+                    </label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="not sure">
+                    <label class="form-check-label" for="exampleRadios4">
+                      I'm not sure
+                    </label>
+                  </div>
+
+       <div class="form-group">
+            <input type="hidden" name="_subject" value="Website contact" />
+            <textarea name="message" placeholder="Your message"></textarea>
+       </div>
+        
+       <div class="form-group">
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="submit" value="Send">
+       </div>
+    </form>
+</section>
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'heyrayoneill+leads' + '@' + 'gmail' + '.' + 'com');
+</script>

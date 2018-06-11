@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: hirepage
 title: Hirepage
 page-primary: "Product Designer"
 page-secondary: "Msc studying at IADT. Curring working at <span class='it-logo'>The Irish Times.<span>  "
@@ -23,22 +23,39 @@ nav ul li {
 main {
   display: flex;
 }
-main h2 {
-  padding: 2em;
+.hirepage h2 {
+  padding: 2em 0;
   font-size: 1.5em;
   line-height: 1.2;
-  width: 50vw;
+  width: 36vw;
+  color: #fff;
 }
-main  {
- background-image: url('https://lh3.googleusercontent.com/0eIaw0-mhrjup1drRUrthhq9oP25pyCXIzkYzhBT4eGbw-fbxYHm4gh-caRjz-fbAN6_vGFppfefluXkO2Rm6PqKME4nA_3mvPkpX7WZbbSuvbLiNVCPEXJAW4Ai3cC3nPDGgWsHJJ7xTatCrvEqWkAFZF94ZReRtaACM9f_8Crl-sKTQWxaAPPZBM9MLF1NK82K_nZqmb_xFqwfUSfjmsQZzuvqJKvV-1Mp8bHcjrEhHpE4stmU_npbpyngQrzFSUFDkK7gH07KqHsY-3rr3esCA_sqOYIKGtioB-VupjHPLKswACpsHPulVaw943pkQY3QF4p9bqQyEIihM81w5hIJYJgrO8WW6j3pzNkaPC-R2BqJCBN6DmFUxLk0LhP4sJUeYzKnSg4UMlVXCwMV_C6d_uKfHJPIDza7BHIEttb5sdQkeyjPXKXpiaeGcF6ErsQG2BC-GxWb2CYkt7dw-M_8nbPgp9pOGfL3FzFMQIowEGvMeJiL8SlQLSGE_uU4AirblYKyISj-rQbyP5ScJB7M1UtJ85K6RfsQzkBDY8QHMs28jxekJxKe-fUoR8f6=w1440-h776');
+.hirepage  {
+ background-image: url('/assets/portfolio_headshot-cutOut.png');
 background-repeat: no-repeat;
+background-size: contain;
+background-color: #326FB6;
 background-position-x:  50VW; 
 height: 100vh;
 width: 100%;
 }
 
-section {
-    display: flex
+header.hirepage nav {
+    font-size: 16px;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+header.hirepage nav a {
+    color: #fff;
+}
+
+header.hirepage .nav-link {
+  color: #fff;
+}
+section.about-me {
+    display: flex;
+    padding: 2em 0;
 }
 
 .about-me div p {
@@ -49,19 +66,25 @@ section {
     flex-basis: 46%;
     margin: 1%
 }
+
+hr {
+    width: 100%;
+    background: #fff;
+    opacity: 0.2;
+    margin: 0;
+}
+
+.slashForward {
+  font-weight: 100;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
 </style>
-<!-- <nav>
-    <span class="logo">Ray O'Neill</span>
-    <ul>
-      <li><a href="">Resumé</a></li>
-      <li><a href="">Work</a></li>
-      <li><a href="">About</a></li>
-    </ul>
-  </nav>
-   -->
-  <main>
-    <h2>I'm a designer, and for me, things are always evolving, and such evolution is necessary.</h2>
-  </main>
+
 
 
   <section class="about-me container">
@@ -72,8 +95,16 @@ section {
     <button class="btn">Find out more aobut my process</button>
 </div>
 <div>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad min tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad min tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p>&nbsp;</p>
 <p>t laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad min tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
 
 </div>
   </section>
+
+  <section class="logos container">
+      <img src="/assets/pp-logo.png" alt="">
+    <img src="/assets/citymelb-logo.png" alt="">
+    <img src="assets/it-masthead-logo.png" alt="">
+  </section>
+

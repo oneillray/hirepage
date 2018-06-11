@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+
+
+  <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
+
+    <!-- open header -->
+        <header class="hirepage">
+            <div class="container">
+                <div class="row">
+      {% include header.html %}
+                <hr>
+      <h2>I'm a designer, and for me, things are always evolving, and such evolution is necessary.</h2>
+
+      </header>
+      </div>
+      </div>
+      <!-- close header -->
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+
+    {% include footer.html %}
+
+    {% if jekyll.environment == 'production' %}
+       {% include analytics.html %}
+    {% endif %}
+  </body>
+
+</html>
