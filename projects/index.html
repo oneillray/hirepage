@@ -1,7 +1,7 @@
 ---
 layout: default
-page-primary: Past Projects
-page-secondary: I've done quite a bit in my time as a designer. View some more of work that over the last six years of my career </p>
+page-primary: Freelance Projects
+page-secondary: I've done quite a bit in my time as a designer. View some more of work that over the last seven years of my career </p>
 ---
 
 
@@ -9,7 +9,7 @@ page-secondary: I've done quite a bit in my time as a designer. View some more o
 
 
 	<article class="project-list row ">
-		{% for project in site.projects limit:12 %}
+		{% for project in site.projects %}
 
 		<a href="{{ project.permalink }}" class="project-item col-md-3">
 				<img class="img-thumb" src="{{ project.thumbnail }}" alt="{{ post.thumbnail-desc }}">

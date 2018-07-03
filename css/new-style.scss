@@ -499,13 +499,13 @@ footer {
 
 $ikeaMe: #FFD700;
 $myWelfare: #8EC63F;
-$joey: #37474F;
+$journey: #37474F;
 $itMobile: #BD363C;
 $irishRail: #029DDC;
 
 
 $projects: (
-	'joey'      : $joey,
+	'journey'      : $journey,
 	'it-mobile' : $itMobile,
 	'ikeaMe'  : $ikeaMe,
 	'myWelfare'   : $myWelfare,
@@ -613,6 +613,14 @@ $projects: (
         background-size: 371px 219px;
         background-repeat: no-repeat;
         background-position: 110% 110%;
+
+    }
+    &--journey {
+        color: #fff !important;
+        background-image: url('/assets/journey-Mockup.png');   
+        background-size: 320px 400px;
+        background-repeat: no-repeat;
+        background-position: 100% -10%;
 
     }
 }
