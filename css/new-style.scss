@@ -133,6 +133,10 @@ em {
 .nav {
     justify-content: flex-end;
 
+    li {
+        font-size: 0.8em;
+    }
+
     a {
         color: $primary-text-color;
     }
@@ -162,6 +166,14 @@ em {
     }
 }
 
+@media screen and (max-width: 768px){
+    .col-md-4.nav-link,  {
+        text-align: center;
+    }
+    .nav {
+        justify-content: center;
+    }
+}
 
 header {
   height: 30vh;
@@ -366,7 +378,6 @@ footer {
 
     &__items {
         display: flex;
-        flex-wrap: wrap;
     }
 
     .material-icons {
@@ -382,6 +393,7 @@ footer {
 
     &__item {
         flex-basis: 45%;
+        padding: 2%;
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
@@ -392,7 +404,7 @@ footer {
 }
 
   &.row {
-      @media screen and (min-width: 1030px){
+      @media screen and (max-width: 1030px){
           flex-wrap: nowrap !important;
       }
   }
@@ -463,38 +475,6 @@ footer {
 
 
 
-
-// project-specifc style
-//
-
-// .ikeaMe header {
-//     background: #FFD700;
-
-// }
-
-
-// .IrishRail header {
-//     background: #019DDC;
-
-// }
-//
-//
-// .myWelfare header {
-//     background: rgba(142, 198, 63, 1.0);
-//
-//     h4 {
-//         color: #fff;
-//         opacity: 1;
-//     }
-// }
-//
-// .myWelfare header a {
-//     color: #fff ;
-// }
-// .myWelfare button {
-//     background: darken(#8EC63F, 20%)
-// }
-
 // Case Study Section
 
 $ikeaMe: #FFD700;
@@ -502,6 +482,7 @@ $myWelfare: #8EC63F;
 $journey: #37474F;
 $itMobile: #BD363C;
 $irishRail: #029DDC;
+$election: #EBEBEB;
 
 
 $projects: (
@@ -509,7 +490,8 @@ $projects: (
 	'it-mobile' : $itMobile,
 	'ikeaMe'  : $ikeaMe,
 	'myWelfare'   : $myWelfare,
-  'irishRail'   : $irishRail
+    'irishRail'   : $irishRail,
+    'it-election'   : $election
 );
 
 
@@ -549,8 +531,9 @@ $projects: (
 
 .case-study__items {
     display: flex;
+    // padding: 2% 2%;
     flex-wrap: wrap;
-    flex-basis: 123%;
+    width: 100%;
 }
 
 .case-study__link {
@@ -559,39 +542,12 @@ $projects: (
 
 .case-study__item {
     padding: 2% 2%;
-    margin: 20px 2%;
-    flex-basis: 100%;
+    flex-basis: 50%;
+    height: 298px;
     position: relative;
-
-
-    // &--ikea {
-    //     color: currentColor;
-    //     border-color: $ikeaMe;
-    //     a {
-    //         color: $ikeaMe;
-    //     }
-    // }
-    // &--mywelfare {
-    //     color: currentColor;
-    //     border-color: $myWelfare;
-    //     a {
-    //         color: $myWelfare;
-    //     }
-    // }
-    // &--joey {
-    //     color: currentColor;
-    //     border-color: $joey;
-    //     a {
-    //         color: $joey;
-    //     }
-    // }
-    // &--itMobile {
-    //     color: currentColor;
-    //     border-color: $itMobile;
-    //     a {
-    //         color: $itMobile;
-    //     }
-    // }
+    @media screen and (max-width: 992px){
+        flex-basis: 100%;
+    }
 
       &--irishRail {
         color: currentColor;
@@ -602,10 +558,10 @@ $projects: (
     }
     &--ikeaMe {
         color: currentColor;
-        background-image: url('/assets/ikeaMe/ikea-screen1.jpg');
-        background-size: 371px 219px;
+        background-image: url('/assets/ikeaMe/ikea-screen.png');
+        background-size: 455.2px 320px;
         background-repeat: no-repeat;
-        background-position: 110% 110%;
+        background-position: 210% -110%;
     }
     &--myWelfare {
         color: currentColor;
@@ -622,6 +578,18 @@ $projects: (
         background-repeat: no-repeat;
         background-position: 100% -10%;
 
+    }
+    &--it-mobile {
+        background-image: url('https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Fd2mxuefqeaa7sj.cloudfront.net%2Fs_217D128B5C00FEE7A1188DB16D0C60E819E9BF71696B39F5C37622F991C297D2_1527804448312_jamie-iphone-2.jpg&hmac=1BtdDoJ88jI6QUwYZKDZZvnMcFMr1E5ZsWjZZMIhmSE%3D');
+        background-size: 220px 400px;
+        background-repeat: no-repeat;
+        background-position: 100% -10%;
+    }
+    &--it-election {
+        background-image: url('/assets/election/EL-hero.png');
+        background-size: 500px 349px;
+        background-repeat: no-repeat;
+        background-position: -400% -60%;
     }
 }
 

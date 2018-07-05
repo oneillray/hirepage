@@ -19,7 +19,7 @@ year: 2016
 
 ## Overview
 
-There was only eight weeks to carry out research, test a prototype and iterate on a final design. Our process was first to understand who Irish Rail customers were, the problems they were having and the top things they needed the online services to do. From there, we defined the problem. Next we hypothesised some solutions around booking a train & checking train times and tested those designs as interactive prototypes. Finally, we learned what worked and what didn't work so.
+There was only eight weeks to carry out research, test a prototype and iterate on a final design. Our process was first to understand who Irish Rail customers were, the problems they were having and the top things they needed the online services to do. From there, we defined the problem. Next we hypothesised some solutions around booking a train & checking train times and tested those designs as interactive prototypes. Finally, we learned what worked and what didn't work so well.
 
 ## Project Objectives
 
