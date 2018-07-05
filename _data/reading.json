@@ -2,6 +2,7 @@
 	{
 		"id": "http://zotero.org/users/3808536/items/KD6SVME7",
 		"type": "book",
+		"image" : "https://images-na.ssl-images-amazon.com/images/I/41aWGg6a8EL._SL200_.jpg",
 		"title": "About Face: The Essentials of Interaction Design, 4th Edition",
 		"author": [
 			{
@@ -29,6 +30,7 @@
 				]
 			]
 		}
+
 	},
 	{
 		"id": "http://zotero.org/users/3808536/items/AFPJJ669",
@@ -36,6 +38,7 @@
 		"title": "Interaction Design: Beyond Human-Computer Interaction",
 		"publisher": "Wiley",
 		"publisher-place": "Chichester",
+		"image" : "https://images-na.ssl-images-amazon.com/images/I/51avUtKUdtL._SL200_.jpg",
 		"number-of-pages": "584",
 		"edition": "4 edition",
 		"source": "Amazon",
@@ -80,6 +83,7 @@
 		"event-place": "New York, New York",
 		"abstract": "How do successful companies create products people can’t put down?Why do some products capture widespread attention while others flop? What makes us engage with certain products out of sheer habit? Is there a pattern underlying how technologies hook us?Nir Eyal answers these questions (and many more) by explaining the Hook Model—a four-step process embedded into the products of many successful companies to subtly encourage customer behavior. Through consecutive “hook cycles,” these products reach their ultimate goal of bringing users back again and again without depending on costly advertising or aggressive messaging.Hooked is based on Eyal’s years of research, consulting, and practical experience. He wrote the book he wished had been available to him as a start-up founder—not abstract theory, but a how-to guide for building better products. Hooked is written for product managers, designers, marketers, start-up founders, and anyone who seeks to understand how products influence our behavior.Eyal provides readers with:• Practical insights to create user habits that stick.• Actionable steps for building products people love.• Fascinating examples from the iPhone to Twitter, Pinterest to the Bible App, and many other habit-forming products.",
 		"ISBN": "978-1-59184-778-6",
+		"image": "https://pictures.abebooks.com/isbn/9781591847786-us.jpg",
 		"shortTitle": "Hooked",
 		"language": "English",
 		"author": [
@@ -117,6 +121,7 @@
 		"abstract": "Even the smartest among us can feel inept as we fail to figure out which light switch or oven burner to turn on, or whether to push, pull, or slide a door. The fault, argues this ingenious—even liberating—book, lies not in ourselves, but in product design that ignores the needs of users and the principles of cognitive psychology. The problems range from ambiguous and hidden controls to arbitrary relationships between controls and functions, coupled with a lack of feedback or other assistance and unreasonable demands on memorization. The Design of Everyday Things shows that good, usable design is possible. The rules are simple: make things visible, exploit natural relationships that couple function and control, and make intelligent use of constraints. The goal: guide the user effortlessly to the right action on the right control at the right time.In this entertaining and insightful analysis, cognitive scientist Don Norman hails excellence of design as the most important key to regaining the competitive edge in influencing consumer behavior. Now fully expanded and updated, with a new introduction by the author, The Design of Everyday Things is a powerful primer on how—and why—some products satisfy customers while others only frustrate them.",
 		"ISBN": "978-0-465-05065-9",
 		"shortTitle": "The Design of Everyday Things",
+		"image": "https://images-na.ssl-images-amazon.com/images/I/410RTQezHYL._SL200_.jpg",
 		"language": "English",
 		"author": [
 			{
@@ -135,41 +140,12 @@
 		}
 	},
 	{
-		"id": "http://zotero.org/users/3808536/items/XZAAG5SU",
-		"type": "book",
-		"title": "Seductive Interaction Design: Creating Playful, Fun, and Effective User Experiences",
-		"publisher": "New Riders",
-		"publisher-place": "Berkeley, CA",
-		"number-of-pages": "240",
-		"edition": "1 edition",
-		"source": "Amazon",
-		"event-place": "Berkeley, CA",
-		"abstract": "What happens when you’ve built a great website or app, but no one seems to care? How do you get people to stick around long enough to see how your service might be of value? In Seductive Interaction Design, speaker and author Stephen P. Anderson takes a fresh approach to designing sites and interactions based on the stages of seduction. This beautifully designed book examines what motivates people to act.Topics include:AESTHETICS, BEAUTY, AND BEHAVIOR: Why do striking visuals grab our attention? And how do emotions affect judgment and behavior?PLAYFUL SEDUCTION: How do you create playful engagements during the moment? Why are serendipity, arousal, rewards, and other delights critical to a good experience?THE SUBTLE ART OF SEDUCTION: How do you put people at ease through clear and suggestive language? What are some subtle ways to influence behavior and get people to move from intent to action?THE GAME OF SEDUCTION: How do you continue motivating people long after the first encounter? Are there lessons to be gained from learning theories or game design?Principles from psychology are found throughout the book, along with dozens of examples showing how these techniques have been applied with great success. In addition, each section includes interviews with influential web and interaction designers.",
-		"ISBN": "978-0-321-72552-3",
-		"shortTitle": "Seductive Interaction Design",
-		"language": "English",
-		"author": [
-			{
-				"family": "Anderson",
-				"given": "Stephen P."
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2011",
-					6,
-					15
-				]
-			]
-		}
-	},
-	{
 		"id": "http://zotero.org/users/3808536/items/24UAARVN",
 		"type": "book",
 		"title": "OBSERVING THE USER EXPERIENCE A PRACTITIONER'S GUIDE TO USER RESEARCH",
 		"publisher": "Elsevier Science & Technology",
 		"edition": "2nd Revised edition edition",
+		"image" : "https://images-na.ssl-images-amazon.com/images/I/51jVKjwOL2L._SL200_.jpg",
 		"source": "Amazon",
 		"author": [
 			{
@@ -183,36 +159,6 @@
 					"2012",
 					10,
 					22
-				]
-			]
-		}
-	},
-	{
-		"id": "http://zotero.org/users/3808536/items/UA4DAVCC",
-		"type": "book",
-		"title": "The Elements of User Experience: User-Centered Design for the Web and Beyond",
-		"publisher": "New Riders",
-		"publisher-place": "Berkeley, Calif",
-		"number-of-pages": "192",
-		"edition": "2 edition",
-		"source": "Amazon",
-		"event-place": "Berkeley, Calif",
-		"abstract": "From the moment it was published almost ten years ago, Elements of User Experience became a vital reference for web and interaction designers the world over, and has come to define the core principles of the practice. Now, in this updated, expanded, and full-color new edition, Jesse James Garrett has refined his thinking about the Web, going beyond the desktop to include information that also applies to the sudden proliferation of mobile devices and applications.    Successful interaction design requires more than just creating clean code and sharp graphics. You must also fulfill your strategic objectives while meeting the needs of your users. Even the best content and the most sophisticated technology won't help you balance those goals without a cohesive, consistent user experience to support it.   With so many issues involved—usability, brand identity, information architecture, interaction design— creating the user experience can be overwhelmingly complex. This new edition of The Elements of User Experience cuts through that complexity with clear explanations and vivid illustrations that focus on ideas rather than tools or techniques. Garrett gives readers the big picture of user experience development, from strategy and requirements to information architecture and visual design.",
-		"ISBN": "978-0-321-68368-7",
-		"shortTitle": "The Elements of User Experience",
-		"language": "English",
-		"author": [
-			{
-				"family": "Garrett",
-				"given": "Jesse James"
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2010",
-					12,
-					26
 				]
 			]
 		}

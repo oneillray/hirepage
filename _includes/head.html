@@ -12,8 +12,12 @@
   <meta name="google-site-verification" content="vQTvxLDK7AEx-ysUNQPFXZLqTm0nftDKOdl11m9rXbI" />
   <!-- <link rel="stylesheet" href="{{ "/css/reset.css" | prepend: site.baseurl }}"> -->
   <link rel="stylesheet" href="{{ "/css/new-style.css" | prepend: site.baseurl }}">
-
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  {% endfor %}
+  {% endif %}
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
 </head>

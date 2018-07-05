@@ -4,10 +4,10 @@ layout: default
 
 
 <div class="container">
-    <div class="project-meta project-meta--horizontal row">
+    <div class="project-meta project-meta--horizontal row justify-content-center">
 
         {% if page.year %}
-        <div class="col-md-4">
+        <div class="col-md-4 ">
             <h6>Year</h6>
             {{ page.year }}
         </div>
@@ -16,15 +16,22 @@ layout: default
 
 
         {% if page.role %}
-        <div class="col-md-4">
+        <div class="col-md-4 ">
             <h6>Project Role</h6>
             {{ page.role }}
         </div>
         {% endif %}
 
+         {% if page.client %}
+        <div class="col-md-4 ">
+            <h6>Client</h6>
+            {{ page.client }}
+        </div>
+        {% endif %}
+
 
         {% if page.duration %}
-        <div class="col-md-4">
+        <div class="col-md-4 ">
             <h6>Project Duration</h6>
             {{ page.duration }}
         </div>

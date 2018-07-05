@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  <style>
+  * {
+      font-family: 'open sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  h5 {
+      font-weight: 700;
+      text-align: center;
+  }
+ #Intro a {
+      text-decoration:underline !important;
+  }   
+  #Intro a:hover {
+      color: #10FF00 !important;
+  }
+
+  .btn-primary {
+     background: #10FF00;
+  }
+
+  .btn-primary:hover {
+     background: #2bad22;
+  }
+
+    .page-nav {
+        position: fixed;
+        width: 400px;
+        top: 250px;
+        left: 3vw;
+    }
+    @media screen and (max-width: 768px){
+        .page-nav {
+        left: 0;
+        top: auto;
+        width: 100%;
+        bottom: 0;
+        }
+
+@media screen and (max-width: 768px){
+        .page-nav ul {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        background: #fff;
+
+        }
+    }
+        .page-nav li {
+            display: inline-block;
+            flex-basis: 25%;
+        }
+    }
+
+    .page-nav li {
+        list-style: none;
+        font-size: 0.8em;
+    }
+  </style>
+
+
+  <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
+
+  <div class="page-nav">
+      <ul>
+          <li><a href="#Intro">Introduction</a></li>
+          <li><a href="#myWork">Work</a></li>
+          <li><a href="#myExp">Experience</a></li>
+          <li><a href="#Msc">MSc Thesis</a></li>
+      </ul>
+  </div>
+
+    <!-- open header -->
+        <header class="">
+            <div class="container">
+                <div class="row justify-content-center">
+      {% include neva-header.html %}
+
+            <div class="col-md-8 col-md-8 text-center">
+                    <img src="//static1.squarespace.com/static/59e88d292278e75f98b8c433/t/59fb5d1441920238509e482e/1530536101154/?format=200w" alt="NevaLabs">
+            </div>
+      <h3 class="col-md-8 text-center">{{page.page-secondary}}</h3>
+      </header>
+      </div>
+      </div>
+      <!-- close header -->
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8" id="Intro">
+                {{ content }}
+        </div>
+      </div>
+      <div class="row justify-content-center">
+            <div class="col-md-12">
+                   <h5 id="myWork">Work</h5>
+
+                   <section class="cv container">
+                   
+                        {% include topline-casestudies.html %}
+
+                            <div class="row">
+
+                                    <div class="col-md-12">
+                                            <h5 id ="MSc">Msc Thesis</h5>
+                                            
+                                        </div>
+
+                                    <div class="col-md-12">
+                                            <h5 id ="myExp">Experience & Education</h5>
+                                        </div>
+                            </div>
+
+                           {% include topline-exp-edu.html %}
+                    
+                    </section>
+                    
+            </div>
+            
+    </div>
+      </div>
+    </div>
+
+
+
+    {% if jekyll.environment == 'production' %}
+       {% include analytics.html %}
+    {% endif %}
+  </body>
+
+</html>

@@ -9,8 +9,9 @@ $primary-color:        #009688;
 $primary-color-light:  #B2DFDB;
 $primary-color-text:   #FFFFFF;
 $accent-color:         #607D8B;
-$primary-text-color:   #212121;
+$primary-text-color:   #292b2c;
 $secondary-text-color: #757575;
+// current col
 $divider-color:        #CAD5CF; //#efefef; // #BDBDBD;
 
 
@@ -20,15 +21,14 @@ $divider-color:        #CAD5CF; //#efefef; // #BDBDBD;
 // import reset
 // @import "reset";
 
-$body-font: sans-serif;
+$body-font:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;// 'Work Sans', Avenir, sans-serif;
 
 * {
-font-family: 'Work Sans', sans-serif; // remove the google font dependancy for now
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 // test body fade
-body { -webkit-animation:fadein 1.2s; animation:fadein 1.2s }
+body { -webkit-animation:fadein 1.2s; animation:fadein 1.2s; }
 @-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
 @keyframes fadein { from {opacity:0} to {opacity:1} }
 
@@ -69,13 +69,21 @@ blockquote {
 
 body, p {
     color: $primary-text-color;
+    font-size: 20px;
+    @media screen and (max-width: 800px){
+      font-size: 16px;
+    }
 }
 
 
+h1, h2 {
+  font-weight: 100;
+}
 h2, .h2 {
     font-size: 32px;
     line-height: 48px;
     position: relative;
+    font-weight: 100;
     // margin-bottom: 48px !important;
 }
 
@@ -87,17 +95,36 @@ h3, .h3 {
 }
 
 p {
-  margin: 16px 0 32px;
+  margin: 48px 0;
 }
 
 
 a {
     color: $secondary-text-color;
+
 }
 
 .cv__item a {
     text-decoration: underline;
+    // color: $primary-text-color;//darken($di-color, 50%);
+
 }
+
+em {
+  background: #5bc0de1f;
+  font-style: normal;
+}
+
+.it-logo {
+    font-family: "Times New Roman", serif;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+    opacity: 1 !important;
+    display: inline-block; 
+}
+
 
 /*
 * Header
@@ -106,8 +133,16 @@ a {
 .nav {
     justify-content: flex-end;
 
+    li {
+        font-size: 0.8em;
+    }
+
     a {
         color: $primary-text-color;
+    }
+
+    .active {
+      border-bottom: 3px solid #000;
     }
 
     &--next-link{
@@ -118,18 +153,36 @@ a {
         }
         justify-content: space-around;
         font-size: 1.2em;
-        text-decoration: underline;
+
 
         .small {
-            text-decoration: none;
+            opacity: 0.3 !important;
+            font-size: 16px;
+        }
+        
+        a.prev {
+          text-align: right;
         }
     }
 }
 
+@media screen and (max-width: 768px){
+    .col-md-4.nav-link,  {
+        text-align: center;
+    }
+    .nav {
+        justify-content: center;
+    }
+}
 
 header {
+<<<<<<< HEAD
   height: 45vh;
   background: $divider-color;
+=======
+  height: 30vh;
+  // background: $divider-color;
+>>>>>>> redesign-v2
 
   a {
       color: $primary-text-color;
@@ -141,7 +194,6 @@ header {
 
   h4 {
       font-weight: 100;
-      opacity: 0.5;
   }
 }
 
@@ -225,6 +277,12 @@ footer {
     @media screen and (max-width: 700px){
         padding: 2em 0;
     }
+
+    .footer-nav {
+      font-size: 0.8em;
+      display: flex;
+      justify-content: space-between;
+    }
 }
 
 
@@ -273,6 +331,10 @@ footer {
     }
 }
 
+.tr {
+  text-align: right;
+}
+
 // toolkit
 
 .toolkit {
@@ -282,6 +344,10 @@ footer {
 // project padding-vert
 
 .project-meta {
+
+    h6 {
+      opacity: 0.3;
+    }
     &--horizontal {
         padding: 4em 0;
     }
@@ -317,7 +383,6 @@ footer {
 
     &__items {
         display: flex;
-        flex-wrap: wrap;
     }
 
     .material-icons {
@@ -333,13 +398,18 @@ footer {
 
     &__item {
         flex-basis: 45%;
+        padding: 2%;
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
 }
 
+&.skills {
+  border-bottom: none
+}
+
   &.row {
-      @media screen and (min-width: 1030px){
+      @media screen and (max-width: 1030px){
           flex-wrap: nowrap !important;
       }
   }
@@ -377,6 +447,10 @@ footer {
   display: block;
   opacity: 0.5;
   line-height: 1;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .cv__section__item__contents {
@@ -406,55 +480,37 @@ footer {
 
 
 
-
-// project-specifc style
-//
-
-.ikeaMe header {
-    background: #FFD700;
-
-}
-//
-//
-// .myWelfare header {
-//     background: rgba(142, 198, 63, 1.0);
-//
-//     h4 {
-//         color: #fff;
-//         opacity: 1;
-//     }
-// }
-//
-// .myWelfare header a {
-//     color: #fff ;
-// }
-// .myWelfare button {
-//     background: darken(#8EC63F, 20%)
-// }
-
 // Case Study Section
 
 $ikeaMe: #FFD700;
 $myWelfare: #8EC63F;
-$joey: #37474F;
+$journey: #37474F;
 $itMobile: #BD363C;
+$irishRail: #029DDC;
+$election: #EBEBEB;
 
 
 $projects: (
-	'joey'      : $joey,
+	'journey'      : $journey,
 	'it-mobile' : $itMobile,
-	'ikea'  : $ikeaMe,
-	'welfare'   : $myWelfare
+	'ikeaMe'  : $ikeaMe,
+	'myWelfare'   : $myWelfare,
+    'irishRail'   : $irishRail,
+    'it-election'   : $election
 );
 
 
 @each $name, $project in $projects {
 
 	.case-study__item--#{$name} {
+        color: #fff;
+        border: 1px solid $project;
         transition: all ease-in-out 0.5s;
         cursor: pointer;
+        background-color: $project; 
+
         &:hover {
-            background: $project;
+        box-shadow: 0 5px 20px 0 rgba(0,0,0,0.44);
             color: #fff;
             p {
                 color: #fff;
@@ -464,61 +520,82 @@ $projects: (
             }
             a {
                 color: #fff;
+                text-decoration: none;
             }
         }
-        color: $project;
+        color: #fff;
         border-color: $project;
     h3 {
-     color: $project;
+     color: #fff !important;
     }
-    a {
-        color: $project;
+    a, p {
+      color: darken($project, 15%);
     }
 }
 }
 
 .case-study__items {
     display: flex;
+    // padding: 2% 2%;
     flex-wrap: wrap;
-    flex-basis: 123%;
+    width: 100%;
 }
+
+.case-study__link {
+  display: block;
+} 
 
 .case-study__item {
     padding: 2% 2%;
-    border: 1px solid;
-    margin: 20px 2%;
-    flex-basis: 46%;
+    flex-basis: 50%;
+    height: 298px;
     position: relative;
+    @media screen and (max-width: 992px){
+        flex-basis: 100%;
+    }
 
+      &--irishRail {
+        color: currentColor;
+        background-image: url('/assets/irishRail/ir-insitu-thumb.png');
+        background-size: 371px 219px;
+        background-repeat: no-repeat;
+        background-position: 110% 110%;
+    }
+    &--ikeaMe {
+        color: currentColor;
+        background-image: url('/assets/ikeaMe/ikea-screen.png');
+        background-size: 455.2px 320px;
+        background-repeat: no-repeat;
+        background-position: 210% -110%;
+    }
+    &--myWelfare {
+        color: currentColor;
+        background-image: url('/assets/in-iPhone.jpg');
+        background-size: 371px 219px;
+        background-repeat: no-repeat;
+        background-position: 110% 110%;
 
-    // &--ikea {
-    //     color: currentColor;
-    //     border-color: $ikeaMe;
-    //     a {
-    //         color: $ikeaMe;
-    //     }
-    // }
-    // &--mywelfare {
-    //     color: currentColor;
-    //     border-color: $myWelfare;
-    //     a {
-    //         color: $myWelfare;
-    //     }
-    // }
-    // &--joey {
-    //     color: currentColor;
-    //     border-color: $joey;
-    //     a {
-    //         color: $joey;
-    //     }
-    // }
-    // &--itMobile {
-    //     color: currentColor;
-    //     border-color: $itMobile;
-    //     a {
-    //         color: $itMobile;
-    //     }
-    // }
+    }
+    &--journey {
+        color: #fff !important;
+        background-image: url('/assets/journey-Mockup.png');   
+        background-size: 320px 400px;
+        background-repeat: no-repeat;
+        background-position: 100% -10%;
+
+    }
+    &--it-mobile {
+        background-image: url('https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Fd2mxuefqeaa7sj.cloudfront.net%2Fs_217D128B5C00FEE7A1188DB16D0C60E819E9BF71696B39F5C37622F991C297D2_1527804448312_jamie-iphone-2.jpg&hmac=1BtdDoJ88jI6QUwYZKDZZvnMcFMr1E5ZsWjZZMIhmSE%3D');
+        background-size: 220px 400px;
+        background-repeat: no-repeat;
+        background-position: 100% -10%;
+    }
+    &--it-election {
+        background-image: url('/assets/election/EL-hero.png');
+        background-size: 500px 349px;
+        background-repeat: no-repeat;
+        background-position: -400% -60%;
+    }
 }
 
 
@@ -529,3 +606,89 @@ $projects: (
     line-height: 2.4;
   }
 }
+
+// Image captions
+
+.caption {
+  text-align: center;
+    display: block;
+    font-size: 1em;
+    opacity: 0.4;
+
+}
+
+//  reading list
+
+#reading {
+
+  h3 {
+    opacity: 1;
+    color: #292b2c;
+  }
+
+  h4, h6 {
+    font-weight: 100;
+    opacity: 0.5;
+}
+  }
+
+  .list-unstyled {
+    display: flex;
+    // flex-basis: calc(33% - 32px);
+    // @media screen and (max-width: 768px){
+    //   flex-basis: calc(50% - 32px); 
+    // }
+    // @media screen and (max-width: 574px){
+    //   flex-basis: 100%; 
+    // }
+    margin: 16px;
+    padding: 16px;
+    // border: 1px solid #ddd;
+
+}
+
+
+
+.book-info {
+  margin-left: 20px;
+}
+
+.book-image {
+  min-width: 200px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// PRINT
+
+
+@media print {
+   body {
+   font-size : 16px;
+   line-height: 1.5;
+   }
+
+   nav {
+    display: none;
+   }
+
+   h1 {
+    font-size: 2em;
+   }
+
+   h2 {
+    font-size: 1.5em;
+   }
+
+   h3 {
+    font-size: 1em;
+    font-weight: bold;
+
+   }
+}
+
+
+
+

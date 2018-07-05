@@ -13,7 +13,7 @@
       </div>
     </div>
     <!-- close header -->
-    <section id="reading" class="container">
+    <section class="container">
       <div class="row">
         <div class="col-md-8">
           <div>
@@ -22,28 +22,36 @@
         </div>
       </div>
     </section>
-    <section class="container" id="list">
+    <section id="reading"  class="container" id="list">
       <ul class="row">
         {% for book in site.data.reading %}
               <li class="list-unstyled">
-           <b> {{ book.title }}</b>
+            <div class="book-image">
+                <img src="{{ book.image }} " alt="{{ book.title }}">
+            </div>
+            <div class='book-info'>
+            <h3> {{ book.title }}</h3>
 
-            <span> <i>by</i> 
+            <h5> <i>by</i> 
                 {{ book.author[0].given }} {{ book.author[0].family }}
                 {{ book.author[1].given }} {{ book.author[2].family }}
                 {{ book.author[2].family }} 
-            </span>
+            </h5>
             
+            <p>            {{ book.abstract }} 
+  </p>
+            </div>
           </li>
-<!--           <div class="col-md-8">
-           {{ book.abstract }} 
-          </div> -->
+
           
         {% endfor %}
       </ul>
       
     </section>
     {% include footer.html %}
+<<<<<<< HEAD
   
+=======
+>>>>>>> redesign-v2
   </body>
 </html>
