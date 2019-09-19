@@ -8,13 +8,14 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="stylesheet" href="{{ "/css/vendor/bootstrap.min.css" | prepend: site.baseurl }}">
   <meta name="google-site-verification" content="vQTvxLDK7AEx-ysUNQPFXZLqTm0nftDKOdl11m9rXbI" />
   <!-- <link rel="stylesheet" href="{{ "/css/reset.css" | prepend: site.baseurl }}"> -->
   <link rel="stylesheet" href="{{ "/css/new-style.css" | prepend: site.baseurl }}">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
   {% if page.custom_css %}
   {% for stylesheet in page.custom_css %}
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css" media="screen" type="text/css"> -->
   {% endfor %}
   {% endif %}
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet">
