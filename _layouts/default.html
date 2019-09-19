@@ -8,28 +8,9 @@
 
 
 
-  <body{% if page.slug %} class="{{ page.slug }}"{% endif %}>
+  <body{% if page.slug %} class="{{ page.slug }}"{% endif %} class="flex content-center container mx-auto">
 
-    <!-- open header -->
-        <header class="">
-            <div class="container">
-                <div class="row justify-content-center">
-      {% include header.html %}
-
-      <h2 class="col-md-8 text-center">{{page.page-primary}}</h2>
-      <h4 class="col-md-6 text-center">{{page.page-secondary}}</h4>
-      </header>
-      </div>
-      </div>
-      <!-- close header -->
-
-    <div class="page-content">
-      <div class="wrapper">
         {{ content }}
-      </div>
-    </div>
-
-
 
   </body>
 
