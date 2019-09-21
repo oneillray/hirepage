@@ -1,19 +1,16 @@
 # Site settings
 title: Ray O'Neill
 subtitle: Product Designer
-email: info@raymondoneill.ie
+email: heyrayoneill@gmail.com
 description: I am a user-centered designer that is seeking a new role in a company builds software to help humans and make positive change in the world.
 colophon: test This website was hand crafted using jekyll and hosted with Github pages. Type is set in Worksans and served up by Googlefonts. The website itself was built using good ol' bootstrap beacuse life too damn short not too.
 # baseurl: "/hirepage/" # the subpath of your site, e.g. /blog/
 # url: "http://madebyray.com" # the base hostname & protocol for your site
-twitter_username: madebyray
-github_username:  oneillray
-instagram_username: oneillray
-dribbble_username: madebyray
+twitter: madebyray
+work:  Swrve
+work_url: 
+dribbble: madebyray
 spotify_username: raysayhey
-skype_username: oneillray
-pinterest_username: madebyray
-codepen_username: oneillray
 # resume_url: http://madebyray.com
 # SEO Stuff - http://vrepin.org/vr/JekyllMeta/
 # summary: How to add metadata to the Jekyll-based site: google sitemap xml, Open Graph and plain old "meta"-tags.
